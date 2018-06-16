@@ -25,6 +25,7 @@
   8. delete the newFeature branch
   9. **git pull**
 
+
 #### PUBLISH project with github
 1. go at github.com/project -> setting -> Github Pages.source {master branch} -> save
 2. go back at Github Pages.source and copy the link
