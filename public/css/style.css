@@ -1,0 +1,72 @@
+body{
+  font-size: 1.3em;
+}
+/* chapter title */
+h3{
+  color: #0039e6;
+}
+/* vietnamese */
+h7 {
+  text-align: left;
+  color: #0000b3;
+}
+/* english */
+h8 {
+  text-align: left;
+  font-style: italic;
+  color:#39004d;
+}
+/* french */
+h9 {
+  text-align: left;
+  font-style: italic;
+}
+.fr-sub{
+  color:green;
+}
+.has-note:after {
+  content: '+ ';
+  color:green;
+}
+.child-row td{
+  box-shadow: 0 0 10px black;
+  background: rgb(250, 239, 189);
+}
+tr:nth-child(even)>td {
+  background-color: rgb(241, 243, 243);
+}
+/** BOOSTRAP costum style */
+.container{
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+  margin-top:75px;
+}
+/* boot strap container */
+@media (min-width: 1200px) {
+  .container{
+      max-width: 80%;
+ }
+}
+/* EMBED VIDEO MODAL */
+.video-responsive {
+  padding-bottom:56%;
+  position:relative;
+}
+.video-responsive iframe {
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.modal-dialog {
+  max-width: 70%;
+  max-height: 65%;
+}
+.modal-body{
+  max-width: 100%;
+  max-height: 100%;
+}
+/** DATATABLE costum style */
+/* search box */
+label {
+  margin-top: 1rem;
+}
