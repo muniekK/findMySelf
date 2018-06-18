@@ -2,7 +2,8 @@
 - [w3school javascript](https://www.w3schools.com/js/js_versions.asp)
 - [canIUse](https://caniuse.com/)
 - [online JS cheatsheet](http://htmlcheatsheet.com/js/)
-
+- [mozilla](https://developer.mozilla.org/bm/docs/Web/JavaScript)
+- [JavaScript ES6 / ES2015 by Traversy Media](https://www.youtube.com/watch?v=2LeqilIw-28&list=PLillGF-RfqbZ7s3t6ZInY3NjEOOX7hsBv)
 ## JAVASCRIPT TYPES
 
 1. Number 
