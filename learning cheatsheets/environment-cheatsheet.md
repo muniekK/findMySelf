@@ -83,3 +83,18 @@
 
 - touch .gitignore
   > /node_modules
+
+
+#### prepare App for deployment ( Heroku ) 
+1. Section 6, Lecture 35 of nodejs express mongodb dev to deployement of traversy media
+2. package.jso > scripts> "starts":"node app.js"  :: Heroku need this to start the app
+3. app.js > const port = process.env.PORT || 80   :: We are not sure which port Heroku will use and port 80 is for local
+4. mLab > create New (mongo deployment > SANDBox (free) > ... > submit order           :: database can't be local
+  - user tab > add database user
+5. create database.js to use local db if local. Else if its in production, use mLab
+
+6. have to upload to git to work with heroku
+7. install heroku toolbelt
+  1. git bash / cmd > heroku login
+  2. it the project directory > heroku create  
+  3. dashboard.heroku.com > 
