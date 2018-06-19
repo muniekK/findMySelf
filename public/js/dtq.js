@@ -7,36 +7,46 @@ $(document).ready(function() {
 
   loadTheory();
 
-  $('.homepage').click(loadTheory);
-
-  //jquery event-delegation
-  $(document).on('click', '.videoLink', function() {
+   // jquery event-delegation
+   // use for embeded video of facebook/youtube into the modal
+   $(document).on('click', '.videoLink', function() {
     displayVideo($(this).attr('data-link'));
   })
+
+  // Stop playing video in iframe when modal is closed
+  $("#myModal").on('hidden.bs.modal', function (e) {
+    $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+  });
+
+  $('.homepage').click(loadTheory);
+
+  $('#dtq40').click(function(){
+    loadVideos('dtq40')
+  });
+
+  $('#dtq60').click(function(){
+    loadVideos('dtq60')
+  });
+
+  $('#dtq120').click(function(){
+    loadVideos('dtq120')
+  });
+
+  $('#nlntt').click(function(){
+    loadVideos('nlntt')
+  });
+
+  $('#thpt').click(function(){
+    loadVideos('thpt')
+  });
+
 })
 
-function displayVideo(dataURL) {
-  var bodycontent;
-
-  switch (identifiedStreamer(dataURL)) {
-    case facebookStream:
-      bodyContent = `<div class=video-responsive><iframe src=${dataURL} style=border:none;overflow:hidden scrolling=no frameborder=0 allowTransparency=true allowFullScreen=true></iframe></div>`;
-      break;
-    case youtubeStream:
-      console.log(dataURL)
-      bodyContent = `<div class=video-responsive><iframe src=${dataURL} frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe></div>`;
-      break;
-  }
-
-  //dynamically-change-bootstrap-modal-body
-  var mymodal = $('#myModal');
-  mymodal.find('.modal-body').html(bodyContent);
-  mymodal.modal('show');
-}
-
-function identifiedStreamer(videoLink) {
-  return videoLink.includes("youtu") ? 2 : 1; // youtu:2, face:1
-}
+/*************************************************************************************************************
+*
+* 	DTQ Home Page
+*
+**************************************************************************************************************/
 
 function loadTheory() {
   $.ajax({
@@ -47,7 +57,7 @@ function loadTheory() {
       var dtq120 = JSON.parse(obj.dtq120)
       var nlntt = JSON.parse(obj.nlntt)
 
-      var html = '<table id=dtq-table class=dtqTheory><thead><tr><th width=70%></th><th width=12%>DTQ 120</th><th width=5%>DTQ Giảng</th><th width=13%>true Story</th></tr></thead><tbody>';
+      var html = '<table id=dtq-table class=display><thead><tr><th width=70%></th><th width=12%>DTQ 120</th><th width=5%>DTQ Giảng</th><th width=13%>true Story</th></tr></thead><tbody>';
 
       // Order is important
       html += getChapterHtml(dtqTheory.chapter01) + getChapterHtml(dtqTheory.chapter02) + getChapterHtml(dtqTheory.chapter03) + getChapterHtml(dtqTheory.chapter04) + getChapterHtml(dtqTheory.chapter05) + getChapterHtml(dtqTheory.chapter06) + getChapterHtml(dtqTheory.chapter07);
@@ -60,7 +70,7 @@ function loadTheory() {
       setDtqGiang(finalObj);
       setNlntt(nlntt);
 
-      $('#dtq-table').DataTable({
+      $('table.display').DataTable({
         paging: false,
         ordering: false
       });
@@ -165,4 +175,85 @@ function loadChild(x) {
 
 function childRow(notes) {
   return `<table><tr class=child-row><td>[Note] ${notes} </td></tr></table>`;
+}
+
+/*************************************************************************************************************
+*
+* 	DTQ VIDEOs Page
+*
+**************************************************************************************************************/
+function loadVideos(title){
+  var html = '';
+
+  $.ajax({
+    url: `/dtq/videos/${title}`,
+    success: function(res) {
+      var obj = JSON.parse(res.videos);
+      html += "<table class=display><thead><tr><th>Title</th><th>Theories</th><th>without Sub</th><th>english Sub</th><th>french Sub</th></tr></thead><tbody>";
+
+      var chapters = obj.chapters;
+      for(var i in chapters){
+        
+        html += `<tr><td> ${chapters[i].title} </td>`
+            + `<td> ${getTheoryParts(chapters[i].theory)} </td>`
+            + `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].embedVideo} > ${addLinkIfNotEmpty(chapters[i].embedVideo)} </a></td>`
+            + `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].enSub} > ${addLinkIfNotEmpty(chapters[i].enSub)} </a></td>`
+            + `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].frSub} > ${addLinkIfNotEmpty(chapters[i].frSub)} </a></td>`;
+      }
+      html += "</tbody></table>";
+
+      document.getElementById('main-content').innerHTML = html;
+
+      $("table.display").DataTable({
+        paging: false,
+        autoWidth:false,
+        "columnDefs": [
+          { "width": "25%", "targets": 0 },
+          { "width": "10%", "targets": 2 }
+        ]
+      })
+    }
+  });
+}
+
+function getTheoryParts(theories){
+	var html = "<table><tr>";
+	for(i in theories){
+		html += `<td> ${theories[i].p} </td>`
+	}
+	html += "</tr></table>";
+	return html;
+}
+
+function addLinkIfNotEmpty(data){
+	return (data) ? 'click to view':'';
+}
+
+/*************************************************************************************************************
+*
+* 	MODAL for embeded videos
+*
+**************************************************************************************************************/
+
+function displayVideo(dataURL) {
+  var bodycontent;
+
+  switch (identifiedStreamer(dataURL)) {
+    case facebookStream:
+      bodyContent = `<div class=video-responsive><iframe src=${dataURL} style=border:none;overflow:hidden scrolling=no frameborder=0 allowTransparency=true allowFullScreen=true></iframe></div>`;
+      break;
+    case youtubeStream:
+      console.log(dataURL)
+      bodyContent = `<div class=video-responsive><iframe src=${dataURL} frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe></div>`;
+      break;
+  }
+
+  //dynamically-change-bootstrap-modal-body
+  var mymodal = $('#myModal');
+  mymodal.find('.modal-body').html(bodyContent);
+  mymodal.modal('show');
+}
+
+function identifiedStreamer(videoLink) {
+  return videoLink.includes("youtu") ? 2 : 1; // youtu:2, face:1
 }
