@@ -97,4 +97,11 @@
 7. install heroku toolbelt
   1. git bash / cmd > heroku login
   2. it the project directory > heroku create  
-  3. dashboard.heroku.com > 
+8. dashboard.heroku.com : the project might be different name, not necessary pacific...
+  1. heroku git:clone -a pacific-sands-75808
+  2. git push heroku master
+9. dashboard.heroku.com > ... > open App 
+  - its demployed.
+10. add domain name
+  - buy domain name: godady.com
+  - add link it to heroku app
