@@ -1,3 +1,5 @@
+// https://google.github.io/styleguide/jsguide.html#formatting-comments
+
 const express = require('express');
 const router = express.Router();
 
@@ -8,22 +10,36 @@ router.get('/', (req, res) => {
   res.render('dtq');
 });
 
+
+/**
+ * @param {string} : dtq40, dtq60, dtq120, nlntt, thpt
+ */
+router.get('/videos/:title', (req, res)=>{
+  let dbPath = `./staticdb/${req.params.title}.json`;
+  console.log(dbPath)
+  
+  fs.readFile(dbPath, 'utf8', (err, data)=>{
+    if (err) throw err;
+    res.json({videos:data});  
+  })
+})
+
 router.get('/theory', (req, res) => {
   async.parallel([
       function(callback) {
-        fs.readFile('./staticdb/dtq_theory.json', 'utf8', (err, data) => {
+        fs.readFile('./staticdb/dtqTheory.json', 'utf8', (err, data) => {
           if (err) throw err;
           callback(null, data);
         })
       },
       function(callback) {
-        fs.readFile('./staticdb/dtq_120.json', 'utf8', (err, data) => {
+        fs.readFile('./staticdb/dtq120.json', 'utf8', (err, data) => {
           if (err) throw err;
           callback(null, data);
         })
       },
       function(callback) {
-        fs.readFile('./staticdb/dtq_nlntt.json', 'utf8', (err, data) => {
+        fs.readFile('./staticdb/nlntt.json', 'utf8', (err, data) => {
           if (err) throw err;
           callback(null, data);
         })
@@ -38,5 +54,6 @@ router.get('/theory', (req, res) => {
       })
     });
 })
+
 
 module.exports = router;

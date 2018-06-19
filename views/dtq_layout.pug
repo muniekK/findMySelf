@@ -25,7 +25,16 @@ body
         li.nav-item.active
           a.nav-link(href='javascript:void(0)').homepage Home 
           span.sr-only (current)
-
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='javascript:void(0)' role='button', data-toggle='dropdown', aria-hasmodal='true', aria-expanded='false') Videos
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='javascript:void(0)')#dtq120 1 ĐTQ-120: Anime
+            a.dropdown-item(href='javascript:void(0)')#dtq60 2 ĐTQ-060: Anime
+            a.dropdown-item(href='javascript:void(0)')#dtq40 3 ĐTQ-040: Giảng
+            a.dropdown-item(href='javascript:void(0)')#nlntt 4 Nhân Lễ Nghĩa Trí Tín
+            .dropdown-divider
+            a.dropdown-item(href='javascript:void(0)')#thpt 5 Thiên Hạ Phụ Tự
+            
   .container
     block content
     br

@@ -1,4 +1,5 @@
 # JAVASCRIPT (ECMAScrip 1-8)
+- [Google JavaScript Style Guide] (https://google.github.io/styleguide/jsguide.html#formatting-comments)
 - [w3school javascript](https://www.w3schools.com/js/js_versions.asp)
 - [canIUse](https://caniuse.com/)
 - [online JS cheatsheet](http://htmlcheatsheet.com/js/)
