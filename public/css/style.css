@@ -32,9 +32,7 @@ h9 {
   box-shadow: 0 0 10px black;
   background: rgb(250, 239, 189);
 }
-tr:nth-child(even)>td {
-  background-color: rgb(241, 243, 243);
-}
+
 /** BOOSTRAP costum style */
 .container{
   border-radius: 10px;
@@ -65,6 +63,7 @@ tr:nth-child(even)>td {
   max-width: 100%;
   max-height: 100%;
 }
+
 /** DATATABLE costum style */
 /* search box */
 label {

@@ -52,6 +52,8 @@
   - Bracket Pair Colorizer by CoenraadS
 
 #### visual studio code shortcut
+- CTRL + K then CTRL + C : add line(s) comments
+- CTRL + K then CTRL + U : remove line(s) comments
 - ALT + CLICK: add additional cursor
 - CTRL + ALT + DOWN/UP : add cursor below/up
 - CTRL + B : toggle sidebar
@@ -97,11 +99,17 @@
 7. install heroku toolbelt
   1. git bash / cmd > heroku login
   2. it the project directory > heroku create  
-8. dashboard.heroku.com : the project might be different name, not necessary pacific...
-  1. heroku git:clone -a pacific-sands-75808
+8. dashboard.heroku.com : the project might be different name, not necessary findmyself...
+  1. heroku git:clone -a findmyself
   2. git push heroku master
 9. dashboard.heroku.com > ... > open App 
   - its demployed.
 10. add domain name
   - buy domain name: godady.com
-  - add link it to heroku app
+  - link the domain name to to heroku app
+
+- Heroku changing name
+  1. dashboard.heroku > ... > edit new name
+  2. local > open ../.git/config  > change rl = git@heroku.com:NEW_APP_NAME.git
+  3. heroku apps:rename newname
+
