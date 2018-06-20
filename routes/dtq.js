@@ -1,5 +1,4 @@
 // https://google.github.io/styleguide/jsguide.html#formatting-comments
-
 const express = require('express');
 const router = express.Router();
 
@@ -10,17 +9,18 @@ router.get('/', (req, res) => {
   res.render('dtq');
 });
 
-
 /**
  * @param {string} : dtq40, dtq60, dtq120, nlntt, thpt
  */
-router.get('/videos/:title', (req, res)=>{
+router.get('/videos/:title', (req, res) => {
   let dbPath = `./staticdb/${req.params.title}.json`;
   console.log(dbPath)
-  
-  fs.readFile(dbPath, 'utf8', (err, data)=>{
+
+  fs.readFile(dbPath, 'utf8', (err, data) => {
     if (err) throw err;
-    res.json({videos:data});  
+    res.json({
+      videos: data
+    });
   })
 })
 

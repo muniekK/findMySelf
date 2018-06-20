@@ -56,9 +56,10 @@
 - CTRL + K then CTRL + U : remove line(s) comments
 - ALT + CLICK: add additional cursor
 - CTRL + ALT + DOWN/UP : add cursor below/up
-- CTRL + B : toggle sidebar
 - CTRL + SPACE : trigger IntelliSense
 - F11 : full screen
+- CTRL+Shift+V : Toggle Markdown Preview
+- CTRL + B : toggle sidebar
 
 ## Learnings websites
 - [The Complete Web Developer in 2018: Zero to Mastery by Andrei Neagoie](https://www.udemy.com/the-complete-web-developer-in-2018/)
