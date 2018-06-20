@@ -35,6 +35,16 @@ body
             .dropdown-divider
             a.dropdown-item(href='javascript:void(0)')#thpt 5 Thiên Hạ Phụ Tự
             
+      .nav.navbar-nav.ml-auto
+        if user
+          li.nav-item
+            a.nav-link(href='/users/logout') Logout
+        else
+          li.nav-item
+            a.nav-link(href='javascript:void(0)')#register Register 
+          li.nav-item
+            a.nav-link(href='javascript:void(0)')#login Login 
+
   .container
     block content
     br
