@@ -7,46 +7,218 @@ $(document).ready(function() {
 
   loadTheory();
 
-   // jquery event-delegation
-   // use for embeded video of facebook/youtube into the modal
-   $(document).on('click', '.videoLink', function() {
+  // jquery event-delegation
+  // use for embeded video of facebook/youtube into the modal
+  $(document).on('click', '.videoLink', function() {
     displayVideo($(this).attr('data-link'));
   })
 
   // Stop playing video in iframe when modal is closed
-  $("#myModal").on('hidden.bs.modal', function (e) {
+  $("#myModal").on('hidden.bs.modal', function(e) {
     $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
   });
 
   $('.homepage').click(loadTheory);
 
-  $('#dtq40').click(function(){
+  $('#dtq40').click(function() {
     loadVideos('dtq40')
   });
 
-  $('#dtq60').click(function(){
+  $('#dtq60').click(function() {
     loadVideos('dtq60')
   });
 
-  $('#dtq120').click(function(){
+  $('#dtq120').click(function() {
     loadVideos('dtq120')
   });
 
-  $('#nlntt').click(function(){
+  $('#nlntt').click(function() {
     loadVideos('nlntt')
   });
 
-  $('#thpt').click(function(){
+  $('#thpt').click(function() {
     loadVideos('thpt')
+  });
+
+  $('#register').click(function() {
+    loadRegisterForm();
+  });
+
+  $('#login').click(function() {
+    loadLoginForm();
   });
 
 })
 
 /*************************************************************************************************************
-*
-* 	DTQ Home Page
-*
-**************************************************************************************************************/
+ *
+ * 	USER Register and Login
+ *
+ **************************************************************************************************************/
+function loadRegisterForm() {
+  var html = "<form action=/users/register method=post class='was-validated' id='registerForm'>" +
+    "<div class=form-group>" +
+    "<label for='name'>Name:</label>" +
+    "<input name='name' type='text' class='form-control' id='name'/>" +
+    "</div>" +
+    "<div class=form-group>" +
+    "<label for='email'>Email:</label>" +
+    "<input name='email' type='text' class='form-control' id='email'/>" +
+    "<div id=invalid-email class='text-danger'></div>" +
+    "</div>" +
+    "<div class=form-group>" +
+    "<label for='username'>Username:</label>" +
+    "<input name='username' type='text' class='form-control' id='username'/>" +
+    "<div id=invalid-username class='text-danger'></div>" +
+    "</div>" +
+    "<div class=form-group>" +
+    "<label for='password'>Password:</label>" +
+    "<input name='password' type='password' class='form-control' id='password'/>" +
+    "<div id=invalid-password class='text-danger'></div>" +
+    "</div>" +
+    "<div class=form-group>" +
+    "<label for='password2'>Confirm Password:</label>" +
+    "<input name='password2' type='password' class='form-control' id='password2'/>" +
+    "<div id=invalid-password2 class='text-danger'></div>"
+
+    +
+    "</div><br/>" +
+    "</form>" +
+    "<input type='button' value='Submit' class='btn btn-primary' onclick='submitRegister()'/>"
+
+  document.getElementById('main-content').innerHTML = html;
+}
+
+//https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_forms_through_JavaScript
+function submitRegister() {
+  var url = '/users/register',
+    name = document.getElementById('name').value,
+    email = document.getElementById('email').value,
+    username = document.getElementById('username').value,
+    password = document.getElementById('password').value,
+    password2 = document.getElementById('password2').value
+
+  var params = `name=${name}&email=${email}&username=${username}&password=${password}&password2=${password2}`;
+
+  var isValid = true;
+
+  // Basic client-side first validation
+  if (email == "" || isValidEmail(email)) {
+    document.getElementById('invalid-email').innerHTML = ''
+  } else {
+    document.getElementById('invalid-email').innerHTML = "email is invalid";
+    isValid = false;
+  }
+
+  if (username == "") {
+    document.getElementById('invalid-username').innerHTML = 'this field is required';
+    isValid = false;
+  } else {
+    document.getElementById('invalid-username').innerHTML = '';
+  }
+
+  if (password == "") {
+    document.getElementById('invalid-password').innerHTML = 'this field is required';
+    isValid = false;
+  } else {
+    document.getElementById('invalid-password').innerHTML = '';
+  }
+
+  if (password2 !== password) {
+    document.getElementById('invalid-password2').innerHTML = "password doesn't match";
+    isValid = false;
+  } else {
+    document.getElementById('invalid-password2').innerHTML = '';
+  }
+
+  if (isValid) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4)
+        if (xhr.status == 409) {
+          document.getElementById('invalid-username').innerHTML = 'username already existed'
+        }
+      else if (xhr.status == 201) {
+        loadLoginForm();
+      }
+    };
+    xhr.send(params)
+  }
+}
+
+function loadLoginForm() {
+  var html = "<form action=/users/register method=post class='was-validated'>" +
+    "<div class=form-group>" +
+    "<label for='username'>Username:</label>" +
+    "<input name='username' type='text' class='form-control' id='username'/>" +
+    "<div id=invalid-username class='text-danger'></div>" +
+    "</div>" +
+    "<div class=form-group>" +
+    "<label for='password'>Password:</label>" +
+    "<input name='password' type='password' class='form-control' id='password'/>" +
+    "<div id=invalid-password class='text-danger'></div>" +
+    "</div>" +
+    "<br/>" +
+    "</form>" +
+    "<input type='button' value='Submit' class='btn btn-primary' onclick='submitLogin()'/>"
+
+  document.getElementById('main-content').innerHTML = html;
+}
+
+function submitLogin() {
+  var url = '/users/login';
+
+  var username = document.getElementById('username').value,
+    password = document.getElementById('password').value;
+
+  var params = 'username=' + username + '&password=' + password;
+
+  var isValid = true;
+
+  if (username == "") {
+    document.getElementById('invalid-username').innerHTML = 'this field is required';
+    isValid = false;
+  } else {
+    document.getElementById('invalid-username').innerHTML = '';
+  }
+  if (password == "") {
+    document.getElementById('invalid-password').innerHTML = 'this field is required';
+    isValid = false;
+  } else {
+    document.getElementById('invalid-password').innerHTML = '';
+  }
+
+  if (isValid) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4)
+        if (xhr.status == 401) {
+          document.getElementById('invalid-password').innerHTML = 'username/password invalid'
+        }
+      if (xhr.status == 202) {
+        window.location = '/';
+        //window.location = '/dtq/my-surveys'; 
+        console.log('logged in')
+      }
+    };
+    xhr.send(params)
+  }
+}
+
+function isValidEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+/*************************************************************************************************************
+ *
+ * 	DTQ Home Page
+ *
+ **************************************************************************************************************/
 
 function loadTheory() {
   $.ajax({
@@ -178,11 +350,11 @@ function childRow(notes) {
 }
 
 /*************************************************************************************************************
-*
-* 	DTQ VIDEOs Page
-*
-**************************************************************************************************************/
-function loadVideos(title){
+ *
+ * 	DTQ VIDEOs Page
+ *
+ **************************************************************************************************************/
+function loadVideos(title) {
   var html = '';
 
   $.ajax({
@@ -192,13 +364,13 @@ function loadVideos(title){
       html += "<table class=display><thead><tr><th>Title</th><th>Theories</th><th>without Sub</th><th>english Sub</th><th>french Sub</th></tr></thead><tbody>";
 
       var chapters = obj.chapters;
-      for(var i in chapters){
-        
-        html += `<tr><td> ${chapters[i].title} </td>`
-            + `<td> ${getTheoryParts(chapters[i].theory)} </td>`
-            + `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].embedVideo} > ${addLinkIfNotEmpty(chapters[i].embedVideo)} </a></td>`
-            + `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].enSub} > ${addLinkIfNotEmpty(chapters[i].enSub)} </a></td>`
-            + `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].frSub} > ${addLinkIfNotEmpty(chapters[i].frSub)} </a></td>`;
+      for (var i in chapters) {
+
+        html += `<tr><td> ${chapters[i].title} </td>` +
+          `<td> ${getTheoryParts(chapters[i].theory)} </td>` +
+          `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].embedVideo} > ${addLinkIfNotEmpty(chapters[i].embedVideo)} </a></td>` +
+          `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].enSub} > ${addLinkIfNotEmpty(chapters[i].enSub)} </a></td>` +
+          `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].frSub} > ${addLinkIfNotEmpty(chapters[i].frSub)} </a></td>`;
       }
       html += "</tbody></table>";
 
@@ -206,34 +378,39 @@ function loadVideos(title){
 
       $("table.display").DataTable({
         paging: false,
-        autoWidth:false,
-        "columnDefs": [
-          { "width": "25%", "targets": 0 },
-          { "width": "10%", "targets": 2 }
+        autoWidth: false,
+        "columnDefs": [{
+            "width": "25%",
+            "targets": 0
+          },
+          {
+            "width": "10%",
+            "targets": 2
+          }
         ]
       })
     }
   });
 }
 
-function getTheoryParts(theories){
-	var html = "<table><tr>";
-	for(i in theories){
-		html += `<td> ${theories[i].p} </td>`
-	}
-	html += "</tr></table>";
-	return html;
+function getTheoryParts(theories) {
+  var html = "<table><tr>";
+  for (i in theories) {
+    html += `<td> ${theories[i].p} </td>`
+  }
+  html += "</tr></table>";
+  return html;
 }
 
-function addLinkIfNotEmpty(data){
-	return (data) ? 'click to view':'';
+function addLinkIfNotEmpty(data) {
+  return (data) ? 'click to view' : '';
 }
 
 /*************************************************************************************************************
-*
-* 	MODAL for embeded videos
-*
-**************************************************************************************************************/
+ *
+ * 	MODAL for embeded videos
+ *
+ **************************************************************************************************************/
 
 function displayVideo(dataURL) {
   var bodycontent;
