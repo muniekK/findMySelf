@@ -1,7 +1,6 @@
 // https://google.github.io/styleguide/jsguide.html#formatting-comments
 const express = require('express');
 const router = express.Router();
-
 const fs = require('fs');
 const async = require('async');
 
@@ -26,26 +25,26 @@ router.get('/videos/:title', (req, res) => {
 
 router.get('/theory', (req, res) => {
   async.parallel([
-    function (callback) {
-      fs.readFile('./staticdb/dtqTheory.json', 'utf8', (err, data) => {
-        if (err) throw err;
-        callback(null, data);
-      })
-    },
-    function (callback) {
-      fs.readFile('./staticdb/dtq120.json', 'utf8', (err, data) => {
-        if (err) throw err;
-        callback(null, data);
-      })
-    },
-    function (callback) {
-      fs.readFile('./staticdb/nlntt.json', 'utf8', (err, data) => {
-        if (err) throw err;
-        callback(null, data);
-      })
-    }
-  ],
-    function (err, data) {
+      function(callback) {
+        fs.readFile('./staticdb/dtqTheory.json', 'utf8', (err, data) => {
+          if (err) throw err;
+          callback(null, data);
+        })
+      },
+      function(callback) {
+        fs.readFile('./staticdb/dtq120.json', 'utf8', (err, data) => {
+          if (err) throw err;
+          callback(null, data);
+        })
+      },
+      function(callback) {
+        fs.readFile('./staticdb/nlntt.json', 'utf8', (err, data) => {
+          if (err) throw err;
+          callback(null, data);
+        })
+      }
+    ],
+    function(err, data) {
       res.json({
         title: 'theory and videos links for dtq',
         dtqTheory: data[0],
@@ -53,6 +52,60 @@ router.get('/theory', (req, res) => {
         nlntt: data[2]
       })
     });
+})
+
+// server side rendering with mongoose-datatables
+// https://github.com/archr/mongoose-datatables 
+// https://github.com/archr/mongoose-datatables/blob/master/example/index.js
+router.post('/my-surveys/:chapter', ensureAuthenticated, (req, res) => {
+  let username = (req.user) ? req.user.username : "";
+
+  let Model = require('../models/hieumodel'),
+    datatablesQuery = require('datatables-query'),
+    params = req.body,
+    query = datatablesQuery(Model);
+
+  switch (req.params.chapter) {
+    case 'de':
+      Model = require('../models/demodel');
+      break;
+    case 'can':
+      Model = require('../models/canmodel');
+      break;
+    case 'tin':
+      Model = require('../models/tinmodel');
+      break;
+    case 'tubi':
+      Model = require('../models/tubimodel');
+      break;
+    case 'thannhan':
+      Model = require('../models/thannhanmodel');
+      break;
+    case 'hocvan':
+      Model = require('../models/hocvanmodel');
+      break;
+  }
+
+
+  Model.dataTables({
+    limit: req.body.length,
+    skip: req.body.start,
+    order: req.body.order,
+    columns: req.body.columns,
+    search: {
+      value: "(^" + username + "$)",
+      fields: ['user']
+    },
+    sort: {
+      date: -1
+    }
+  }).then(function(table) {
+    res.json({
+      data: table.data,
+      recordsFiltered: table.total,
+      recordsTotal: table.total
+    });
+  })
 })
 
 router.post('/newSurvey/:chapter', ensureAuthenticated, (req, res) => {
@@ -98,12 +151,12 @@ router.post('/newSurvey/:chapter', ensureAuthenticated, (req, res) => {
       'date': -1
     })
     .limit(1)
-    .exec(function (err, lastSurvey) {
+    .exec(function(err, lastSurvey) {
       if (lastSurvey[0] && lastSurvey[0].date.substring(0, 10).localeCompare(getCurrDate().substring(0, 10)) == 0) {
         res.status(409).json({
           message: 'survey already done for today'
         }); //find the last one of the user to see if its today: only one survey, per one user, per day
-        
+
       } else {
         newSurvey.date = getCurrDate();
         newSurvey.user = req.user.username;
@@ -111,12 +164,12 @@ router.post('/newSurvey/:chapter', ensureAuthenticated, (req, res) => {
         for (i = 1; i < nbQuestions + 1; i++) {
           let name = (i < 10) ? 'Q0' + i : 'Q' + i;
           //console.log(req.body['Q01']);
-          newSurvey[name] = (req.body[name]) ? req.body[name] : "na";        // default: na
+          newSurvey[name] = (req.body[name]) ? req.body[name] : "na"; // default: na
         }
 
         newSurvey.notes = (req.body.notes) ? req.body.notes : '';
 
-        newSurvey.save(function (err) {
+        newSurvey.save(function(err) {
           if (err) {
             res.status(500).json({
               message: 'server error'
