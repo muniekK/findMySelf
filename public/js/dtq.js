@@ -3,52 +3,62 @@
  */
 var facebookStream = 1;
 var youtubeStream = 2;
-$(document).ready(function() {
+$(document).ready(function () {
 
   loadTheory();
 
   // jquery event-delegation
   // use for embeded video of facebook/youtube into the modal
-  $(document).on('click', '.videoLink', function() {
+  $(document).on('click', '.videoLink', function () {
     displayVideo($(this).attr('data-link'));
   })
 
   // Stop playing video in iframe when modal is closed
-  $("#myModal").on('hidden.bs.modal', function(e) {
+  $("#myModal").on('hidden.bs.modal', function (e) {
     $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
   });
 
   $('.homepage').click(loadTheory);
 
-  $('#dtq40').click(function() {
+  /**
+   * videos 
+   */
+  $('#dtq40').click(function () {
     loadVideos('dtq40')
   });
 
-  $('#dtq60').click(function() {
+  $('#dtq60').click(function () {
     loadVideos('dtq60')
   });
 
-  $('#dtq120').click(function() {
+  $('#dtq120').click(function () {
     loadVideos('dtq120')
   });
 
-  $('#nlntt').click(function() {
+  $('#nlntt').click(function () {
     loadVideos('nlntt')
   });
 
-  $('#thpt').click(function() {
+  $('#thpt').click(function () {
     loadVideos('thpt')
   });
 
-  $('#register').click(function() {
+  $('#register').click(function () {
     loadRegisterForm();
   });
 
-  $('#login').click(function() {
+  $('#login').click(function () {
     loadLoginForm();
   });
 
+  /**
+   * NEW Surveys
+   */
+  $('#new-survey-hieu').click(function () {
+    loadNewSurveyForm('hieu')
+  });
 })
+
 
 /*************************************************************************************************************
  *
@@ -135,14 +145,14 @@ function submitRegister() {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url, true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
       if (xhr.readyState == 4)
         if (xhr.status == 409) {
           document.getElementById('invalid-username').innerHTML = 'username already existed'
         }
-      else if (xhr.status == 201) {
-        loadLoginForm();
-      }
+        else if (xhr.status == 201) {
+          loadLoginForm();
+        }
     };
     xhr.send(params)
   }
@@ -194,15 +204,13 @@ function submitLogin() {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url, true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
       if (xhr.readyState == 4)
         if (xhr.status == 401) {
           document.getElementById('invalid-password').innerHTML = 'username/password invalid'
         }
       if (xhr.status == 202) {
         window.location = '/';
-        //window.location = '/dtq/my-surveys'; 
-        console.log('logged in')
       }
     };
     xhr.send(params)
@@ -223,7 +231,7 @@ function isValidEmail(email) {
 function loadTheory() {
   $.ajax({
     url: '/dtq/theory',
-    success: function(result) {
+    success: function (result) {
       var obj = JSON.parse(JSON.stringify(result));
       var dtqTheory = JSON.parse(obj.dtqTheory)
       var dtq120 = JSON.parse(obj.dtq120)
@@ -275,10 +283,10 @@ function setDtq120(videos) {
 
   for (var i = 1, row; row = table.rows[i]; i++) {
     if (typeof videos[i - 1] !== 'undefined' && videos[i - 1].frSub) {
-      var link = `<a href=javascript:void(0) data-link= ${videos[i-1].frSub} class=videoLink> ${videos[i-1].title} <span class=fr-sub>(fr)</span></a>`;
+      var link = `<a href=javascript:void(0) data-link= ${videos[i - 1].frSub} class=videoLink> ${videos[i - 1].title} <span class=fr-sub>(fr)</span></a>`;
       row.cells[dtq120Col].innerHTML = link;
     } else if (typeof videos[i - 1] !== 'undefined' && videos[i - 1].embedVideo) {
-      var link = `<a href=javascript:void(0) data-link= ${videos[i-1].embedVideo} class=videoLink> ${videos[i-1].title} </a>`;
+      var link = `<a href=javascript:void(0) data-link= ${videos[i - 1].embedVideo} class=videoLink> ${videos[i - 1].title} </a>`;
       row.cells[dtq120Col].innerHTML = link;
     }
   }
@@ -359,7 +367,7 @@ function loadVideos(title) {
 
   $.ajax({
     url: `/dtq/videos/${title}`,
-    success: function(res) {
+    success: function (res) {
       var obj = JSON.parse(res.videos);
       html += "<table class=display><thead><tr><th>Title</th><th>Theories</th><th>without Sub</th><th>english Sub</th><th>french Sub</th></tr></thead><tbody>";
 
@@ -380,13 +388,13 @@ function loadVideos(title) {
         paging: false,
         autoWidth: false,
         "columnDefs": [{
-            "width": "25%",
-            "targets": 0
-          },
-          {
-            "width": "10%",
-            "targets": 2
-          }
+          "width": "25%",
+          "targets": 0
+        },
+        {
+          "width": "10%",
+          "targets": 2
+        }
         ]
       })
     }
@@ -411,26 +419,127 @@ function addLinkIfNotEmpty(data) {
  * 	MODAL for embeded videos
  *
  **************************************************************************************************************/
-
 function displayVideo(dataURL) {
-  var bodycontent;
-
-  switch (identifiedStreamer(dataURL)) {
-    case facebookStream:
-      bodyContent = `<div class=video-responsive><iframe src=${dataURL} style=border:none;overflow:hidden scrolling=no frameborder=0 allowTransparency=true allowFullScreen=true></iframe></div>`;
-      break;
-    case youtubeStream:
-      console.log(dataURL)
-      bodyContent = `<div class=video-responsive><iframe src=${dataURL} frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe></div>`;
-      break;
-  }
+  var bodyContent = getStreamLink(dataURL);
 
   //dynamically-change-bootstrap-modal-body
   var mymodal = $('#myModal');
   mymodal.find('.modal-body').html(bodyContent);
   mymodal.modal('show');
 }
-
+function getStreamLink(dataURL) {
+  return { //1: facebookstream, 2:youtubestream;
+    1: `<div class=video-responsive><iframe src=${dataURL} style=border:none;overflow:hidden scrolling=no frameborder=0 allowTransparency=true allowFullScreen=true></iframe></div>`,
+    2: `<div class=video-responsive><iframe src=${dataURL} frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe></div>`
+  }[identifiedStreamer(dataURL)]
+}
 function identifiedStreamer(videoLink) {
   return videoLink.includes("youtu") ? 2 : 1; // youtu:2, face:1
+}
+
+/*************************************************************************************************************
+ *
+ * 	NEW Survey
+ *
+ **************************************************************************************************************/
+
+// switch alternative: https://toddmotto.com/deprecating-the-switch-statement-for-object-literals/
+function getChapterTheory(theory, chapter) {
+  return {
+    'hieu': theory.chapter01,
+    'de': theory.chapter02,
+    'can': theory.chapter03,
+    'tin': theory.chapter04,
+    'tubi': theory.chapter05,
+    'thannhan': theory.chapter06,
+    'hocvan': theory.chapter07
+  }[chapter]
+}
+
+function loadNewSurveyForm(chapter) {
+  var html = "";
+  $.ajax({
+    url: '/dtq/theory',
+    success: function (resultat) {
+      var theory = JSON.parse(JSON.parse(JSON.stringify(resultat)).dtqTheory)
+      chapterTheory = getChapterTheory(theory, chapter);
+
+      html += `<form action=/dtq/newSurvey/${chapter} method=post id='newSurveyForm'>`
+        + `<h3> ${getChapterTitle(chapter)} </h3>`
+        + `<table id=new-survey><thead><tr><th>Description</th><th>OUI</th><th>NON</th><th>NA</th></tr></thead>`
+        + `<tbody>`;
+
+      for (i in chapterTheory) {
+        if (!isTitle(chapterTheory[i].code)) {
+          html += `<tr><td><h7>[${chapterTheory[i].code}] ${chapterTheory[i].vietnamese} </h7><br><h8>▪${chapterTheory[i].english}</h8><br><h9>▪${chapterTheory[i].french}</h9></td>`
+
+          for (j = 1; j < 2; j++) {
+            var name = (i < 10) ? 'Q0' + i : 'Q' + i;
+            html += `<td><input type=radio name = ${name} value=oui></td>`
+              + `<td><input type=radio name = ${name} value=non></td>`
+              + `<td><input type=radio name = ${name} value=na></td>`;
+          }
+
+          html += '</tr>'
+        }
+      }
+
+      html += `</tbody></table><br><h7>Thêm Chi Tiết</h7><br><h8>Additional-notes </h8><textarea name=notes id=noteID placeholder='${chapterTheory[0].code}: write something'></textarea>`
+        + `</form><input id=submitID type=button value=submit onclick=submitNewSurvey('${chapter}') class='btn btn-primary'>`
+        + `<div id=error class='text-danger'></div>`
+
+      document.getElementById('main-content').innerHTML = html;
+      $('#new-survey').DataTable({
+        paging: false,
+        ordering: false,
+        bFilter: false
+      });
+    }
+  });
+}
+
+/**
+ * https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequestEventTarget/onload
+ * https://stackoverflow.com/questions/374644/how-do-i-capture-response-of-form-submit
+ * http://blog.teamtreehouse.com/create-ajax-contact-form
+ */
+function submitNewSurvey(chapter) {
+
+  var form = $('#newSurveyForm');
+  var formData = $(form).serialize();
+
+  $.ajax({
+    type: 'POST',
+    url: '/dtq/newSurvey/' + chapter,
+    data: formData,
+    statusCode: {
+      201: function () {
+        console.log('survey submited')
+      },
+      409: function () {
+        document.getElementById('error').innerHTML = 'This chapter already completed for today';
+      },
+      500: function(){
+        console.log('Server errors')
+      }
+    }
+  })
+}
+
+// switch alternative by object: https://toddmotto.com/deprecating-the-switch-statement-for-object-literals/
+function getChapterTitle(chapter) {
+  return {
+    'hieu': 'Hiếu - At home, be dutiful to my parents',
+    'de': 'Đệ - Standards for a younger brother/sister',
+    'can': 'Cẩn - Be cautious in my daily life',
+    'tin': 'Tín - Be trustworthy',
+    'tubi': 'Từ Bi - Love all equally',
+    'thannhan': 'Thân Nhân - Be close to and learn from people of virtue and compassion',
+    'hocvan': 'Học Văn - After all above are accomplished, I should study further and learn more to improve my cultural and spiritual life',
+  }[chapter]
+}
+
+function isTitle(str) {
+  var patt = new RegExp("00");
+  return patt.test(str);
 }

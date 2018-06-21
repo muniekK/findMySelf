@@ -25,6 +25,8 @@
   8. delete the newFeature branch
   9. **git pull**
 
+- git reset --hard "commid-id" ; delete commit branch
+- git push --force heroku master : if local version is behind heroku version, overrite it.
 
 #### PUBLISH project with github
 1. go at github.com/project -> setting -> Github Pages.source {master branch} -> save
@@ -50,7 +52,7 @@
   - [Emmet Cheatsheet](https://docs.emmet.io/cheat-sheet/) : [video by Traversy Media](https://www.youtube.com/watch?v=5BIAdWNcr8Y)
   - Live Server by Ritwick Dey
   - Bracket Pair Colorizer by CoenraadS
-
+  - (pretier - js/css formater by esben petersen)[https://github.com/prettier/prettier-vscode] : Select text > SHIFT + ALT + F
 #### visual studio code shortcut
 - CTRL + K then CTRL + C : add line(s) comments
 - CTRL + K then CTRL + U : remove line(s) comments
