@@ -1,65 +1,224 @@
 /**
  * ES6 : LET is incompatible on ios 9 safari, so have to use var
+ * Don't be suprise if this project contents differents method to do one similair principes(ajax with jquery and xhr)
+ *  1. I wan to test 
+ *  2. I don't realise it
  */
 var facebookStream = 1;
 var youtubeStream = 2;
-$(document).ready(function () {
+$(document).ready(function() {
 
   loadTheory();
 
   // jquery event-delegation
   // use for embeded video of facebook/youtube into the modal
-  $(document).on('click', '.videoLink', function () {
+  $(document).on('click', '.videoLink', function() {
     displayVideo($(this).attr('data-link'));
   })
 
   // Stop playing video in iframe when modal is closed
-  $("#myModal").on('hidden.bs.modal', function (e) {
+  $("#myModal").on('hidden.bs.modal', function(e) {
     $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
   });
 
   $('.homepage').click(loadTheory);
 
+  $('#my-surveys').click(function() {
+    displaySurveys('my-surveys');
+  });
+
   /**
    * videos 
    */
-  $('#dtq40').click(function () {
+  $('#dtq40').click(function() {
     loadVideos('dtq40')
   });
 
-  $('#dtq60').click(function () {
+  $('#dtq60').click(function() {
     loadVideos('dtq60')
   });
 
-  $('#dtq120').click(function () {
+  $('#dtq120').click(function() {
     loadVideos('dtq120')
   });
 
-  $('#nlntt').click(function () {
+  $('#nlntt').click(function() {
     loadVideos('nlntt')
   });
 
-  $('#thpt').click(function () {
+  $('#thpt').click(function() {
     loadVideos('thpt')
   });
 
-  $('#register').click(function () {
+  $('#register').click(function() {
     loadRegisterForm();
   });
 
-  $('#login').click(function () {
+  $('#login').click(function() {
     loadLoginForm();
   });
-
-  /**
-   * NEW Surveys
-   */
-  $('#new-survey-hieu').click(function () {
-    loadNewSurveyForm('hieu')
-  });
+  // setColor for surveys result, for more easy to see the result: setColor each time the table data changed
+  $("body").on('DOMSubtreeModified', ".survey", function() {
+    setColors();
+  })
 })
 
+/*************************************************************************************************************
+ *
+ * 	Display Surveys ( My/Group )
+ *
+ **************************************************************************************************************/
+function displaySurveys(surveyType) {
+  document.getElementById('main-content').innerHTML = "<div id='hieuDiv'></div><div id='deDiv'></div><div id='canDiv'></div><div id='tinDiv'></div><div id='tubiDiv'></div><div id='thannhanDiv'></div><div id='hocvanDiv'></div>";
+  async.parallel([
+      function(callback) {
+        loadSurvey(surveyType, 'hieu');
+        callback(null, 'hieu: success');
+      },
+      function(callback) {
+        loadSurvey(surveyType, 'de');
+        callback(null, 'de: success');
+      },
+      function(callback) {
+        loadSurvey(surveyType, 'can');
+        callback(null, 'can: success');
+      },
+      function(callback) {
+        loadSurvey(surveyType, 'tin');
+        callback(null, 'tin: success');
+      },
+      function(callback) {
+        loadSurvey(surveyType, 'tubi');
+        callback(null, 'tubi: success');
+      },
+      function(callback) {
+        loadSurvey(surveyType, 'thannhan');
+        callback(null, 'thannhan: success');
+      },
+      function(callback) {
+        loadSurvey(surveyType, 'hocvan');
+        callback(null, 'hocvan: success');
+      },
+    ]),
+    function(err, res) {
+      console.log(err + ':' + res)
+    }
+}
+/** surveyType: group-survey or my-survey */
+function loadSurvey(surveyType, chapter) {
 
+  var tableID = chapter + 'table'
+  var txt = "<h3><a href=javascript:void(0) onclick=displayTheoryModal('" + chapter + "'); return false;>" + getChapterTitle(chapter) + "+ </a></h3>" +
+    "<table id=" + tableID + " class=survey><thead><tr><th>Date</th><th>Name</th>"
+
+  for (i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 2 for date and user
+    txt += "<th><a href=javascript:void(0)>";
+    txt += (i < 10) ? ("0" + i + "</th>") : (i + "</a></th>"); // add 0 in front if Question is less than 2 number
+  }
+
+  txt += "<th class='hide'>notes</th></thead></tr><tbody>";
+  document.getElementById(chapter + 'Div').innerHTML = txt;
+
+  /** IMPORTANT: jQuery way */
+  /** IMPORTANT:  
+   * https://stackoverflow.com/questions/45136218/datatables-scrollx-causing-squashed-header?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+   * "sScrollX": "100%", "sScrollXInner": "100%", "bScrollCollapse": true, "fixedColumns": { "leftColumns": 1 }
+   * ScrollX and fixedHeader aren't compatible. Need the codes to enable X scrolling, with the header responsive with the data content
+   **/
+  $('#' + tableID).DataTable({
+    "sScrollX": "100%",
+    "sScrollXInner": "100%",
+    "bScrollCollapse": true,
+    "fixedColumns": {
+      "leftColumns": 1
+    },
+    "columns": getTableBody(chapter),
+    "order": [
+      ["0", "desc"]
+    ], // date is on col 0 
+    "columnDefs": [{
+      "targets": ['hide'],
+      "visible": false,
+    }],
+    serverSide: true,
+    ajax: {
+      url: '/dtq/' + surveyType + '/' + chapter,
+      type: 'POST',
+      error: function(err) {
+        if (err.status) {
+          //history.pushState(null, null, '/users/login');
+          loadLoginForm();
+        }
+      }
+    },
+
+  })
+}
+/**
+ * src: https://github.com/vinicius0026/datatables-query
+ *	req.body should be equivalent to:
+ *	
+ * "columns": [
+ *		{
+ *				"data": "name", // field name in the MongoDB Schema
+ *				"searchable": "true", // mandatory
+ *				"orderable": "true" // mandatory
+ *		},
+ *		{ // .. same structure as above for each field    }
+ */
+function getTableBody(chapter) {
+  var txt;
+  var obj = [{
+      "data": "date",
+      "searchable": "true",
+      "orderable": "true",
+      "render": function(data, type, row, meta) {
+        var value = "<a href=javascript:void(0) data-link = '" + row.notes + "' ";
+        value += (row.notes !== "") ? " class= has-note " : ""
+        value += "onclick=loadChild(this); return false; > " + data.substring(0, 10) + "</a>"
+        return value // display notes on child when click on date
+      }
+    },
+    {
+      "data": "user",
+      "searchable": "true",
+      "orderable": "true"
+    }
+  ];
+
+  for (var i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 1 because we started at i = 1
+    txt = (i < 10) ? 'Q0' : 'Q';
+    obj.push({
+      data: txt + i,
+      "searchable": "true",
+      "orderable": "true"
+    })
+  }
+
+  //=temp: without this, notes are note available in render.row
+  obj.push({
+    "data": "notes",
+    "searchable": "true",
+    "orderable": "true",
+    "render": function(data, type, row, meta) {
+      return "<td class=hide>" + data + "</td>"
+    }
+  })
+
+  return obj;
+}
+
+function getNbCols(chapter) {
+  return {
+    'hieu': 24,
+    'de': 13,
+    'can': 24,
+    'tin': 15,
+    'tubi': 21,
+    'thannhan': 4,
+    'hocvan': 3
+  }[chapter]
+}
 /*************************************************************************************************************
  *
  * 	USER Register and Login
@@ -145,14 +304,14 @@ function submitRegister() {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url, true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
       if (xhr.readyState == 4)
         if (xhr.status == 409) {
           document.getElementById('invalid-username').innerHTML = 'username already existed'
         }
-        else if (xhr.status == 201) {
-          loadLoginForm();
-        }
+      else if (xhr.status == 201) {
+        loadLoginForm();
+      }
     };
     xhr.send(params)
   }
@@ -204,7 +363,7 @@ function submitLogin() {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url, true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
       if (xhr.readyState == 4)
         if (xhr.status == 401) {
           document.getElementById('invalid-password').innerHTML = 'username/password invalid'
@@ -231,7 +390,7 @@ function isValidEmail(email) {
 function loadTheory() {
   $.ajax({
     url: '/dtq/theory',
-    success: function (result) {
+    success: function(result) {
       var obj = JSON.parse(JSON.stringify(result));
       var dtqTheory = JSON.parse(obj.dtqTheory)
       var dtq120 = JSON.parse(obj.dtq120)
@@ -367,7 +526,7 @@ function loadVideos(title) {
 
   $.ajax({
     url: `/dtq/videos/${title}`,
-    success: function (res) {
+    success: function(res) {
       var obj = JSON.parse(res.videos);
       html += "<table class=display><thead><tr><th>Title</th><th>Theories</th><th>without Sub</th><th>english Sub</th><th>french Sub</th></tr></thead><tbody>";
 
@@ -388,13 +547,13 @@ function loadVideos(title) {
         paging: false,
         autoWidth: false,
         "columnDefs": [{
-          "width": "25%",
-          "targets": 0
-        },
-        {
-          "width": "10%",
-          "targets": 2
-        }
+            "width": "25%",
+            "targets": 0
+          },
+          {
+            "width": "10%",
+            "targets": 2
+          }
         ]
       })
     }
@@ -427,12 +586,14 @@ function displayVideo(dataURL) {
   mymodal.find('.modal-body').html(bodyContent);
   mymodal.modal('show');
 }
+
 function getStreamLink(dataURL) {
   return { //1: facebookstream, 2:youtubestream;
     1: `<div class=video-responsive><iframe src=${dataURL} style=border:none;overflow:hidden scrolling=no frameborder=0 allowTransparency=true allowFullScreen=true></iframe></div>`,
     2: `<div class=video-responsive><iframe src=${dataURL} frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe></div>`
   }[identifiedStreamer(dataURL)]
 }
+
 function identifiedStreamer(videoLink) {
   return videoLink.includes("youtu") ? 2 : 1; // youtu:2, face:1
 }
@@ -460,14 +621,14 @@ function loadNewSurveyForm(chapter) {
   var html = "";
   $.ajax({
     url: '/dtq/theory',
-    success: function (resultat) {
+    success: function(resultat) {
       var theory = JSON.parse(JSON.parse(JSON.stringify(resultat)).dtqTheory)
       chapterTheory = getChapterTheory(theory, chapter);
 
-      html += `<form action=/dtq/newSurvey/${chapter} method=post id='newSurveyForm'>`
-        + `<h3> ${getChapterTitle(chapter)} </h3>`
-        + `<table id=new-survey><thead><tr><th>Description</th><th>OUI</th><th>NON</th><th>NA</th></tr></thead>`
-        + `<tbody>`;
+      html += `<form action=/dtq/newSurvey/${chapter} method=post id='newSurveyForm'>` +
+        `<h3> ${getChapterTitle(chapter)} </h3>` +
+        `<table id=new-survey><thead><tr><th>Description</th><th>OUI</th><th>NON</th><th>NA</th></tr></thead>` +
+        `<tbody>`;
 
       for (i in chapterTheory) {
         if (!isTitle(chapterTheory[i].code)) {
@@ -475,18 +636,18 @@ function loadNewSurveyForm(chapter) {
 
           for (j = 1; j < 2; j++) {
             var name = (i < 10) ? 'Q0' + i : 'Q' + i;
-            html += `<td><input type=radio name = ${name} value=oui></td>`
-              + `<td><input type=radio name = ${name} value=non></td>`
-              + `<td><input type=radio name = ${name} value=na></td>`;
+            html += `<td><input type=radio name = ${name} value=oui></td>` +
+              `<td><input type=radio name = ${name} value=non></td>` +
+              `<td><input type=radio name = ${name} value=na></td>`;
           }
 
           html += '</tr>'
         }
       }
 
-      html += `</tbody></table><br><h7>Thêm Chi Tiết</h7><br><h8>Additional-notes </h8><textarea name=notes id=noteID placeholder='${chapterTheory[0].code}: write something'></textarea>`
-        + `</form><input id=submitID type=button value=submit onclick=submitNewSurvey('${chapter}') class='btn btn-primary'>`
-        + `<div id=error class='text-danger'></div>`
+      html += `</tbody></table><br><h7>Thêm Chi Tiết</h7><br><h8>Additional-notes </h8><textarea name=notes id=noteID placeholder='${chapterTheory[0].code}: write something'></textarea>` +
+        `</form><input id=submitID type=button value=submit onclick=submitNewSurvey('${chapter}') class='btn btn-primary'>` +
+        `<div id=error class='text-danger'></div>`
 
       document.getElementById('main-content').innerHTML = html;
       $('#new-survey').DataTable({
@@ -513,13 +674,13 @@ function submitNewSurvey(chapter) {
     url: '/dtq/newSurvey/' + chapter,
     data: formData,
     statusCode: {
-      201: function () {
-        console.log('survey submited')
+      201: function() {
+        displaySurveys('my-surveys');
       },
-      409: function () {
-        document.getElementById('error').innerHTML = 'This chapter already completed for today';
+      409: function() {
+        document.getElementById('error').innerHTML = 'This chapter already compvared for today';
       },
-      500: function(){
+      500: function() {
         console.log('Server errors')
       }
     }
@@ -543,3 +704,20 @@ function isTitle(str) {
   var patt = new RegExp("00");
   return patt.test(str);
 }
+
+function setColors() {
+  var td_array = document.getElementsByTagName("td"),
+    check_good = "oui",
+    check_bad = "non",
+    check_else = "na";
+
+  for (i = 0; i < td_array.length; i++) {
+    if (td_array[i].textContent == check_good) {
+      td_array[i].style.backgroundColor = "#b3ff66";
+    } else if (td_array[i].textContent == check_bad) {
+      td_array[i].style.backgroundColor = "#ffa366";
+    } else if (td_array[i].textContent == check_else) {
+      td_array[i].style.backgroundColor = "#ffff66";
+    };
+  };
+};
