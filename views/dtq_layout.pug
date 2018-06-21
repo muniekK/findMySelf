@@ -34,7 +34,22 @@ body
             a.dropdown-item(href='javascript:void(0)')#nlntt 4 Nhân Lễ Nghĩa Trí Tín
             .dropdown-divider
             a.dropdown-item(href='javascript:void(0)')#thpt 5 Thiên Hạ Phụ Tự
-            
+        //- li.nav-item
+        //-   a.nav-link(href='javascript:void(0)')#group-surveys GROUP surveys
+        if user
+          //- li.nav-item
+          //-   a.nav-link(href='javascript:void(0)')#my-surveys MY surveys
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='javascript:void(0)', role='button', data-toggle='dropdown', aria-hasmodal='true', aria-expanded='false') NEW Survey
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('hieu')")#new-survey-hieu 1 Hiếu
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('de')")#new-survey-de 2 Đệ
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('can')")#new-survey-can 3 Cận
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('tin')")#new-survey-tin 4 Tín
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('tubi')")#new-survey-tubi 5 Từ Bi
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('thannhan')")#new-survey-thannhan 6 Thân Nhân
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('hocvan')")#new-survey-hocvan 7 Học Văn
+			
       .nav.navbar-nav.ml-auto
         if user
           li.nav-item

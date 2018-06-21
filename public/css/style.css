@@ -1,6 +1,18 @@
 body{
   font-size: 1.3em;
 }
+input[type="radio"] {
+  transform: scale(2);
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
 /* chapter title */
 h3{
   color: #0039e6;
