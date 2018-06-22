@@ -57,6 +57,18 @@ router.get('/theory', (req, res) => {
 // server side rendering with mongoose-datatables
 // https://github.com/archr/mongoose-datatables 
 // https://github.com/archr/mongoose-datatables/blob/master/example/index.js
+function getModel(chapter) {
+  return {
+    'hieu': '../models/hieumodel',
+    'de': '../models/demodel',
+    'can': '../models/canmodel',
+    'tin': '../models/tinmodel',
+    'tubi': '../models/tubimodel',
+    'thannhan': '../models/thannhanmodel',
+    'hocvan': '../models/hocvanmodel'
+  }[chapter]
+}
+
 router.post('/my-surveys/:chapter', ensureAuthenticated, (req, res) => {
   let username = (req.user) ? req.user.username : "";
 
@@ -65,27 +77,7 @@ router.post('/my-surveys/:chapter', ensureAuthenticated, (req, res) => {
     params = req.body,
     query = datatablesQuery(Model);
 
-  switch (req.params.chapter) {
-    case 'de':
-      Model = require('../models/demodel');
-      break;
-    case 'can':
-      Model = require('../models/canmodel');
-      break;
-    case 'tin':
-      Model = require('../models/tinmodel');
-      break;
-    case 'tubi':
-      Model = require('../models/tubimodel');
-      break;
-    case 'thannhan':
-      Model = require('../models/thannhanmodel');
-      break;
-    case 'hocvan':
-      Model = require('../models/hocvanmodel');
-      break;
-  }
-
+    model = require(getModel(req.params.chapter));
 
   Model.dataTables({
     limit: req.body.length,
@@ -106,6 +98,19 @@ router.post('/my-surveys/:chapter', ensureAuthenticated, (req, res) => {
       recordsTotal: table.total
     });
   })
+})
+
+router.get('/my-last-survey/:chapter', (req, res)=>{
+  
+  let model = require(getModel(req.params.chapter));
+
+  model
+    .find({'user':req.user.username})
+    .sort({'date': -1})
+    .limit(1)
+    .exec(function(err, lastSurvey) {
+      res.json(lastSurvey)
+    })
 })
 
 router.post('/newSurvey/:chapter', ensureAuthenticated, (req, res) => {
