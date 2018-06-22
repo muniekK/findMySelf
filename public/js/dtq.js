@@ -138,6 +138,7 @@ function loadSurvey(surveyType, chapter) {
     "sScrollX": "100%",
     "sScrollXInner": "100%",
     "bScrollCollapse": true,
+    "bFilter":false,
     "fixedColumns": {
       "leftColumns": 1
     },
