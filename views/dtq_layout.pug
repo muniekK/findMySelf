@@ -34,7 +34,22 @@ body
             a.dropdown-item(href='javascript:void(0)')#nlntt 4 Nhân Lễ Nghĩa Trí Tín
             .dropdown-divider
             a.dropdown-item(href='javascript:void(0)')#thpt 5 Thiên Hạ Phụ Tự
-            
+        li.nav-item
+          a.nav-link(href='javascript:void(0)')#group-surveys GROUP surveys
+        if user
+          li.nav-item
+            a.nav-link(href='javascript:void(0)')#my-surveys MY surveys
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='javascript:void(0)', role='button', data-toggle='dropdown', aria-hasmodal='true', aria-expanded='false') NEW Survey
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('hieu')")#new-survey-hieu 1 Hiếu
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('de')")#new-survey-de 2 Đệ
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('can')")#new-survey-can 3 Cận
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('tin')")#new-survey-tin 4 Tín
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('tubi')")#new-survey-tubi 5 Từ Bi
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('thannhan')")#new-survey-thannhan 6 Thân Nhân
+              a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('hocvan')")#new-survey-hocvan 7 Học Văn
+			
       .nav.navbar-nav.ml-auto
         if user
           li.nav-item
@@ -59,6 +74,7 @@ body
     hr
     footer
       p Created on 2018
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/async/2.6.1/async.min.js') 
       script(src='https://code.jquery.com/jquery-3.3.1.js', integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=', crossorigin='anonymous')
       script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
       script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")

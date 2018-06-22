@@ -1,6 +1,18 @@
 body{
   font-size: 1.3em;
 }
+input[type="radio"] {
+  transform: scale(2);
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
 /* chapter title */
 h3{
   color: #0039e6;
@@ -32,7 +44,9 @@ h9 {
   box-shadow: 0 0 10px black;
   background: rgb(250, 239, 189);
 }
-
+.disable{
+  background: grey;
+}
 /** BOOSTRAP costum style */
 .container{
   border-radius: 10px;
@@ -44,6 +58,9 @@ h9 {
   .container{
       max-width: 80%;
  }
+}
+.dropdown-menu{
+  padding:0px;
 }
 /* EMBED VIDEO MODAL */
 .video-responsive {
