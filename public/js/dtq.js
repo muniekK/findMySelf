@@ -26,6 +26,9 @@ $(document).ready(function() {
   $('#my-surveys').click(function() {
     displaySurveys('my-surveys');
   });
+  $('#group-surveys').click(function() {
+    displaySurveys('group-surveys');
+  });
 
   /**
    * videos 
