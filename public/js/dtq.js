@@ -57,6 +57,12 @@ $(document).ready(function() {
   $('#login').click(function() {
     loadLoginForm();
   });
+
+  // = temp: update progress when user logged
+	if(document.getElementById("my-surveys")){
+    updateTodaySurveyProgress()
+  }
+
   // setColor for surveys result, for more easy to see the result: setColor each time the table data changed
   $("body").on('DOMSubtreeModified', ".survey", function() {
     setColors();
@@ -675,14 +681,35 @@ function submitNewSurvey(chapter) {
     data: formData,
     statusCode: {
       201: function() {
+        updateTodaySurveyProgress();
         displaySurveys('my-surveys');
       },
       409: function() {
-        document.getElementById('error').innerHTML = 'This chapter already compvared for today';
+        document.getElementById('error').innerHTML = 'This chapter already done for today';
       },
       500: function() {
         console.log('Server errors')
       }
+    }
+  })
+}
+function updateTodaySurveyProgress(){  
+	var i;
+	var chapters = ["hieu", "de", "can", "tin", "tubi", "thannhan", "hocvan"];
+	for (i = 0; i < chapters.length; i++) {
+		checkIfChapterDone(chapters[i]);
+	}
+}
+
+function checkIfChapterDone(chapter){
+  var url = "/dtq/my-last-survey/" + chapter;	
+  
+  $.ajax({
+    url: url,
+    success: function(value) {
+      if(typeof value[0] !== "undefined" && getCurrDate().substring(0, 10).localeCompare(value[0].date.substring(0, 10)) == 0) {
+        $('#new-survey-'+chapter).addClass('disable')
+      } 
     }
   })
 }
@@ -721,3 +748,21 @@ function setColors() {
     };
   };
 };
+
+function getCurrDate() {
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+	var yyyy = today.getFullYear();
+	var hour = today.getHours();
+	var min = today.getMinutes();
+	var sec = today.getSeconds();
+
+	if(dd<10) { dd = '0'+dd} 
+	if(mm<10) { mm = '0'+mm }
+	if(hour<10) { hour = '0'+hour }
+  if(min<10) { min = '0'+min }
+  if(sec<10) { sec = '0'+sec } 	
+
+	return yyyy + '/' + mm + '/' + dd + " " + hour + ":" + min +":" + sec;
+}
