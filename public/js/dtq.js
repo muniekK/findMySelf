@@ -117,7 +117,7 @@ function displaySurveys(surveyType) {
 function loadSurvey(surveyType, chapter) {
 
   var tableID = chapter + 'table'
-  var txt = "<h3><a href=javascript:void(0) onclick=displayTheoryModal('" + chapter + "'); return false;>" + getChapterTitle(chapter) + "+ </a></h3>" +
+  var txt = "<h3><a href=javascript:void(0)>" + getChapterTitle(chapter) + " </a></h3>" +
     "<table id=" + tableID + " class=survey><thead><tr><th>Date</th><th>Name</th>"
 
   for (i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 2 for date and user
