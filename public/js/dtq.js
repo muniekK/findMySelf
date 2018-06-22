@@ -117,7 +117,7 @@ function displaySurveys(surveyType) {
 function loadSurvey(surveyType, chapter) {
 
   var tableID = chapter + 'table'
-  var txt = "<h3><a href=javascript:void(0) onclick=displayTheoryModal('" + chapter + "'); return false;>" + getChapterTitle(chapter) + "+ </a></h3>" +
+  var txt = "<h3><a href=javascript:void(0)>" + getChapterTitle(chapter) + " </a></h3>" +
     "<table id=" + tableID + " class=survey><thead><tr><th>Date</th><th>Name</th>"
 
   for (i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 2 for date and user
@@ -138,6 +138,7 @@ function loadSurvey(surveyType, chapter) {
     "sScrollX": "100%",
     "sScrollXInner": "100%",
     "bScrollCollapse": true,
+    "bFilter":false,
     "fixedColumns": {
       "leftColumns": 1
     },
@@ -225,7 +226,7 @@ function getNbCols(chapter) {
     'tin': 15,
     'tubi': 21,
     'thannhan': 4,
-    'hocvan': 3
+    'hocvan': 13
   }[chapter]
 }
 /*************************************************************************************************************
