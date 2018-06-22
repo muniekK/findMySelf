@@ -111,6 +111,45 @@ router.get('/my-last-survey/:chapter', (req, res)=>{
     })
 })
 
+router.post('/group-surveys/:chapter', (req, res)=>{
+
+  let username = (req.user) ? req.user.username:"";
+
+  let Model = require(getModel(req.params.chapter)),
+    datatablesQuery = require('datatables-query'),
+    params = req.body, 
+    query = datatablesQuery(Model);
+  
+  //https://github.com/archr/mongoose-datatables // https://github.com/archr/mongoose-datatables/blob/master/example/index.js
+  Model.dataTables({
+    limit: req.body.length,
+    skip: req.body.start,
+    order: req.body.order,
+    columns: req.body.columns,
+    search: {},
+    sort: {
+      date:-1
+    }
+  }).then(function (table) {
+    res.json({
+      data:treatGroupRes(table.data),
+      recordsFiltered: table.total,
+      recordsTotal: table.total
+    }); 
+  })
+})
+
+// hide name but not notes for some user
+function treatGroupRes(data){
+  var pubUser = ["Triệu"];
+  for(i in data) {    
+    // order is important
+    data[i].notes = (!pubUser.includes((data[i].user))) ?  "": data[i].notes;    
+    data[i].user = "private";
+  }
+  return data;
+}
+  
 router.post('/newSurvey/:chapter', ensureAuthenticated, (req, res) => {
   let instance, newSurvey, nbQuestion = 0;
   switch (req.params.chapter) {
