@@ -72,12 +72,10 @@ function getModel(chapter) {
 router.post('/my-surveys/:chapter', ensureAuthenticated, (req, res) => {
   let username = (req.user) ? req.user.username : "";
 
-  let Model = require('../models/hieumodel'),
+  let Model = require(getModel(req.params.chapter)),
     datatablesQuery = require('datatables-query'),
     params = req.body,
     query = datatablesQuery(Model);
-
-    model = require(getModel(req.params.chapter));
 
   Model.dataTables({
     limit: req.body.length,
