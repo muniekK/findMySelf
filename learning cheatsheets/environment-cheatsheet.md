@@ -116,3 +116,4 @@
   2. local > open ../.git/config  > change rl = git@heroku.com:NEW_APP_NAME.git
   3. heroku apps:rename newname
 
+  - IMPORTANT heroku have to change [default time zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones): bash > heroku config:add TZ="America/New_York"
