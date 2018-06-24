@@ -121,7 +121,7 @@ function loadSurvey(surveyType, chapter) {
     "<table id=" + tableID + " class=survey><thead><tr><th>Date</th><th>Name</th>"
 
   for (i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 2 for date and user
-    txt += "<th><a href=javascript:void(0)>";
+    txt += "<th class='no-sort'><a href=javascript:void(0)>";
     txt += (i < 10) ? ("0" + i + "</th>") : (i + "</a></th>"); // add 0 in front if Question is less than 2 number
   }
 
@@ -139,6 +139,9 @@ function loadSurvey(surveyType, chapter) {
     "sScrollXInner": "100%",
     "bScrollCollapse": true,
     "bFilter":false,
+    "aoColumnDefs": [
+      { 'bSortable': false, 'aTargets': ['no-sort'] }
+    ],
     "fixedColumns": {
       "leftColumns": 1
     },
@@ -156,7 +159,6 @@ function loadSurvey(surveyType, chapter) {
       type: 'POST',
       error: function(err) {
         if (err.status) {
-          //history.pushState(null, null, '/users/login');
           loadLoginForm();
         }
       }
@@ -181,7 +183,7 @@ function getTableBody(chapter) {
   var obj = [{
       "data": "date",
       "searchable": "true",
-      "orderable": "true",
+      //"orderable": "true",
       "render": function(data, type, row, meta) {
         var value = "<a href=javascript:void(0) data-link = '" + row.notes + "' ";
         value += (row.notes !== "") ? " class= has-note " : ""
@@ -192,7 +194,7 @@ function getTableBody(chapter) {
     {
       "data": "user",
       "searchable": "true",
-      "orderable": "true"
+      //"orderable": "true"
     }
   ];
 
@@ -201,7 +203,7 @@ function getTableBody(chapter) {
     obj.push({
       data: txt + i,
       "searchable": "true",
-      "orderable": "true"
+      //"orderable": "true"
     })
   }
 
@@ -209,7 +211,7 @@ function getTableBody(chapter) {
   obj.push({
     "data": "notes",
     "searchable": "true",
-    "orderable": "true",
+    //"orderable": "true",
     "render": function(data, type, row, meta) {
       return "<td class=hide>" + data + "</td>"
     }
