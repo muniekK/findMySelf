@@ -139,9 +139,6 @@ function loadSurvey(surveyType, chapter) {
     "sScrollXInner": "100%",
     "bScrollCollapse": true,
     "bFilter":false,
-    "aoColumnDefs": [
-      { 'bSortable': false, 'aTargets': ['no-sort'] }
-    ],
     "fixedColumns": {
       "leftColumns": 1
     },
@@ -152,7 +149,9 @@ function loadSurvey(surveyType, chapter) {
     "columnDefs": [{
       "targets": ['hide'],
       "visible": false,
-    }],
+    },
+    {'bSortable': false, 'aTargets': ['no-sort'] }
+  ],
     serverSide: true,
     ajax: {
       url: '/dtq/' + surveyType + '/' + chapter,
@@ -194,7 +193,7 @@ function getTableBody(chapter) {
     {
       "data": "user",
       "searchable": "true",
-      //"orderable": "true"
+     // "orderable": "true"
     }
   ];
 
@@ -203,7 +202,7 @@ function getTableBody(chapter) {
     obj.push({
       data: txt + i,
       "searchable": "true",
-      //"orderable": "true"
+     // "orderable": "true"
     })
   }
 
