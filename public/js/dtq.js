@@ -70,6 +70,7 @@ $(document).ready(function() {
   $("body").on('DOMSubtreeModified', ".survey", function() {
     setColors();
   })
+
 })
 
 /*************************************************************************************************************
@@ -113,58 +114,81 @@ function displaySurveys(surveyType) {
       console.log(err + ':' + res)
     }
 }
+
+
 /** surveyType: group-survey or my-survey */
 function loadSurvey(surveyType, chapter) {
 
-  var tableID = chapter + 'table'
-  var txt = "<h3><a href=javascript:void(0)>" + getChapterTitle(chapter) + " </a></h3>" +
-    "<table id=" + tableID + " class=survey><thead><tr><th>Date</th><th>Name</th>"
-
-  for (i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 2 for date and user
-    txt += "<th class='no-sort'><a href=javascript:void(0)>";
-    txt += (i < 10) ? ("0" + i + "</th>") : (i + "</a></th>"); // add 0 in front if Question is less than 2 number
-  }
-
-  txt += "<th class='hide'>notes</th></thead></tr><tbody>";
-  document.getElementById(chapter + 'Div').innerHTML = txt;
-
-  /** IMPORTANT: jQuery way */
-  /** IMPORTANT:  
-   * https://stackoverflow.com/questions/45136218/datatables-scrollx-causing-squashed-header?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-   * "sScrollX": "100%", "sScrollXInner": "100%", "bScrollCollapse": true, "fixedColumns": { "leftColumns": 1 }
-   * ScrollX and fixedHeader aren't compatible. Need the codes to enable X scrolling, with the header responsive with the data content
-   **/
-  $('#' + tableID).DataTable({
-    "sScrollX": "100%",
-    "sScrollXInner": "100%",
-    "bScrollCollapse": true,
-    "bFilter":false,
-    "fixedColumns": {
-      "leftColumns": 1
-    },
-    "columns": getTableBody(chapter),
-    "order": [
-      ["0", "desc"]
-    ], // date is on col 0 
-    "columnDefs": [{
-      "targets": ['hide'],
-      "visible": false,
-    },
-    {'bSortable': false, 'aTargets': ['no-sort'] }
-  ],
-    serverSide: true,
-    ajax: {
-      url: '/dtq/' + surveyType + '/' + chapter,
-      type: 'POST',
-      error: function(err) {
-        if (err.status) {
-          loadLoginForm();
+  async.series([
+    // data for popover
+    function(callback) {
+      $.ajax({
+          url: '/dtq/theory',
+          success: function(result) {
+            var obj = JSON.parse(JSON.stringify(result));
+            var dtqTheory = JSON.parse(obj.dtqTheory)
+            callback(null, getChapterTheory(dtqTheory, chapter));
+          }
+        }); 
+  },
+  ], function(err, res){
+    var tableID = chapter + 'table'
+    var txt = "<h3><a href=javascript:void(0)>" + getChapterTitle(chapter) + " </a></h3>" +
+      "<table id=" + tableID + " class=survey><thead><tr><th>Date</th><th>Name</th>"
+  
+    for (i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 2 for date and user
+    
+      var title = res[0][i].code;
+      var phrase = `<h7>${res[0][i].vietnamese}</h7> / <h8>${res[0][i].english}</h8> / <h9>${res[0][i].french}</h9>`;      
+    
+      txt += `<th class=no-sort><a href=javascript:void(0) data-toggle=popover title='${title}' data-content="${phrase}" data-html="true">`;
+      txt += (i < 10) ? ("0" + i + "</a></th>") : (i + "</a></th>"); // add 0 in front if Question is less than 2 number
+    }
+  
+    txt += "<th class='hide'>notes</th></thead></tr><tbody>";
+    document.getElementById(chapter + 'Div').innerHTML = txt;
+  
+    /** IMPORTANT: jQuery way */
+    /** IMPORTANT:  
+     * https://stackoverflow.com/questions/45136218/datatables-scrollx-causing-squashed-header?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+     * "sScrollX": "100%", "sScrollXInner": "100%", "bScrollCollapse": true, "fixedColumns": { "leftColumns": 1 }
+     * ScrollX and fixedHeader aren't compatible. Need the codes to enable X scrolling, with the header responsive with the data content
+     **/
+    $('#' + tableID).DataTable({
+      "sScrollX": "100%",
+      "sScrollXInner": "100%",
+      "bScrollCollapse": true,
+      "bFilter":false,
+      "fixedColumns": {
+        "leftColumns": 1
+      },
+      "columns": getTableBody(chapter),
+      "order": [
+        ["0", "desc"]
+      ], // date is on col 0 
+      "columnDefs": [{
+        "targets": ['hide'],
+        "visible": false,
+      },
+      {'bSortable': false, 'aTargets': ['no-sort'] }
+    ],
+      serverSide: true,
+      ajax: {
+        url: '/dtq/' + surveyType + '/' + chapter,
+        type: 'POST',
+        error: function(err) {
+          if (err.status) {
+            loadLoginForm();
+          }
         }
+      },
+      fnDrawCallback : function() {
+        $('[data-toggle="popover"]').popover();  
       }
-    },
-
+    })
   })
 }
+
 /**
  * src: https://github.com/vinicius0026/datatables-query
  *	req.body should be equivalent to:
