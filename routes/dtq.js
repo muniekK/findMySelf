@@ -249,21 +249,11 @@ function getCurrDate() {
   var min = today.getMinutes();
   var sec = today.getSeconds();
 
-  if (dd < 10) {
-    dd = '0' + dd
-  }
-  if (mm < 10) {
-    mm = '0' + mm
-  }
-  if (hour < 10) {
-    hour = '0' + hour
-  }
-  if (min < 10) {
-    min = '0' + min
-  }
-  if (sec < 10) {
-    sec = '0' + sec
-  }
+  (dd < 10) ? dd = '0' + dd : "";   
+  (mm < 10) ? mm = '0' + mm : "";  
+  (hour < 10) ? hour = '0' + hour : "";  
+  (min < 10) ? min = '0' + min : "";  
+  (sec < 10) ? sec = '0' + sec : "";
 
   return yyyy + '/' + mm + '/' + dd + " " + hour + ":" + min + ":" + sec;
 }
