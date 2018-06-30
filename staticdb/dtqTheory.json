@@ -181,7 +181,7 @@
 			]
 		}, {
 			"code": "A16",
-			"vietnamese": "Cha mẹ ghét, liệu từ bỏ.",
+			"vietnamese": "Cha mẹ ghét, cẩn thận bỏ.",
 			"french": "Quelque chose qui déplaît à mes parents, si c'est juste est raisonnable, je fais attention de me les éloigner.",
 			"english": "Something displeases my parents, if within reason, I cautiously keep it away.",
 			"shortMeaning": "",
@@ -224,7 +224,7 @@
 			]
 		}, {
 			"code": "A20",
-			"vietnamese": "Cha mẹ ghét, vẫn hiếu kính.",
+			"vietnamese": "Cha mẹ ghét, hiếu mới tốt.",
 			"french": "Quand Mes parents sont en colère envers moi, je suis dévoué envers eux également.",
 			"english": "Have hateful parents, i'm also dutiful to them.",
 			"shortMeaning": "",
@@ -351,7 +351,7 @@
 			]
 		}, {
 			"code": "B06",
-			"vietnamese": "Xưng người lớn, không gọi tên.",
+			"vietnamese": "Với người lớn, không gọi tên.",
 			"french": "Adressant aux aînés, je ne les appelle pas par leur nom/prénom.",
 			"english": "Address to an elder, I don't call him by his given name.",
 			"shortMeaning": "",
@@ -361,7 +361,7 @@
 			]
 		}, {
 			"code": "B07",
-			"vietnamese": "Với người lớn, không khoe tài.",
+			"vietnamese": "Trước người lớn, không khoe tài.",
 			"french": "Devant les aînés, j'agis modestement et ne me vante pas.",
 			"english": "In front of an elder, I don't show off.",
 			"shortMeaning": "",
@@ -1150,7 +1150,7 @@
 			]
 		}, {
 			"code": "F01",
-			"vietnamese": "Cùng là người, khác chủng tộc; Phàm phu nhiều, người hiền hiếm.",
+			"vietnamese": "Cùng là người, khác tánh tình; Phàm phu nhiều, người hiền hiếm.",
 			"french": "Nous sommes tous humains, mais nous ne sommes pas les mêmes. La plupart d'entre nous sont ordinaires; Seul un très petit nombre a de grandes vertus et de hauts principes moraux.",
 			"english": "We are all human, but we are not the same. most of us are ordinary; Only a very few have great virtues and high moral principles.",
 			"shortMeaning": "",
@@ -1160,7 +1160,7 @@
 			]
 		}, {
 			"code": "F02",
-			"vietnamese": "Thật hiền đức, người kính sợ; Lời không dối, mặt không xảo.",
+			"vietnamese": "Thật người hiền, người kính sợ; Lời không dối, mặt không xảo.",
 			"french": "Une personne vraiment vertueuse est grandement respectée par les autres. il n'aura pas peur de dire la vérité. Il n'a besoin de rien des autres personnes.",
 			"english": "A truly virtuous person is greatly respected by others. He will not be afraid to speak the truth and he will not fawn on others.",
 			"shortMeaning": "",
@@ -1170,7 +1170,7 @@
 			]
 		}, {
 			"code": "F03",
-			"vietnamese": "Gần người hiền, tốt vô hạn; đức tiến dần, lỗi giảm dần.",
+			"vietnamese": "Gần người hiền, tốt vô hạn; Đức tiến dần, lỗi giảm dần.",
 			"french": "Je peux être proche et apprendre de gens de grande vertu et de compassion, j'en tirerai beaucoup de profit. Mes vertus grandiront chaque jour et mes méfaits diminueront de jour en jour.",
 			"english": "I can be close to and learn from people of great virtue and compassion, I will benefit immensely. my virtues will grow daily and my wrongdoings will lessen day by day.",
 			"shortMeaning": "",

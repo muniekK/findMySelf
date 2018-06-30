@@ -62,7 +62,7 @@ $(document).ready(function() {
   });
 
   // = temp: update progress when user logged
-	if(document.getElementById("my-surveys")){
+  if (document.getElementById("my-surveys")) {
     updateTodaySurveyProgress()
   }
 
@@ -70,6 +70,7 @@ $(document).ready(function() {
   $("body").on('DOMSubtreeModified', ".survey", function() {
     setColors();
   })
+
 })
 
 /*************************************************************************************************************
@@ -80,90 +81,117 @@ $(document).ready(function() {
 function displaySurveys(surveyType) {
   document.getElementById('main-content').innerHTML = "<div id='hieuDiv'></div><div id='deDiv'></div><div id='canDiv'></div><div id='tinDiv'></div><div id='tubiDiv'></div><div id='thannhanDiv'></div><div id='hocvanDiv'></div>";
   async.parallel([
-      function(callback) {
-        loadSurvey(surveyType, 'hieu');
-        callback(null, 'hieu: success');
-      },
-      function(callback) {
-        loadSurvey(surveyType, 'de');
-        callback(null, 'de: success');
-      },
-      function(callback) {
-        loadSurvey(surveyType, 'can');
-        callback(null, 'can: success');
-      },
-      function(callback) {
-        loadSurvey(surveyType, 'tin');
-        callback(null, 'tin: success');
-      },
-      function(callback) {
-        loadSurvey(surveyType, 'tubi');
-        callback(null, 'tubi: success');
-      },
-      function(callback) {
-        loadSurvey(surveyType, 'thannhan');
-        callback(null, 'thannhan: success');
-      },
-      function(callback) {
-        loadSurvey(surveyType, 'hocvan');
-        callback(null, 'hocvan: success');
-      },
-    ]),
-    function(err, res) {
-      console.log(err + ':' + res)
-    }
+    function(callback) {
+      loadSurvey(surveyType, 'hieu');
+      callback(null, 'hieu: success');
+    },
+    function(callback) {
+      loadSurvey(surveyType, 'de');
+      callback(null, 'de: success');
+    },
+    function(callback) {
+      loadSurvey(surveyType, 'can');
+      callback(null, 'can: success');
+    },
+    function(callback) {
+      loadSurvey(surveyType, 'tin');
+      callback(null, 'tin: success');
+    },
+    function(callback) {
+      loadSurvey(surveyType, 'tubi');
+      callback(null, 'tubi: success');
+    },
+    function(callback) {
+      loadSurvey(surveyType, 'thannhan');
+      callback(null, 'thannhan: success');
+    },
+    function(callback) {
+      loadSurvey(surveyType, 'hocvan');
+      callback(null, 'hocvan: success');
+    },
+  ]),
+  function(err, res) {
+    console.log(err + ':' + res)
+  }
 }
+
 /** surveyType: group-survey or my-survey */
 function loadSurvey(surveyType, chapter) {
 
-  var tableID = chapter + 'table'
-  var txt = "<h3><a href=javascript:void(0)>" + getChapterTitle(chapter) + " </a></h3>" +
-    "<table id=" + tableID + " class=survey><thead><tr><th>Date</th><th>Name</th>"
-
-  for (i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 2 for date and user
-    txt += "<th><a href=javascript:void(0)>";
-    txt += (i < 10) ? ("0" + i + "</th>") : (i + "</a></th>"); // add 0 in front if Question is less than 2 number
-  }
-
-  txt += "<th class='hide'>notes</th></thead></tr><tbody>";
-  document.getElementById(chapter + 'Div').innerHTML = txt;
-
-  /** IMPORTANT: jQuery way */
-  /** IMPORTANT:  
-   * https://stackoverflow.com/questions/45136218/datatables-scrollx-causing-squashed-header?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-   * "sScrollX": "100%", "sScrollXInner": "100%", "bScrollCollapse": true, "fixedColumns": { "leftColumns": 1 }
-   * ScrollX and fixedHeader aren't compatible. Need the codes to enable X scrolling, with the header responsive with the data content
-   **/
-  $('#' + tableID).DataTable({
-    "sScrollX": "100%",
-    "sScrollXInner": "100%",
-    "bScrollCollapse": true,
-    "bFilter":false,
-    "fixedColumns": {
-      "leftColumns": 1
-    },
-    "columns": getTableBody(chapter),
-    "order": [
-      ["0", "desc"]
-    ], // date is on col 0 
-    "columnDefs": [{
-      "targets": ['hide'],
-      "visible": false,
-    }],
-    serverSide: true,
-    ajax: {
-      url: '/dtq/' + surveyType + '/' + chapter,
-      type: 'POST',
-      error: function(err) {
-        if (err.status) {
-          //history.pushState(null, null, '/users/login');
-          loadLoginForm();
+  async.series([
+    // data for popover
+    function(callback) {
+      $.ajax({
+        url: '/dtq/theory',
+        success: function(result) {
+          var obj = JSON.parse(JSON.stringify(result));
+          var dtqTheory = JSON.parse(obj.dtqTheory)
+          callback(null, getChapterTheory(dtqTheory, chapter));
         }
-      }
+      });
     },
+  ], 
+  
+  function(err, res) {
+    var tableID = chapter + 'table'
+    var html = `<h3> ${getChapterTitle(chapter)} </h3> <table id=${tableID} class=survey><thead><tr><th>Date</th><th>Name</th>`;
 
+    for (i = 1; i < getNbCols(chapter) + 1; i++) { // nbCols + 2 for date and user
+
+      var title = res[0][i].code;
+      var phrase = `<h7> ${res[0][i].vietnamese} </h7> / <h8>${res[0][i].english}</h8> / <h9>${res[0][i].french}</h9>`;
+
+      html += `<th class=no-sort><a href=javascript:void(0) data-toggle=popover title='${title}' data-content="${phrase}" data-html="true">`;
+      html += (i < 10) ? (`0${i} </a></th>`) : (`${i}</a></th>`); // add 0 in front if Question is less than 2 number
+    }
+
+    html += `<th class='hide'>notes</th></thead></tr><tbody></table><br>`;
+    document.getElementById(chapter + 'Div').innerHTML = html;
+
+    /** IMPORTANT: jQuery way */
+    /** IMPORTANT:  
+     * https://stackoverflow.com/questions/45136218/datatables-scrollx-causing-squashed-header?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+     * "sScrollX": "100%", "sScrollXInner": "100%", "bScrollCollapse": true, "fixedColumns": { "leftColumns": 1 }
+     * ScrollX and fixedHeader aren't compatible. Need the codes to enable X scrolling, with the header responsive with the data content
+     **/
+    $('#' + tableID).DataTable({
+      "sScrollX": "100%",
+      "sScrollXInner": "100%",
+      "bScrollCollapse": true,
+      "bFilter": false,
+      "fixedColumns": {
+        "leftColumns": 1
+      },
+      "columns": getTableBody(chapter),
+      "order": [
+        ["0", "desc"]
+      ], // date is on col 0 
+      "columnDefs": [{
+          "targets": ['hide'],
+          "visible": false,
+        },
+        {
+          'bSortable': false,
+          'aTargets': ['no-sort']
+        }
+      ],
+      serverSide: true,
+      ajax: {
+        url: `/dtq/${surveyType}/${chapter}`,
+        type: 'POST',
+        error: function(err) {
+          if (err.status) {
+            loadLoginForm();
+          }
+        }
+      },
+      fnDrawCallback: function() {
+        $('[data-toggle="popover"]').popover();
+      }
+    })
   })
 }
+
 /**
  * src: https://github.com/vinicius0026/datatables-query
  *	req.body should be equivalent to:
@@ -181,9 +209,8 @@ function getTableBody(chapter) {
   var obj = [{
       "data": "date",
       "searchable": "true",
-      "orderable": "true",
       "render": function(data, type, row, meta) {
-        var value = "<a href=javascript:void(0) data-link = '" + row.notes + "' ";
+        var value = `<a href=javascript:void(0) data-link = "${row.notes}" `;
         value += (row.notes !== "") ? " class= has-note " : ""
         value += "onclick=loadChild(this); return false; > " + data.substring(0, 10) + "</a>"
         return value // display notes on child when click on date
@@ -191,8 +218,7 @@ function getTableBody(chapter) {
     },
     {
       "data": "user",
-      "searchable": "true",
-      "orderable": "true"
+      "searchable": "true"
     }
   ];
 
@@ -200,18 +226,17 @@ function getTableBody(chapter) {
     txt = (i < 10) ? 'Q0' : 'Q';
     obj.push({
       data: txt + i,
-      "searchable": "true",
-      "orderable": "true"
+      "searchable": "true"
     })
   }
 
-  //=temp: without this, notes are note available in render.row
+  // *temp: without this, notes are note available in render.row
   obj.push({
     "data": "notes",
     "searchable": "true",
-    "orderable": "true",
     "render": function(data, type, row, meta) {
-      return "<td class=hide>" + data + "</td>"
+      //console.log(`<td class=hide> "${data}" </td>`)
+      return `<td class=hide> "${data}" </td>`;
     }
   })
 
@@ -462,22 +487,16 @@ function setDtq120(videos) {
 }
 
 function setDtqGiang(chapter) {
-  var dtqTlhCol = 2;
-  var i, j, html = '';
+  var i, dtqTlhCol = 2, html = '';
   var table = document.getElementById('dtq-table');
 
   for (i = 0; i < chapter.length; i++) {
     var links = chapter[i].video; // max 3 lines in the db
 
-    if (links[0]) {
-      html = `<a href=javascript:void(0) data-link= ${links[0].p} class=videoLink>part1</a>`;
-    }
-    if (links[1]) {
-      html += `<br><a href=javascript:void(0) data-link= ${links[1].p} class=videoLink>part2</a>`;
-    }
-    if (links[2]) {
-      html += `<br><a href=javascript:void(0) data-link= ${links[2].p} class=videoLink>part3</a>`;
-    }
+    (links[0]) ?  html = `<a href=javascript:void(0) data-link= ${links[0].p} class=videoLink>part1</a>`:"";    
+    (links[1]) ?  html += `<br><a href=javascript:void(0) data-link= ${links[1].p} class=videoLink>part2</a>`:"";    
+    (links[2]) ?  html += `<br><a href=javascript:void(0) data-link= ${links[2].p} class=videoLink>part3</a>`:"";
+    
     var row = table.rows[i + 1];
     row.cells[dtqTlhCol].innerHTML = html;
   }
@@ -492,8 +511,7 @@ function setNlntt(objMovies) {
     if (typeof fullChapters[i] !== 'undefined' && fullChapters[i].movies) {
       var currChapter = fullChapters[i].movies;
 
-      var html = '',
-        num = 1;
+      var html = '', num = 1;
       for (var j in currChapter) {
         if (currChapter[j].link) {
           html += `<a href=javascript:void(0) data-link= ${currChapter[j].link} class=videoLink>  no${num} </a>`;
@@ -510,20 +528,16 @@ function setNlntt(objMovies) {
 function loadChild(x) {
   var tableID = $(x).closest('table').attr('id');
   var table = $('#' + tableID).DataTable();
-  var notes = x.getAttribute('data-link');
+  var notes = x.getAttribute("data-link");
   var tr = $(x).closest('tr'); // closet parent	
   var link = $(x).closest('a');
   var row = table.row(tr);
 
-  if (row.child.isShown()) {
-    row.child.hide(); // This row is already open - close it
-  } else {
-    row.child(childRow(notes)).show(); // Open this row
-  }
+  (row.child.isShown()) ? row.child.hide() : row.child(childRow(notes)).show();
 }
 
 function childRow(notes) {
-  return `<table><tr class=child-row><td>[Note] ${notes} </td></tr></table>`;
+  return `<table><tr class=child-row><td>[Note] " ${notes} " </td></tr></table>`;
 }
 
 /*************************************************************************************************************
@@ -697,23 +711,24 @@ function submitNewSurvey(chapter) {
     }
   })
 }
-function updateTodaySurveyProgress(){  
-	var i;
-	var chapters = ["hieu", "de", "can", "tin", "tubi", "thannhan", "hocvan"];
-	for (i = 0; i < chapters.length; i++) {
-		checkIfChapterDone(chapters[i]);
-	}
+
+function updateTodaySurveyProgress() {
+  var i;
+  var chapters = ["hieu", "de", "can", "tin", "tubi", "thannhan", "hocvan"];
+  for (i = 0; i < chapters.length; i++) {
+    checkIfChapterDone(chapters[i]);
+  }
 }
 
-function checkIfChapterDone(chapter){
-  var url = "/dtq/my-last-survey/" + chapter;	
-  
+function checkIfChapterDone(chapter) {
+  var url = "/dtq/my-last-survey/" + chapter;
+
   $.ajax({
     url: url,
     success: function(value) {
-      if(typeof value[0] !== "undefined" && getCurrDate().substring(0, 10).localeCompare(value[0].date.substring(0, 10)) == 0) {
-        $('#new-survey-'+chapter).addClass('disable')
-      } 
+      if (typeof value[0] !== "undefined" && getCurrDate().substring(0, 10).localeCompare(value[0].date.substring(0, 10)) == 0) {
+        $('#new-survey-' + chapter).addClass('disable')
+      }
     }
   })
 }
@@ -754,19 +769,19 @@ function setColors() {
 };
 
 function getCurrDate() {
-	var today = new Date();
-	var dd = today.getDate();
-	var mm = today.getMonth()+1; //January is 0!
-	var yyyy = today.getFullYear();
-	var hour = today.getHours();
-	var min = today.getMinutes();
-	var sec = today.getSeconds();
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth() + 1; //January is 0!
+  var yyyy = today.getFullYear();
+  var hour = today.getHours();
+  var min = today.getMinutes();
+  var sec = today.getSeconds();
 
-	if(dd<10) { dd = '0'+dd} 
-	if(mm<10) { mm = '0'+mm }
-	if(hour<10) { hour = '0'+hour }
-  if(min<10) { min = '0'+min }
-  if(sec<10) { sec = '0'+sec } 	
-
-	return yyyy + '/' + mm + '/' + dd + " " + hour + ":" + min +":" + sec;
+  (dd < 10) ? dd = '0' + dd : "";   
+  (mm < 10) ? mm = '0' + mm : "";  
+  (hour < 10) ? hour = '0' + hour : "";  
+  (min < 10) ? min = '0' + min : "";  
+  (sec < 10) ? sec = '0' + sec : "";
+  
+  return yyyy + '/' + mm + '/' + dd + " " + hour + ":" + min + ":" + sec;
 }
