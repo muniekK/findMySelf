@@ -24,7 +24,7 @@ If anyone wants to join, the person only have to register an account and fill it
 
 ## Final thought :
 
-Oh... and i forgot, considering my programming skill and knowledge, this project is lack of security and other things that i don't know. The information might be accessible to other peoples (but i don't think someone has time for this, they are more busy with other 'big thing'). Just use a fake name if you concern, no one need to know who you are, but be sincere to yourself... I created this first for myself and a group of peoples around me. And we don't mind much about privacy. Also, we don't expose enough to worry about the security. So if security is a concern, please use something not relative to you, but be sincere to yourself about the survey.
+I created this first for myself and a group of peoples around me. And we don't mind much about privacy. Also, we don't expose enough to worry about the security. So if security is a concern, please use something not relative to you, but be sincere to yourself about the survey.
 
 What i wrote up here is just an presentation: nothing much with what i want to say. Word is not enough for the meaning of this project. You will be suprised, if you do it sincerely. "Play" it and you will see... 
 
