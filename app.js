@@ -29,6 +29,7 @@ dbInstance.on('error', (err)=>{
 // Load Routes
 const dtq = require('./routes/dtq');
 const users = require('./routes/users');
+const main = require('./routes/main');
 
 // Static folder
 app.use(express.static(path.join(__dirname, 'public')));
@@ -67,6 +68,7 @@ app.get('/', (req, res) => {
 // use Routes
 app.use('/dtq', dtq)
 app.use('/users', users);
+app.use('/', main);
 
 const port = process.env.PORT || 80;
 
