@@ -457,8 +457,9 @@ function getChapterHtml(chapter) {
 
   for (i = 1; i < chapter.length; i++) {
     var shortMeaning = chapter[i].shortMeaning
+    var image = chapter[i].image
 
-    html += `<tr><td><h7><a href=javascript:void(0) data-link= '${shortMeaning}'`;
+    html += `<tr><td><h7><a href=javascript:void(0) data-link= '${shortMeaning}' data-img= '${image}'`;
 
     if (shortMeaning !== '')
       html += ' class=has-note '
@@ -529,15 +530,16 @@ function loadChild(x) {
   var tableID = $(x).closest('table').attr('id');
   var table = $('#' + tableID).DataTable();
   var notes = x.getAttribute("data-link");
+  var image = x.getAttribute("data-img");
   var tr = $(x).closest('tr'); // closet parent	
   var link = $(x).closest('a');
   var row = table.row(tr);
 
-  (row.child.isShown()) ? row.child.hide() : row.child(childRow(notes)).show();
+  (row.child.isShown()) ? row.child.hide() : row.child(childRow(image, notes)).show();
 }
 
-function childRow(notes) {
-  return `<table><tr class=child-row><td>[Note] " ${notes} " </td></tr></table>`;
+function childRow(image, notes) {
+  return `<table><tr class=child-row><td><img src="${image}"> ${notes} </td></tr></table>`;
 }
 
 /*************************************************************************************************************
@@ -648,15 +650,29 @@ function loadNewSurveyForm(chapter) {
     success: function(resultat) {
       var theory = JSON.parse(JSON.parse(JSON.stringify(resultat)).dtqTheory)
       chapterTheory = getChapterTheory(theory, chapter);
+  
 
       html += `<form action=/dtq/newSurvey/${chapter} method=post id='newSurveyForm'>` +
         `<h3> ${getChapterTitle(chapter)} </h3>` +
         `<table id=new-survey><thead><tr><th>Description</th><th>OUI</th><th>NON</th><th>NA</th></tr></thead>` +
         `<tbody>`;
+        
 
-      for (i in chapterTheory) {
+      for (i in chapterTheory) {       
+        
         if (!isTitle(chapterTheory[i].code)) {
-          html += `<tr><td><h7>[${chapterTheory[i].code}] ${chapterTheory[i].vietnamese} </h7><br><h8>▪${chapterTheory[i].english}</h8><br><h9>▪${chapterTheory[i].french}</h9></td>`
+
+          // Shortmeaning for each question of the survey
+          var shortMeaning = chapterTheory[i].shortMeaning;
+          var image = chapterTheory[i].image;
+    
+          html += `<tr><td><h7><a href=javascript:void(0) data-link= '${shortMeaning}' data-img= '${image}'`;
+    
+          if (shortMeaning !== '')
+          html += ' class=has-note '
+
+          html += `onclick=loadChild(this)><h7>[${chapterTheory[i].code}] ${chapterTheory[i].vietnamese} </a></h7><br><h8>▪${chapterTheory[i].english}</h8><br><h9>▪${chapterTheory[i].french}</h9></td>`; 
+    
 
           for (j = 1; j < 2; j++) {
             var name = (i < 10) ? 'Q0' + i : 'Q' + i;
@@ -666,6 +682,8 @@ function loadNewSurveyForm(chapter) {
           }
 
           html += '</tr>'
+
+         
         }
       }
 
