@@ -13,6 +13,11 @@ textarea {
   border-radius: 10px;
   background-color: #f8f8f8;
 }
+img{ /* image for dtq theory */
+  float:left;
+  width: 25%;
+  padding: 10px;
+}
 /* chapter title */
 h3{
   color: #0039e6;
@@ -41,6 +46,8 @@ h9 {
   color:green;
 }
 .child-row td{
+  text-align: justify;
+  text-justify: inter-word;
   box-shadow: 0 0 10px black;
   background: rgb(250, 239, 189);
 }
