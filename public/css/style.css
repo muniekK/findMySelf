@@ -17,6 +17,7 @@ img{ /* image for dtq theory */
   float:left;
   width: 25%;
   padding: 10px;
+  border-radius: 5%;
 }
 /* chapter title */
 h3{
