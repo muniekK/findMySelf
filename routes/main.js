@@ -2,16 +2,11 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 
-router.get('/', (req, res) => {
-  res.render('main');
-});
-
 router.get('/feedback', (req, res) => {
   res.render('feedback');
 })
 
 router.post('/feedback', (req, res) => {
-
   let Comment = require('../models/commentmodel');
   let newComment = new Comment({
     date: getCurrDate(),
