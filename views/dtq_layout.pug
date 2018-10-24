@@ -35,7 +35,7 @@ body
             .dropdown-divider
             a.dropdown-item(href='javascript:void(0)')#thpt 5 Thiên Hạ Phụ Tự
         li.nav-item
-          a.nav-link(href='javascript:void(0)')#group-surveys GROUP surveys
+          a.nav-link(href='javascript:void(0)')#group-surveys GROUP surveys   
         if user
           li.nav-item
             a.nav-link(href='javascript:void(0)')#my-surveys MY surveys
@@ -49,8 +49,9 @@ body
               a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('tubi')")#new-survey-tubi 5 Từ Bi
               a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('thannhan')")#new-survey-thannhan 6 Thân Nhân
               a.dropdown-item(href='javascript:void(0)' onclick="loadNewSurveyForm('hocvan')")#new-survey-hocvan 7 Học Văn
-			
+
       .nav.navbar-nav.ml-auto
+       
         if user
           li.nav-item
             a.nav-link(href='/users/logout') Logout
@@ -58,8 +59,9 @@ body
           li.nav-item
             a.nav-link(href='javascript:void(0)')#register Register 
           li.nav-item
-            a.nav-link(href='javascript:void(0)')#login Login 
-
+            a.nav-link(href='javascript:void(0)')#login Login
+        li.nav-item
+          a.nav-link(href='javascript:void(0)')#contact Contact 
   .container
     block content
     br
