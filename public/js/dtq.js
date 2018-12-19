@@ -512,7 +512,8 @@ function getChapterHtml(chapter) {
 
     html += `onclick=loadChild(this)> [${chapter[i].code}] ${chapter[i].vietnamese} </a></h7><br>` +
       `<h8>▪${chapter[i].english}</h8><br>` +
-      `<h9>▪${chapter[i].french}</h9></td><td></td><td></td><td></td></tr>`;
+      `<h9>▪${chapter[i].french}</h9><br>` +
+      `<h10>▪${chapter[i].hanviet}</h10> / <h11>${chapter[i].chineseTrad}</h11></td><td></td><td></td><td></td></tr>`;
 
   }
   return html;
@@ -717,7 +718,7 @@ function loadNewSurveyForm(chapter) {
           if (shortMeaning !== '')
           html += ' class=has-note '
 
-          html += `onclick=loadChild(this)><h7>[${chapterTheory[i].code}] ${chapterTheory[i].vietnamese} </a></h7><br><h8>▪${chapterTheory[i].english}</h8><br><h9>▪${chapterTheory[i].french}</h9></td>`; 
+          html += `onclick=loadChild(this)><h7>[${chapterTheory[i].code}] ${chapterTheory[i].vietnamese} </a></h7><br><h8>▪${chapterTheory[i].english}</h8><br><h9>▪${chapterTheory[i].french}</h9><br><h10>▪${chapterTheory[i].hanviet}</h10> / <h11>${chapterTheory[i].chineseTrad}</h11></td>`; 
     
 
           for (j = 1; j < 2; j++) {

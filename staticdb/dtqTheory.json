@@ -1,1294 +1,1664 @@
 {
 	"title": "Đệ Tử Quy",
 	"chapter01": [{
-		"code": "A00",
-		"vietnamese": "Hiếu",
-		"french": "À la maison, je suis dévoué à mes parents.",
-		"english": "At home, be dutiful to my parents.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/BWVjQmKIz30?start=1768"
+			"code": "A00",
+			"chineseTrad": "弟 子 規",
+			"hanviet": "Đệ Tử Quy",
+			"vietnamese": "Hiếu",
+			"french": "À la maison, je suis dévoué à mes parents",
+			"english": "At home, be dutiful to my parents",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/BWVjQmKIz30?start=1768"
+				}, {
+					"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=53"
-		}]
-	}, {
-		"code": "A01",
-		"vietnamese": "Cha mẹ gọi, trả lời ngay.",
-		"french": "Mes parents m'appellent, je les réponds tout de suite.",
-		"english": "My parents call, I answer them right away.",
-		"shortMeaning": "Khi cha mẹ gọi chúng ta, thì chúng ta phải lập tức trả lời.<br><br>Tại vì sao cha mẹ gọi mình đây? Phải chăng mình đang làm điều gì sai ? Ngoài trừ cha mẹ ra, có ai thật vì ta, mà chỉ ra khuyết điểm. Phải Chăng mình đã không làm tròn bổn phận trách nhiệm, nên họ đến nhắc nhở ? Phải chăng họ cần đến mình giúp đỡ? Vậy chúng ta sai rồi. Khi họ cần giúp đỡ, chúng ta phải chủ động đi giúp, không nên đợi họ đến cầu. Đợi họ đến cầu thì chúng ta đã sai rồi, lơ là sơ ý, không quan tâm chiếu cố. Phải quan tâm lo nghĩ, họ có khó khăn gì, cần sự giúp đỡ nào.<br><br> Con chưa nói, cha mẹ đã biết; Con chưa biết, cha mẹ chuẩn bị rồi. Chúng ta phải nên học thái độ yêu thương, quan tâm, chăm sóc này của cha mẹ. <br><br> Hiện tại không học, lớn lến làm sao biết; Rồi đây ta sẽ lớn, cha mẹ rồi cũng già; Con cái ở phương xa, làm sao cho tận hiếu. Lớn rồi, dù có kém khuyết đi nữa, vì thể diện tôn nghiêm của mình, cha mẹ không tiện nói rõ ràng nữa rồi; Lớn rồi, cha mẹ biết mình bẩn rộn, sợ làm phiền đến mình, dù thương nhớ muốn gặp, có nhu cầu cần đến, cũng không tiện lên tiếng; Chỉ âm thầm ưu khổ. <br><br> Nhân trước quả sau; Trẻ nhỏ lơ là, lớn lên không biết; Trọn đời bất hiếu, rồi đến phiên mình.",
-		"image": "https://i.imgur.com/SzQx26i.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=1427"
-		}]
-	}, {
-		"code": "A02",
-		"vietnamese": "Cha mẹ bảo, chớ làm biếng.",
-		"french": "Mes parents me disent de faire quelque chose, je ne fais pas la paresse et je le fais promptement.",
-		"english": "My parents ask to do something, I do it quickly.",
-		"shortMeaning": "Cha mẹ sai bảo chúng ta làm việc gì, chúng ta phải tức khắc làm ngay. <br><br> Đối với mình thì nghĩ được chú đáo, đối với người thì sơ sài qua loa. Để cho cha mẹ phải lên tiếng, thì mình đã sai rồi. Trì trệ không làm ngay, thì sai càng thêm sai.<br><br> Công việc là một cơ hội để biểu đạt sự quan tâm giữa người với người. Việc làm tuy nhỏ, ý nghĩa rất lớn. Xong việc tuy quan trọng, người làm càng quý hơn. Công việc cũng là một cơ hội để rèn luyện đức hạnh, học vấn, năng lực của chính mình. Chỉ có người thân mới cho mình cơ hội.<br><br> 10 tháng dài mang thai, đêm dài không ngon giấc; Giờ phút lúc sanh ra, đau đớn không thể tả; Vừa thấy con chào đời, quên mất cơn khổ nhọc. Khi có con rồi, tất cả đời sống của cha mẹ, đặt con lên hàng đầu. Cả đời vì con mà lo nghĩ, nghĩ đến già, nghĩ đến chết, nghĩ không hết.<br><br> Còn chúng ta thì sao. Từ nhỏ đến lớn, từ lớn đến già, thời gian nào của chúng ta, là giành cho cha mẹ. Còn nhỏ thì vui chơi, lớn lên thì đi học, có được thời gian rãnh, vui chơi cùng bạn bè; Học xong đến làm việc, rồi đến lập gia đình; Có gia đình mình rồi, thì còn đâu thời gian nữa. <br><br> Phải biết nắm bắt cơ hội để rèn luyện chính mình. Phải biết nắm bắt cơ hội, đừng đợi đến khi, con muốn báo hiếu, thì mẹ cha không còn. Khi đó mà hối tiếc, thì có lợi ích gì.",
-		"image": "https://i.imgur.com/SzQx26i.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=2450"
-		}]
-	}, {
-		"code": "A03",
-		"vietnamese": "Cha mẹ dạy, phải kính nghe.",
-		"french": "Mes parents m'instruisent, je les écoute respectueusement.",
-		"english": "My parents instruct, I listen respectfully.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/1dYbGrA.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=2881"
-		}]
-	}, {
-		"code": "A04",
-		"vietnamese": "Cha mẹ trách, phải thừa nhận.",
-		"french": "Mes parents me reprochent, j'obéis et j'accepte leur réprimande. Je m'efforce de changer et de m'améliorer.",
-		"english": "My parents reproach, l obey and accept their scolding. I try hard to change and improve myself, to start anew.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/1dYbGrA.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=3073"
+			"code": "A01",
+			"chineseTrad": "父 母 呼, 應 勿 緩",
+			"hanviet": "Phụ mẫu hô, ứng vật hoãn",
+			"vietnamese": "Cha mẹ gọi, trả lời ngay",
+			"french": "Mes parents m'appellent, je les réponds tout de suite",
+			"english": "My parents call, I answer them right away",
+			"shortMeaning": "Khi cha mẹ gọi chúng ta, thì chúng ta phải lập tức trả lời.<br><br>Tại vì sao cha mẹ phải gọi mình? Hoặc là mình đang làm gì sai, hoặc là mình đã lơ là bổn phận trách nhiệm, nên họ đến nhắc nhở? Hoặc là họ đang cần đến mình? Vậy là chúng ta sai rồi. Khi họ cần giúp đỡ, chúng ta phải chủ động đi giúp, không nên đợi họ đến cầu. Đợi họ đến cầu thì chúng ta đã sai rồi, lơ là sơ ý, không quan tâm chiếu cố. Phải quan tâm lo nghĩ, họ có khó khăn gì, cần sự giúp đỡ nào.<br><br>Con còn chưa nói, cha mẹ đã biết. Con còn chưa biết, cha mẹ đã làm rồi. Chúng ta phải nên học thái độ yêu thương, quan tâm, chăm sóc này của cha mẹ. Chúng ta phải học từ sừ kêu gọi của họ, mà nhận ra đều yêu cầu trong tâm của họ.<br><br> Hiện tại không học, lớn lến làm sao biết. Rồi đây mình sẽ lớn, cha mẹ rồi cũng già. Con cái ở phương xa, làm sao cho tận hiếu. Lớn rồi, già rồi, dù chúng ta có sai, dù cha mẹ có cần, dù cho họ có buồn khổ đi nữa, họ cũng không còn kêu gọi nữa đâu.<br><br> Nhân trước quả sau. Trẻ nhỏ lơ là, lớn lên không biết. Trọn đời bất hiếu, rồi đến phiên mình",
+			"image": "https://i.imgur.com/SzQx26i.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=1427"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/zrQSku_8U9A?start=295"
-		}]
-	}, {
-		"code": "A05",
-		"vietnamese": "Đông làm ấm.",
-		"french": "Hiver, je m'assure que mes parents sont chauds.",
-		"english": "Winter, I keep my parents warm.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/9Lg4l2h.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/zrQSku_8U9A?start=1567"
-		}]
-	}, {
-		"code": "A06",
-		"vietnamese": "Hạ làm mát.",
-		"french": "Été, je m'assure que mes parents sont frais.",
-		"english": "Summer, I keep my parents cool.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/9Lg4l2h.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/zrQSku_8U9A?start=1567"
-		}]
-	}, {
-		"code": "A07",
-		"vietnamese": "Sáng phải thăm.",
-		"french": "Le matin, je les ai salués.",
-		"english": "Morning, I greet my parents.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/UcXDmAu.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=53"
-		}]
-	}, {
-		"code": "A08",
-		"vietnamese": "Tối phải viếng.",
-		"french": "La nuit, je m'assure qu'ils se reposent confortablement.",
-		"english": "Night, I make sure my parents rest well.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/UcXDmAu.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=53"
-		}]
-	}, {
-		"code": "A09",
-		"vietnamese": "Đi phải thưa.",
-		"french": "Avant de sortir, j'informe mes parents où je vais.",
-		"english": "Before going out, I tell my parents where I am going.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/3PhRukr.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=515"
-		}]
-	}, {
-		"code": "A10",
-		"vietnamese": "Về phải trình.",
-		"french": "De retour à la maison, je fais savoir à mes parents que je suis de retour.",
-		"english": "Returning home, I let my parents know that I am back.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=515"
-		}]
-	}, {
-		"code": "A11",
-		"vietnamese": "Ở ổn định.",
-		"french": "Je mène une vie stable et garde la bonne routine.",
-		"english": "I maintain a permanent place to stay and lead a routine life.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/auYkBC2.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=851"
+			"code": "A02",
+			"chineseTrad": "父 母 命, 行 勿 懶",
+			"hanviet": "Phụ mẫu mạng, hành vật lãn",
+			"vietnamese": "Cha mẹ bảo, chớ làm biếng",
+			"french": "Mes parents me disent de faire quelque chose, je ne fais pas la paresse et je le fais promptement",
+			"english": "My parents ask to do something, I do it quickly",
+			"shortMeaning": "Cha mẹ sai bảo chúng ta làm việc gì, chúng ta phải tức khắc làm ngay.<br><br>Giải đại lười biếng, phạm vi này rất rộng. Chẳng phải chỉ là những người mỗi ngày chỉ biết có ngủ nghỉ. Nhũng người nào là những người giải đãi? Đối với bổn phận trách nhiệm của mình không chuyên tâm nỗ lực mà làm. Hơn nữa, còn chuyên tâm làm những chuyện, hoặc tiếp xúc người, hoặc đến những nơi ảnh hưởng không tốt đối với việc chính của mình. Đây đều là thuộc về giải đại.<br><br>Đối với mình thì nghĩ được chú đáo, đối với người thì sơ sài qua loa. Để cho cha mẹ phải lên tiếng, thì mình đã sai rồi. Trì trệ không làm ngay, thì sai càng thêm sai.<br><br> 10 tháng dài mang thai, đêm dài không ngon giấc. Giờ phút lúc sanh ra, đau đớn không thể tả. Vừa thấy con chào đời, quên mất cơn khổ nhọc. Trọn đời của cha mẹ, đặt con lên hàng đầu. Vì con mà lo nghĩ, Nghĩ suy không ngừng nghĩ.<br><br>Còn chúng ta thì sao. Từ nhỏ đến lớn rồi đến già, có bao nhiêu thời gian là giành cho cha mẹ. Còn nhỏ thì vui chơi, lớn lên thì đi học. Được chút thời gian rãnh, vui chơi cùng bạn bè. Học xong đến làm việc, rồi đến lập gia đình. Có gia đình mình rồi, còn đâu thời gian nữa.<br><br>Công việc là một cơ hội để biểu đạt sự quan tâm giữa người với người. Việc làm tuy nhỏ, ý nghĩa rất lớn. Xong việc tuy quan trọng, nhưng người làm càng quý hơn. Công việc cũng là một cơ hội để rèn luyện đức hạnh, học vấn, năng lực của chính mình. Chỉ có người thân mới cho mình cơ hội. Còn nhỏ con có sai, bên con còn cha mẹ. Lớn rồi con có sai, bên con chẳng còn ai. Còn nhỏ con cực nhọc, về già con hưởng phước. Còn nhỏ con hưởng phước, về già con thê thảm.<br><br> Phải biết nắm bắt cơ hội, rèn luyện đức năng học vấn của chính mình. Trăm điều thiện, Hiếu đứng đầu. Phải biết nắm bắt cơ hội, để báo ơn cha mẹ, đừng đợi đến khi con muốn báo hiếu, thì mẹ cha không còn. Khi đó mà hối tiếc, thì có lợi ích gì",
+			"image": "https://i.imgur.com/SzQx26i.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=2450"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=53"
-		}]
-	}, {
-		"code": "A12",
-		"vietnamese": "Nghề không đổi.",
-		"french": "Je persiste dans tout ce que je fais et je ne change pas mes aspirations à volonté.",
-		"english": "I persist in whatever I do and not change my aspirations at will.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/auYkBC2.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=851"
+			"code": "A03",
+			"chineseTrad": "父 母 教, 須 敬 聽",
+			"hanviet": "Phụ mẫu giáo, tu kính thính",
+			"vietnamese": "Cha mẹ dạy, phải kính nghe",
+			"french": "Mes parents m'instruisent, je les écoute respectueusement",
+			"english": "My parents instruct, I listen respectfully",
+			"shortMeaning": "Đối với lời dạy của cha mẹ, chúng ta phải cung kính lắng nghe.<br><br>Xã hội hiện tại, chân thật đáng thương, Động loạn bất an, không có chổ để nương tựa, không có cảm giác an toàn, tâm cuồng ý loạn, khổ không nói ra lời. Ngày nay đáng lo nhất là chuyện gì? Không phải ăn mặc, đây đều là chuyện nhỏ. Đều lo nhất là làm sao đem chánh pháp truyền lại cho đời sau, không đến nỗi chôn vùi mất. Đây là căn nguyên hạnh phúc. Chánh pháp được truyền xuống thì đời sau có phước. Nếu chánh pháp đoạn tuyệt, thì đời sau thật đáng thương. Không ai chỉ dạy, không rõ đạo lý, từ khổ và khổ, từ tối vào tối. Người trước không thiện, không biết đạo đức, không thể chỉ dạy khuyến khích đời sau.<br><br>Giáo dục con cái là bắt đầu từ thai giáo. Thánh hiền thời xưa, người mẹ mang thai, mắt không nhìn đều bất thiện, miệng không nói lời ác, thân không tà hạnh, tâm không được có ác niệm, để cho thai nhi được thanh tịnh, không để cho nó có cảm nhiễm tà ác, khi sanh ra thì dễ dạy. 3 năm đầu mới sanh ra, nó biết thấy biết nghe, phải cho nó tiếp xúc luân lý đạo đức. Cử chỉ người lớn phái đoan trang, luân lý đạo đức phải biểu lỗ ra ngoài, cha mẹ phải hiếu thuận với ông bà, thương mến anh em. Người xưa nói, 3 tuổi định 80. Sau 3 tuổi mới dạy, đã không kịp, nó đã học hư rồi. Trước 12 tuổi đầu óc của chúng còn trong sáng hơn, sức ghi nhớ rất tốt, sức lý giải chưa phát triển, cũng phải dạy cho chúng đọc thuộc kinh sách của thánh hiền. Trẻ nhỏ mà không ép như thế, đầu óc của chúng sẽ nghĩ tưởng sằng bậy. Đây là giúp chúng tu tâm thanh tịnh. Tâm thanh tịnh, khởi tác dụng chính là trí tuệ. Sau 12 tuổi sức lý giải của chúng phát triển, mới chú trọng giảng dạy cho chúng hiểu rõ đạo lý bên trong.<br><br>Sau thời động loạn chiến tranh, khoảng dựa xưa nay, đã mất một khoảng trống. Những cha mẹ hiện nay không biết, lúc mang thai, thường hay nóng giận, ảnh hưởng thai nhi. Sanh rồi lại không biết dạy con như thế nào. Tưởng nó không biết, ai ngờ nó đang học tập hết thói quen tật xấu của người lớn. Còn cho nó xem truyền hình internet, nào là bảo lực sát sanh, trộm cắp, tình dục, nói dối. Đều này đã hình thành giá trị quan của nó rồi. Lớn lên, con cái không nghe lời cha mẹ, học trò không nghe lời thầy cô, công nhân không nghe lợi ông chủ, đều này lạ lắm sao? Tại sao con cái ngày nay khó dạy? Vì lúc nên dạy thì lại lơ là, đến khi ba tuổi thì học hư rồi.<br><br>Hơn nữa mà nói, từ nhỏ được cha mẹ nuông chìu, muốn gì được nấy, hình thành nên loại cá tính phản nghịch. Tương lai không được thỏa mạng, phiền phức liền đến ngay. Từ nhỏ, phải biết nuôi dạy cho chúng cảm được, việc không vừa ý thường rất nhiều. Phải để chúng có chổ thể hội, không được để chúng kiêu ngạo phóng túng. Đều hợp lý thì cho, không hợp lý phải hạn chế.<br><br>Tập thành từ nhỏ giống như bản tánh, tập quen thành tự nhiên. Từ nhỏ phải hình thành thói quen tốt. Còn nhỏ thì dễ dàng, ô nhiễm rồi thì thật khó dạy.<br><br>Còn nhỏ phải hạn chế dục vọng hưởng thụ vật chất của chúng, sau này mới có thể tiếp nhận giáo dục đức hạnh nâng cao phẩm đức. Phải để cho chúng biết được, biết đủ thường vui. Hiện nay hoàn cảnh vật chất nhân sự mê hoặc quá nhiều. Khi còn trẻ, cha mẹ lơ là căn bản giáo dục, lớn lên bị hoàn cảnh dụ dỗ, chúng làm sao mà không bị mê hoặc, tạo ác nghiệp, chịu thống khổ. Đời sống vật chất quá nhiều, sẽ mất đi đời sống tinh thần. Giàu mà khổ, không bằng nghèo mà vui. Người biết đủ thì đủ, không biết đủ, dù làm vua cũng không đủ. Người xưa dạy trẻ nhỏ rất khắt khe, không cho chúng hưởng thủ. Đi đứng nằm ngồi, đối nhân sự thế tiếp vật, đều có quy củ phép tắc. Phải siêng năng cần cù, lao bàn quét nhà, phải tự mình làm. Không thể nuông chìu thuận theo chúng được, không thể để cho chúng muốn gì được nấy. Từ nhỏ mà thuận theo, lớn lên làm sao dạy.<br><br>Ngày xưa giáo dục con cái là cha mẹ cùng lão sư hợp tác. Cha mẹ dạy con cung kính thầy, thầy dạy con về nhà hiếu thảo với cha mẹ. Thế nhưng ngày nay, việc này rất khó. Ngày nay không có thầy trò, con cái quên ơn phụ nghĩa. Đối với cha mẹ mà còn quên ơn phụ nghĩa, đối với người khác còn đáng tin sao? Cha mẹ phải hợp tác dạy dỗ con cái. Cha dạy con cảm nhận được công ơn của mẹ, Mẹ dạy con cảm nhận được lao nhọc của cha. Phải để cho chúng hiểu được, biết ơn báo ơn. Chúng ta không thể nói, cả đời ta hy sinh vì gia đình, con phải hiếu kính với ta, đều này không thể được. Người thầy đầu tiên của con cái chính là cha mẹ.<br><br>Công việc ở nhà của người phụ nữ, phù trợ chồng, dạy dỗ con. Ngày nay xem thường, lìa khỏi gia đình, làm phụ nữ chức nghiệp. Con không có thời gian để dạy, đời này vinh hiển, đời sau thì xong. Một vị đại đức đã từng nói, an nguy của xã hội, chức trách của người nữ có quan hệ rất lớn, chỉ cần quản tốt chồng cùng con, làm tổng thống nên để họ đi làm, mình không nên đi làm. Bình đẳng nam nữ, không phải như nhau trên công việc, mà tất cả chức vụ đều quan trọng như nhau. Phải tôn trọng lẫn nhau. Chồng ở ngoài, vợ ợ trong, con đi học, tương lai tiếp nối. Như cái đỉnh ba chân, thiếu một thì gia đình này xụp độ. Gia đình xụp độ, thì xa hội cũng lâm nguy.<br><br>Nhân tố căn bệnh của ngày nay, chú tâm quán sát sẽ dễ phát hiện. Ai ai cũng phải day, dạy người phải đoan chánh, ảnh hưởng người xung quanh. Người người đều phải làm quân thân sư. Quân là dần đầu làm gương tốt. Thân là thương yêu quan tâm giúp đỡ hợp tác. Sư là chỉ đạo đức hạnh học thuật kỹ năng, thiện xảo phương tiện giúp đỡ người khác. Người người đều làm quân thân sư, đều là bình đẳng hộ trợ lẫn nhau, không có so sánh hơn thua, không có cao thấp nặng nhẹ",
+			"image": "https://i.imgur.com/1dYbGrA.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=2881"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=53"
-		}]
-	}, {
-		"code": "A13",
-		"vietnamese": "Việc tuy nhỏ, chớ vội làm; Nếu vội làm, lỗi đạo con.",
-		"french": "Une affaire tout à fait triviale, si elle n'est pas correcte, je ne le fais pas; Si, je le fais, je ne suis pas digne envers mes parents.",
-		"english": "A matter might be trivial, if it is wrong or unfair to another person, I don't do it; If I do, I am not being a dutiful child.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/a15g1MJ.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=360"
-		}]
-	}, {
-		"code": "A14",
-		"vietnamese": "Vật tuy nhỏ, chớ tự dấu; Nếu tự dấu, cha mẹ buồn.",
-		"french": "Un objet, même très petite, je ne cache pas à mes parents. Sinon ils seront tristes.",
-		"english": "An object might be small, I don't keep it a secret from my parents; If I do, I will hurt my parents’ feelings.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/LZajqx0.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=1768"
-		}]
-	}, {
-		"code": "A15",
-		"vietnamese": "Cha mẹ thích, tận lực làm.",
-		"french": "Tout ce qui plaît à mes parents, si c'est juste et raisonnable, je fais de mon mieux pour l'atteindre.",
-		"english": "Whatever pleases my parents, if is fair and reasonable, I try my best to attain it.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=2261"
+			"code": "A04",
+			"chineseTrad": "父 母 責, 須 順 承",
+			"hanviet": "Phụ mẫu trách, tu thuận thừa",
+			"vietnamese": "Cha mẹ trách, phải thừa nhận",
+			"french": "Mes parents me reprochent, j'obéis et j'accepte leur réprimande. Je m'efforce de changer et de m'améliorer",
+			"english": "My parents reproach, l obey and accept their scolding. I try hard to change and improve myself, to start anew",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/1dYbGrA.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/nmGCXH-rmYY?start=3073"
+				}, {
+					"p": "https://www.youtube.com/embed/zrQSku_8U9A?start=295"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/YcH70MvbmhU?start=53"
+			"code": "A05",
+			"chineseTrad": "冬 則 溫",
+			"hanviet": "Đông tắc ôn",
+			"vietnamese": "Đông phải ấm",
+			"french": "Hiver, je m'assure que mes parents sont chauds",
+			"english": "Winter, I keep my parents warm",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/9Lg4l2h.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/zrQSku_8U9A?start=1567"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/807oBHwzr6Q?start=53"
-		}]
-	}, {
-		"code": "A16",
-		"vietnamese": "Cha mẹ ghét, cẩn thận bỏ.",
-		"french": "Quelque chose qui déplaît à mes parents, si c'est juste est raisonnable, je fais attention de me les éloigner.",
-		"english": "Something displeases my parents, if within reason, I cautiously keep it away.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/807oBHwzr6Q?start=1216"
+			"code": "A06",
+			"chineseTrad": "夏 則 凊",
+			"hanviet": "Hạ tắc sảnh",
+			"vietnamese": "Hạ phải mát",
+			"french": "Été, je m'assure que mes parents sont frais",
+			"english": "Summer, I keep my parents cool",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/9Lg4l2h.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/zrQSku_8U9A?start=1567"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=53"
-		}]
-	}, {
-		"code": "A17",
-		"vietnamese": "Thân bị thương, cha mẹ lo.",
-		"french": "J'évite de me blesser physiquement. Sinon mes parents seront inquiets.",
-		"english": "I'm not letting my body hurt, otherwise my parents will be worried.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/qwE6d6T.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=879"
-		}]
-	}, {
-		"code": "A18",
-		"vietnamese": "Đức hạnh kém, cha mẹ tủi.",
-		"french": "J'évite de me blesser moralement. Sinon mes parents auront honte.",
-		"english": "I'm not letting my virtues compromised, otherwise my parents will feel ashamed.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=1173"
-		}]
-	}, {
-		"code": "A19",
-		"vietnamese": "Cha mẹ thương, hiếu đâu khó.",
-		"french": "Quand mes parents m'aiment, je suis dévoué envers eux.",
-		"english": "Have loving parents, it is not difficult to be dutiful to them.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/vpTnKSB.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=1597"
-		}]
-	}, {
-		"code": "A20",
-		"vietnamese": "Cha mẹ ghét, hiếu mới tốt.",
-		"french": "Quand Mes parents sont en colère envers moi, je suis dévoué envers eux également.",
-		"english": "Have hateful parents, i'm also dutiful to them.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=1597"
-		}]
-	}, {
-		"code": "A21",
-		"vietnamese": "Cha mẹ lỗi, khuyên thay đổi; Mặt tươi vui, lời nhu hòa; Khuyên không được, vẫn phải khuyên; đến phải khóc, đánh không giận.",
-		"french": "Mes parents commettent des erreurs, je les invite à changer. Je le fais avec une expression faciale gentille et une voix douce et chaleureuse. S'ils n'acceptent pas mes conseils, j'attendrai une autre occasion. S'ils sont en colère contre moi, je ne garde aucune rancune.",
-		"english": "My parents do wrong, I urge them to change. I do it with a kind facial expression and a warm gentle voice. if they do not accept my advice, I will wait another opportunity. if they end up whipping me, I will not hold a grudge against them.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/wFxKMULb.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=2453"
+			"code": "A07",
+			"chineseTrad": "晨 則 省",
+			"hanviet": " Thần tắc tỉnh",
+			"vietnamese": "Sáng phải thăm",
+			"french": "Le matin, je les ai salués",
+			"english": "Morning, I greet my parents",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/UcXDmAu.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/xdwqtYm4Z6s?start=53"
+			"code": "A08",
+			"chineseTrad": "昏 則 定",
+			"hanviet": "Hôn tắc định",
+			"vietnamese": "Tối phải viếng",
+			"french": "La nuit, je m'assure qu'ils se reposent confortablement",
+			"english": "Night, I make sure my parents rest well",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/UcXDmAu.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/tqb5ZMARHqU?start=53"
-		}]
-	}, {
-		"code": "A22",
-		"vietnamese": "Cha mẹ bệnh, nếm thuốc trước; Ngày đêm chăm, không rời bước.",
-		"french": "Mes parents sont malades, je vérifie d'abord le médicament avant de leur donner. Je prends soin d'eux jour et nuit et reste à leur portée.",
-		"english": "My parents are ill, I verify the medicine first before giving it to them. I take care of them day and night and stay within their reach.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/Qppio9O.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tqb5ZMARHqU?start=1045"
-		}]
-	}, {
-		"code": "A23",
-		"vietnamese": "Tang ba năm, thường thương nhớ; Không vui chơi, không rượu thịt.",
-		"french": "Pendant les trois premières années après le décès de mes parents, je me souviens tristement d'eux avec gratitude. Pendant cette période, j'organiserai ma maison pour refléter mon chagrin. J'éviterai les festivités et les amusements.",
-		"english": "During the first three years after my parents have passed away, I sadly remember them with gratitude. during this period I will arrange my home to reflect my grief and sorrow. I will also avoid festivities and indulgence in food and alcoholic drinks.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tqb5ZMARHqU?start=2200"
-		}]
-	}, {
-		"code": "A24",
-		"vietnamese": "Tang tận lễ, cúng tận thành; đối người mất, như lúc sống.",
-		"french": "J'organise les funérailles de mes parents et je tiens la cérémonie commémorative avec la plus grande sincérité. Je me dévoue envers eux, comme s'ils étaient encore en vie.",
-		"english": "I arrange my parents’ funerals and hold the memorial ceremony with utmost sincerity. I will serve my departed parents as if they were still alive.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/KQOv81Rb.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tqb5ZMARHqU?start=2549"
-		}]
-	}],
+			"code": "A09",
+			"chineseTrad": "出 必 告",
+			"hanviet": "Xuất tất cáo",
+			"vietnamese": "Đi phải thưa",
+			"french": "Avant de sortir, j'informe mes parents où je vais",
+			"english": "Before going out, I tell my parents where I am going",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/3PhRukr.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=515"
+				}
+			]
+		}, {
+			"code": "A10",
+			"chineseTrad": "反 必 面",
+			"hanviet": "Phản tất diện",
+			"vietnamese": "Về phải trình",
+			"french": "De retour à la maison, je fais savoir à mes parents que je suis de retour",
+			"english": "Returning home, I let my parents know that I am back",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=515"
+				}
+			]
+		}, {
+			"code": "A11",
+			"chineseTrad": "居 有 常",
+			"hanviet": "Cư hữu thường",
+			"vietnamese": "Ở ổn định",
+			"french": "Je mène une vie stable et garde la bonne routine",
+			"english": "I maintain a permanent place to stay and lead a routine life",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/auYkBC2.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=851"
+				}, {
+					"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=53"
+				}
+			]
+		}, {
+			"code": "A12",
+			"chineseTrad": "業 無 變",
+			"hanviet": "Nghiệp vô biến",
+			"vietnamese": "Nghề không đổi",
+			"french": "Je persiste dans tout ce que je fais et je ne change pas mes aspirations à volonté",
+			"english": "I persist in whatever I do and not change my aspirations at will",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/auYkBC2.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/X9woBwYvlbE?start=851"
+				}, {
+					"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=53"
+				}
+			]
+		}, {
+			"code": "A13",
+			"chineseTrad": "事 雖 小, 勿 擅 為, 苟 擅 為, 子 道 虧",
+			"hanviet": "Sự tuy tiểu, vật thiện vi. Cẩu thiện vi, tử đạo khuy",
+			"vietnamese": "Việc tuy nhỏ, chớ vội làm. Nếu đã làm, thiếu đạo con",
+			"french": "Une affaire tout à fait triviale, si elle n'est pas correcte, je ne le fais pas; Si, je le fais, je ne suis pas digne envers mes parents",
+			"english": "A matter might be trivial, if it is wrong or unfair to another person, I don't do it; If I do, I am not being a dutiful child",
+			"shortMeaning": "Cha mẹ ưa thích những chuyện hợp tình, hợp lý, hợp pháp, thì chúng ta phải tận tâm tận lực vì cha mẹ làm cho tốt đẹp trong phạm vi hợp lý. Nếu như đối với người, đối với việc, đối với vật làm cho cha mẹ chán ghét, thì chúng ta phải hết lòng cẩn thận trừ bỏ ngay. <br><br>Sự việc lớn nhỏ, không phải ở trên công việc, mà phải xem ở phía mặt ảnh hưởng của nó gây nên. Vậy phải quán sát, <em>mức độ</em> ảnh hưởng của nó bao nhiêu sâu, <em>thời gian</em> ảnh hưởng bao nhiêu lâu và <em>không gian</em> ảnh hưởng bao nhiêu rộng.<br><br>Vậy phải cần có kinh nghiệm đời sống và học vấn trí tuệ mới thấy được sâu rộng. Cho nên không nên khinh thường bất cứ một việc nào hết, sẽ tránh được rất nhiều sai lầm đáng tiếc. Nhất là khi chúng ta còn trẻ, thiếu kinh nghiệm, không nên xem thường công việc được giao phó. Bất luận là việc nào, ngay trong đi đứng nằm ngồi, ăn cơm mật áo, đối nhân sự thế tiếp vật, đều cần phải suy xét thận trọng, động tác phải thong thả, an tường, điềm tĩnh,thung dung, tất cả đều phải có quy củ phép tắc; Hấp tấp, đột ngột, vội vã, bối rối, bộp chộp ắt sẽ thảm bại khiến phải hối hận về sau",
+			"image": "https://i.imgur.com/a15g1MJ.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=360"
+				}
+			]
+		}, {
+			"code": "A14",
+			"chineseTrad": "物 雖 小, 勿 私 藏, 苟 私 藏, 親 心 傷",
+			"hanviet": "Vật tuy tiểu, vật tư tàng. Cẩu tư tàng, thân tâm thương",
+			"vietnamese": "Vật tuy nhỏ, chớ cất riêng. Nếu cất riêng, cha mẹ buồn. ",
+			"french": "Un objet, même très petite, je ne cache pas à mes parents. Sinon ils seront tristes",
+			"english": "An object might be small, I don't keep it a secret from my parents; If I do, I will hurt my parents’ feelings",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/LZajqx0.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=1768"
+				}
+			]
+		}, {
+			"code": "A15",
+			"chineseTrad": "親 所 好, 力 為 具",
+			"hanviet": "Thân sở hảo, lực vi cụ",
+			"vietnamese": "Cha mẹ thích, tận lực làm",
+			"french": "Tout ce qui plaît à mes parents, si c'est juste et raisonnable, je fais de mon mieux pour l'atteindre",
+			"english": "Whatever pleases my parents, if is fair and reasonable, I try my best to attain it",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/yvtXa7ddb1k?start=2261"
+				}, {
+					"p": "https://www.youtube.com/embed/YcH70MvbmhU?start=53"
+				}, {
+					"p": "https://www.youtube.com/embed/807oBHwzr6Q?start=53"
+				}
+			]
+		}, {
+			"code": "A16",
+			"chineseTrad": "親 所 惡, 謹 為 去",
+			"hanviet": "Thân sở ố, cẩn vi khứ",
+			"vietnamese": "Cha mẹ ghét, cẩn thận bỏ",
+			"french": "Quelque chose qui déplaît à mes parents, si c'est juste est raisonnable, je fais attention de me les éloigner",
+			"english": "Something displeases my parents, if within reason, I cautiously keep it away",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/807oBHwzr6Q?start=1216"
+				}, {
+					"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=53"
+				}
+			]
+		}, {
+			"code": "A17",
+			"chineseTrad": "身 有 傷, 貽 親 憂",
+			"hanviet": "Thân hữu thương, di thân ưu",
+			"vietnamese": "Thân bị thương, cha mẹ lo",
+			"french": "J'évite de me blesser physiquement. Sinon mes parents seront inquiets",
+			"english": "I'm not letting my body hurt, otherwise my parents will be worried",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/qwE6d6T.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=879"
+				}
+			]
+		}, {
+			"code": "A18",
+			"chineseTrad": "德 有 傷, 貽 親 羞",
+			"hanviet": "Đức hữu thương, di thân tu",
+			"vietnamese": "Đức hạnh kém, cha mẹ tủi",
+			"french": "J'évite de me blesser moralement. Sinon mes parents auront honte",
+			"english": "I'm not letting my virtues compromised, otherwise my parents will feel ashamed",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=1173"
+				}
+			]
+		}, {
+			"code": "A19",
+			"chineseTrad": "親 愛 我, 孝 何 難",
+			"hanviet": "Thân ái ngã, hiếu hà nan",
+			"vietnamese": "Cha mẹ thương, hiếu đâu khó",
+			"french": "Quand mes parents m'aiment, je suis dévoué envers eux",
+			"english": "Have loving parents, it is not difficult to be dutiful to them",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/vpTnKSB.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=1597"
+				}
+			]
+		}, {
+			"code": "A20",
+			"chineseTrad": "親 憎 我, 孝 方 賢",
+			"hanviet": "Thân tăng ngã, hiếu phương hiền",
+			"vietnamese": "Cha mẹ ghét, hiếu mới tốt",
+			"french": "Quand Mes parents sont en colère envers moi, je suis dévoué envers eux également",
+			"english": "Have hateful parents, i'm also dutiful to them",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=1597"
+				}
+			]
+		}, {
+			"code": "A21",
+			"chineseTrad": "親 有 過, 諫 使 更, 怡 吾 色, 柔 吾 聲. 諫 不 入, 悅 復 諫, 號 泣 隨,  撻 無 怨",
+			"hanviet": "Thân hữu quá, gián sử canh, di ngô sắc, nhu ngô thanh. Gián bất nhập, duyệt phục gián, hào khấp tuỳ, thát vô oán",
+			"vietnamese": "Cha mẹ lỗi, khuyên thay đổi, mặt tươi vui, lời nhu hòa. Khuyên không được, vẫn phải khuyên, đến phải khóc, đánh không giận",
+			"french": "Mes parents commettent des erreurs, je les invite à changer. Je le fais avec une expression faciale gentille et une voix douce et chaleureuse. S'ils n'acceptent pas mes conseils, j'attendrai une autre occasion. S'ils sont en colère contre moi, je ne garde aucune rancune",
+			"english": "My parents do wrong, I urge them to change. I do it with a kind facial expression and a warm gentle voice. if they do not accept my advice, I will wait another opportunity. if they end up whipping me, I will not hold a grudge against them",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/wFxKMULb.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/jbxAjMb7Y4Y?start=2453"
+				}, {
+					"p": "https://www.youtube.com/embed/xdwqtYm4Z6s?start=53"
+				}, {
+					"p": "https://www.youtube.com/embed/tqb5ZMARHqU?start=53"
+				}
+			]
+		}, {
+			"code": "A22",
+			"chineseTrad": "親 有 疾, 藥 先 嘗, 晝 夜 侍, 不 離 床",
+			"hanviet": "Thân hữu tật, dược tiên thường, trú dạ thị, bất li sàng",
+			"vietnamese": "Cha mẹ bệnh, nếm thuốc trước, ngày đêm chăm, không rời bước",
+			"french": "Mes parents sont malades, je vérifie d'abord le médicament avant de leur donner. Je prends soin d'eux jour et nuit et reste à leur portée",
+			"english": "My parents are ill, I verify the medicine first before giving it to them. I take care of them day and night and stay within their reach",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/Qppio9O.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tqb5ZMARHqU?start=1045"
+				}
+			]
+		}, {
+			"code": "A23",
+			"chineseTrad": "喪 三 年, 常 悲 咽, 居 處 變, 酒 肉 絕",
+			"hanviet": "Tang tam niên, thường bi yết, cư xứ biến, tửu nhục tuyệt",
+			"vietnamese": "Tang ba năm, thường thương nhớ, không vui chơi, không rượu thịt",
+			"french": "Pendant les trois premières années après le décès de mes parents, je me souviens tristement d'eux avec gratitude. Pendant cette période, j'organiserai ma maison pour refléter mon chagrin. J'éviterai les festivités et les amusements",
+			"english": "During the first three years after my parents have passed away, I sadly remember them with gratitude. during this period I will arrange my home to reflect my grief and sorrow. I will also avoid festivities and indulgence in food and alcoholic drinks",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tqb5ZMARHqU?start=2200"
+				}
+			]
+		}, {
+			"code": "A24",
+			"chineseTrad": "喪 盡 禮, 祭 盡 誠, 事 死 者, 如 事 生",
+			"hanviet": "Tang tận lễ, tế tận thành, sự tử giả, như sự sanh",
+			"vietnamese": "Tang đủ lễ, cúng hết lòng, với người mất, như lúc sống. ",
+			"french": "J'organise les funérailles de mes parents et je tiens la cérémonie commémorative avec la plus grande sincérité. Je me dévoue envers eux, comme s'ils étaient encore en vie",
+			"english": "I arrange my parents’ funerals and hold the memorial ceremony with utmost sincerity. I will serve my departed parents as if they were still alive",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/KQOv81Rb.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tqb5ZMARHqU?start=2549"
+				}
+			]
+		}
+	],
 	"chapter02": [{
-		"code": "B00",
-		"vietnamese": "Đệ",
-		"french": "Principe de l'aîné et du plus jeune.",
-		"english": "Standards for a younger brother/sister.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/dicQBXCwzSU?start=229"
-		}]
-	}, {
-		"code": "B01",
-		"vietnamese": "Anh thương em, em kính anh; Anh em hòa, là hiếu kính.",
-		"french": "En tant qu'aîné, je prends soin du plus jeune. En tant que plus jeune, je respecte les plus âgés. Si je maintiens une relation harmonieuse avec mes frères et Soeurs, mes parents seront contents.",
-		"english": "As the older, I take care the younger ones. As younger, I respect and love the older ones. Only when I can maintain harmonious relationships with my siblings am I being dutiful to my parents.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/bWmhL0Y.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/dicQBXCwzSU?start=880"
+			"code": "B00",
+			"chineseTrad": "出 則 弟",
+			"hanviet": "Xuất tắc đệ",
+			"vietnamese": "Đệ",
+			"french": "Principe de l'aîné et du plus jeune",
+			"english": "Standards for a younger brother/sister",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/dicQBXCwzSU?start=229"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/eCRzc3bjQl8?start=53"
-		}]
-	}, {
-		"code": "B02",
-		"vietnamese": "Tiền xem nhẹ, oán nào sanh.",
-		"french": "J'apprécie mes liens familiaux plus que du matériel. Aucun ressentiment ne viendra.",
-		"english": "I value my familial ties more than materials. No resentment will come.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/QQBuuwd.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/eCRzc3bjQl8?start=256"
-		}]
-	}, {
-		"code": "B03",
-		"vietnamese": "Lời nhường nhịn, oán tự tan.",
-		"french": "Je fais attention et retiens mes paroles. La colère entre nous disparaîtra naturellement.",
-		"english": "I'm careful with words and hold back hurtful comments. The anger will naturally die out.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/QQBuuwd.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/eCRzc3bjQl8?start=1231"
-		}]
-	}, {
-		"code": "B04",
-		"vietnamese": "Hoặc ăn uống, hoặc ngồi đi; Người lớn trước, người nhỏ sau.",
-		"french": "Boire, manger, marcher ou s'asseoir, je laisse aux aînés en premier, moi après.",
-		"english": "Drinking, eating, walking, or sitting, I let the elders go first; The younger ones should follow.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/88D2lxY.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/eCRzc3bjQl8?start=2663"
+			"code": "B01",
+			"chineseTrad": "兄 道 友, 弟 道 恭. 兄 弟 睦,  孝 在 中",
+			"hanviet": "Huynh đạo hữu, đệ đạo cung. Huynh đệ mục, hiếu tại trung",
+			"vietnamese": "Anh thương em, em kính anh. Anh em thuận, là hiếu kính",
+			"french": "En tant qu'aîné, je prends soin du plus jeune. En tant que plus jeune, je respecte les plus âgés. Si je maintiens une relation harmonieuse avec mes frères et Soeurs, mes parents seront contents",
+			"english": "As the older, I take care the younger ones. As younger, I respect and love the older ones. Only when I can maintain harmonious relationships with my siblings am I being dutiful to my parents",
+			"shortMeaning": "Làm anh chị phải thương mến các em của mình. Các em cũng biết kính trọng anh chị của mình. Anh chị em với nhau có thể sống chung hòa thuận, đó là hiếu kính cha mẹ.<br><br>Dữa anh chị em với nhau, phải biết yêu kính lẫn nhau, chớ nên ghét bỏ, ganh tị lẫn nhau. Nếu thấy người thân có lỗi, thì phải khuyên can nhau. Nếu thấy người thân có được điều tốt, thì phải vui vẽ cho nhau. Nếu thấy người thân có thất bại, gặp tai nạn bất trắc, thì chớ bỏ nhau",
+			"image": "https://i.imgur.com/bWmhL0Y.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/dicQBXCwzSU?start=880"
+				}, {
+					"p": "https://www.youtube.com/embed/eCRzc3bjQl8?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/0YquvGcdKsQ?start=53"
-		}]
-	}, {
-		"code": "B05",
-		"vietnamese": "Lớn gọi người, giúp gọi giùm; Người không có, tự đến giúp.",
-		"french": "Les aînés demandent quelqu'un, je les aide à l'appeler. Si la personne n'est pas là, je rapporte immédiatement, et je les demande si je peux les aider.",
-		"english": "An elder is asking for someone, I get that person for him right away. if I cannot find that person, I immediately report back, and put myself at the elder’s service instead.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/n8RVP2p.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/0YquvGcdKsQ?start=3207"
+			"code": "B02",
+			"chineseTrad": "財 物 輕, 怨 何 生",
+			"hanviet": "Tài vật khinh, oán hà sanh",
+			"vietnamese": "Tiền của nhẹ, oán nào sanh",
+			"french": "J'apprécie mes liens familiaux plus que du matériel. Aucun ressentiment ne viendra",
+			"english": "I value my familial ties more than materials. No resentment will come",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/QQBuuwd.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/eCRzc3bjQl8?start=256"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=53"
-		}]
-	}, {
-		"code": "B06",
-		"vietnamese": "Với người lớn, không gọi tên.",
-		"french": "Adressant aux aînés, je ne les appelle pas par leur nom/prénom.",
-		"english": "Address to an elder, I don't call him by his given name.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=547"
-		}]
-	}, {
-		"code": "B07",
-		"vietnamese": "Trước người lớn, không khoe tài.",
-		"french": "Devant les aînés, j'agis modestement et ne me vante pas.",
-		"english": "In front of an elder, I don't show off.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=810"
-		}]
-	}, {
-		"code": "B08",
-		"vietnamese": "Gặp người lớn, phải kính chào; Người chưa nói, đứng cung kính.",
-		"french": "Rencontrer les aînés que je connais, je les salue promptement. S'ils ne me parlent pas encore, je me recule et m'écarter du chemin respectueusement.",
-		"english": "Meet an elder I know on the street, I promptly greet them. if he doesn't speak to me yet, I step back and respectfully stand aside.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/JmQEHM8.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=1292"
-		}]
-	}, {
-		"code": "B09",
-		"vietnamese": "Liền xuống ngựa, liền xuống xe; đợi người đi, hơn trăm bước.",
-		"french": "En roulant, si je vois les aînés, je m'arrête, je sors et je demande si je peux les amener quelque part. Je les attends partir avant moi et m'assure qu'ils sont corrects.",
-		"english": "Riding the carriage, I stop, get out and ask if I can give the elder a ride. I don't leave until he disappears from my sight.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=2921"
+			"code": "B03",
+			"chineseTrad": "言 語 忍, 忿 自 泯",
+			"hanviet": "Ngôn ngữ nhẫn, phẫn tự mẫn",
+			"vietnamese": "Lời nhường nhịn, oán tự tan",
+			"french": "Je fais attention et retiens mes paroles. La colère entre nous disparaîtra naturellement",
+			"english": "I'm careful with words and hold back hurtful comments. The anger will naturally die out",
+			"shortMeaning": "Dữa anh chị em với nhau, chúng ta phải biết cẩn thận lời nói, phải có tâm nhẫn nại, phải có thể bao dung nhường nhịn. Không nên xảy ra xung đột, những việc oán hận tự nhiên cũng sẽ tiêu mất không thể sinh khởi.<br><br>Ngôn ngữ và vẻ mặt thường phải ôn hòa nhã nhặn khiêm tốn cúng kính, chớ nên chống trái gay gắt bực tức nóng giận phẫn nộ, lở lúc trách cải, có chỗ sân giận. Gặp mặt lại nhau, oán hận càng tăng. Trước khi đại oán xảy ra, phải nên sớm nghỉ cách mà hóa giải nó đi",
+			"image": "https://i.imgur.com/QQBuuwd.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/eCRzc3bjQl8?start=1231"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/4Fck3okD30o?start=53"
-		}]
-	}, {
-		"code": "B10",
-		"vietnamese": "Người lớn đứng, trẻ không ngồi; Người lớn ngồi, trẻ mới ngồi.",
-		"french": " Les aînés debout, je ne m'assois pas. Je ne m'assois qu'après qu'ils s'assoient.",
-		"english": "The elder is standing, I don't sit. after an elder sits down, then is my turn.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/Qq4d15Z.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4Fck3okD30o?start=230"
-		}]
-	}, {
-		"code": "B11",
-		"vietnamese": "Trước người lớn, tiếng nhỏ nhẹ; Tiếng nhỏ quá, cũng không nên.",
-		"french": "Devant les personnes âgées, je parle doucement. Mais si ma voix est trop basse et difficile à entendre, ce n'est pas correct non plus.",
-		"english": "Before an elder, I speak softly. but if my voice is too low and hard to hear, it is not appropriate neither.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/wNCvXYg.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4Fck3okD30o?start=467"
-		}]
-	}, {
-		"code": "B12",
-		"vietnamese": "Tiến phải nhanh, lui phải chậm; Khi hỏi đáp, mắt nhìn thẳng.",
-		"french": "Je réponds et m'avance rapidement vers les personnes âgées et je les quitte lentement. Quand je pose ou réponds à des questions, je regarde la personne.",
-		"english": "I walk towards the elder rapidly and leaving slowly. when asking and answering a question, I look at the person.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4Fck3okD30o?start=748"
-		}]
-	}, {
-		"code": "B13",
-		"vietnamese": "Kính chú bác, như cha mẹ; Anh em họ, như ruột thịt.",
-		"french": "Je respecte mes oncles comme mes parents. Je traite mes cousins ​​comme s'ils étaient mes frères et soeurs.",
-		"english": "I respect my uncles just as my parents. I treat my cousins as if they are my own siblings.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/oCyi20h.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4Fck3okD30o?start=53"
-		}]
-	}],
+			"code": "B04",
+			"chineseTrad": "或 飲 食, 或 坐 走, 長 者 先, 幼 者 後",
+			"hanviet": "Hoặc ẩm thực, hoặc toạ tẩu, trưởng giả tiên, ấu giả hậu",
+			"vietnamese": "Hoặc ăn uống, hoặc ngồi đi, người lớn trước, người nhỏ sau",
+			"french": "Boire, manger, marcher ou s'asseoir, je laisse aux aînés en premier, moi après",
+			"english": "Drinking, eating, walking, or sitting, I let the elders go first; The younger ones should follow",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/88D2lxY.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/eCRzc3bjQl8?start=2663"
+				}, {
+					"p": "https://www.youtube.com/embed/0YquvGcdKsQ?start=53"
+				}
+			]
+		}, {
+			"code": "B05",
+			"chineseTrad": "長 呼 人, 即 代 叫, 人 不 在, 己 即 到",
+			"hanviet": "Trưởng hô nhân, tức đại khiếu. Nhân bất tại, kỉ tức đáo",
+			"vietnamese": "Lớn gọi người, giúp gọi giùm. Người không có, tự đến giúp",
+			"french": "Les aînés demandent quelqu'un, je les aide à l'appeler. Si la personne n'est pas là, je rapporte immédiatement, et je les demande si je peux les aider",
+			"english": "An elder is asking for someone, I get that person for him right away. if I cannot find that person, I immediately report back, and put myself at the elder’s service instead",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/n8RVP2p.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/0YquvGcdKsQ?start=3207"
+				}, {
+					"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=53"
+				}
+			]
+		}, {
+			"code": "B06",
+			"chineseTrad": "稱 尊 長, 勿 呼 名",
+			"hanviet": "Xưng tôn trưởng, vật hô danh",
+			"vietnamese": "Gọi người lớn, không gọi tên",
+			"french": "Adressant aux aînés, je ne les appelle pas par leur nom/prénom",
+			"english": "Address to an elder, I don't call him by his given name",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=547"
+				}
+			]
+		}, {
+			"code": "B07",
+			"chineseTrad": "對 尊 長, 勿 見 能",
+			"hanviet": "Đối tôn trưởng, vật hiện năng",
+			"vietnamese": "Với người lớn, không khoe tài",
+			"french": "Devant les aînés, j'agis modestement et ne me vante pas",
+			"english": "In front of an elder, I don't show off",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=810"
+				}
+			]
+		}, {
+			"code": "B08",
+			"chineseTrad": "路 遇 長, 疾 趨 揖. 長 無 言, 退 恭 立",
+			"hanviet": "Lộ ngộ trưởng, tật xu ấp. Trưởng vô ngôn, thoái cung lập",
+			"vietnamese": "Gặp người lớn, phải kính chào. Người chưa nói, đứng cung kính",
+			"french": "Rencontrer les aînés que je connais, je les salue promptement. S'ils ne me parlent pas encore, je me recule et m'écarter du chemin respectueusement",
+			"english": "Meet an elder I know on the street, I promptly greet them. if he doesn't speak to me yet, I step back and respectfully stand aside",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/JmQEHM8.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=1292"
+				}
+			]
+		}, {
+			"code": "B09",
+			"chineseTrad": "騎 下 馬, 乘 下 車, 過 猶 待, 百 步 餘",
+			"hanviet": "Kị hạ mã, thừa hạ xa, quá do đãi, bách bộ dư",
+			"vietnamese": "Liền xuống ngựa, liền xuống xe; đợi người đi, hơn trăm bước",
+			"french": "En roulant, si je vois les aînés, je m'arrête, je sors et je demande si je peux les amener quelque part. Je les attends partir avant moi et m'assure qu'ils sont corrects",
+			"english": "Riding the carriage, I stop, get out and ask if I can give the elder a ride. I don't leave until he disappears from my sight",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kzJViCj0Tsc?start=2921"
+				}, {
+					"p": "https://www.youtube.com/embed/4Fck3okD30o?start=53"
+				}
+			]
+		}, {
+			"code": "B10",
+			"chineseTrad": "長 者 立, 幼 勿 坐, 長 者 坐, 命 乃 坐",
+			"hanviet": "Trưởng giả lập, ấu vật toạ. Trưởng giả toạ, mệnh nãi toạ",
+			"vietnamese": "Người lớn đứng, trẻ không ngồi. Người lớn ngồi, trẻ mới ngồi",
+			"french": " Les aînés debout, je ne m'assois pas. Je ne m'assois qu'après qu'ils s'assoient",
+			"english": "The elder is standing, I don't sit. after an elder sits down, then is my turn",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/Qq4d15Z.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4Fck3okD30o?start=230"
+				}
+			]
+		}, {
+			"code": "B11",
+			"chineseTrad": "尊 長 前, 聲 要 低, 低 不 聞, 卻 非 宜",
+			"hanviet": "Tôn trưởng tiền, thanh yếu đê, đê bất văn, khước phi nghi",
+			"vietnamese": "Trước người lớn, tiếng nhỏ nhẹ, tiếng nhỏ quá, cũng không nên",
+			"french": "Devant les personnes âgées, je parle doucement. Mais si ma voix est trop basse et difficile à entendre, ce n'est pas correct non plus",
+			"english": "Before an elder, I speak softly. but if my voice is too low and hard to hear, it is not appropriate neither",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/wNCvXYg.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4Fck3okD30o?start=467"
+				}
+			]
+		}, {
+			"code": "B12",
+			"chineseTrad": "進 必 趨, 退 必 遲. 問 起 對, 視 勿 移",
+			"hanviet": "Tiến tất xu, thoái tất trì. Vấn khởi đối, thị vật di",
+			"vietnamese": "Đến phải nhanh, lui phải chậm. Khi hỏi đáp, mắt nhìn thẳng",
+			"french": "Je réponds et m'avance rapidement vers les personnes âgées et je les quitte lentement. Quand je pose ou réponds à des questions, je regarde la personne",
+			"english": "I walk towards the elder rapidly and leaving slowly. when asking and answering a question, I look at the person",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4Fck3okD30o?start=748"
+				}
+			]
+		}, {
+			"code": "B13",
+			"chineseTrad": "事 諸 父, 如 事 父, 事 諸 兄, 如 事 兄",
+			"hanviet": "Sự chư phụ, như sự phụ. Sự chư huynh, như sự huynh",
+			"vietnamese": "Kính chú bác, như cha mẹ. Kính anh họ, như anh ruột",
+			"french": "Je respecte mes oncles comme mes parents. Je traite mes cousins ​​comme s'ils étaient mes frères et soeurs",
+			"english": "I respect my uncles just as my parents. I treat my cousins as if they are my own siblings",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/oCyi20h.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4Fck3okD30o?start=53"
+				}
+			]
+		}
+	],
 	"chapter03": [{
-		"code": "C00",
-		"vietnamese": "Cẩn",
-		"french": "je suis prudent dans ma vie quotidienne",
-		"english": "Be cautious in my daily life.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4Fck3okD30o?start=2163"
+			"code": "C00",
+			"chineseTrad": "謹",
+			"hanviet": "Cẩn",
+			"vietnamese": "Cẩn",
+			"french": "je suis prudent dans ma vie quotidienne",
+			"english": "Be cautious in my daily life",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4Fck3okD30o?start=2163"
+				}, {
+					"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=53"
-		}]
-	}, {
-		"code": "C01",
-		"vietnamese": "Sáng dậy sớm, tối ngủ trễ; Già chóng đến, quý thời gian.",
-		"french": "Matin, je me lève rapidement. Nuit, je dors à des heures convenables. Le temps passe et ne peut pas revenir en arrière. Le temps est précieux, je ne les gaspille pas.",
-		"english": "Morning, I get up promptly. night, I sleep at proper hours. time is passing by and cannot be turn back, I especially treasure the time.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/MiBsPYA.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=994"
-		}]
-	}, {
-		"code": "C02",
-		"vietnamese": "Sáng rửa mặt, và đánh răng.",
-		"french": "Au réveil du matin, je me lave le visage et je me brosse les dents.",
-		"english": "Woke up in the morning, I wash my face and brush my teeth.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/63FWjJf.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=2418"
-		}]
-	}, {
-		"code": "C03",
-		"vietnamese": "Vệ sinh rồi, liền rửa tay.",
-		"french": "Après avoir utilisé les toilettes, je me lave toujours les mains.",
-		"english": "After using the toilet, I always wash my hands.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/63FWjJf.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=2418"
-		}]
-	}, {
-		"code": "C04",
-		"vietnamese": "Nón ngay ngắn, gài nút kỹ; Mang giầy vớ, phải chỉnh tề.",
-		"french": "Je porte mon chapeau droit et j'attache les crochets de mes vêtements, mes chaussettes et mes chaussures proprement et correctement.",
-		"english": "I wear my hat straight and ties the hooks of my clothes. my socks and shoes also beeing worn neatly and correctly.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/lbWUGrc.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=2970"
+			"code": "C01",
+			"chineseTrad": "朝 起 早, 夜 眠 遲, 老 易 至, 惜 此 時",
+			"hanviet": "Triêu khởi tảo, dạ miên trì, lão dị chí, tích thử thời",
+			"vietnamese": "Sáng dậy sớm, tối ngủ trễ, già chóng đến, quý thời gian",
+			"french": "Matin, je me lève rapidement. Nuit, je dors à des heures convenables. Le temps passe et ne peut pas revenir en arrière. Le temps est précieux, je ne les gaspille pas",
+			"english": "Morning, I get up promptly. night, I sleep at proper hours. time is passing by and cannot be turn back, I especially treasure the time",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/MiBsPYA.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=994"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=53"
-		}]
-	}, {
-		"code": "C05",
-		"vietnamese": "Đặt nón áo, nơi cố định; Không hỗn loạn,tránh dơ bẩn.",
-		"french": "Je range toujours mon chapeau et mes vêtements à leur place. Je ne les jette pas n'importe où. Cela les salirait.",
-		"english": "I always place my hat and clothes away in their proper places. I don't carelessly throw my clothes around, for that will get them dirty.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/ZNmq3AA.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=402"
-		}]
-	}, {
-		"code": "C06",
-		"vietnamese": "Áo quý sạch, không quý đắt; Trên hợp phận, dưới hợp gia.",
-		"french": "J'accorde plus d'importance aux vêtements propres qu'à l'extravagance. Je porte ce qui convient à la situation et à la famille.",
-		"english": "I accord more important to the clean clothes than extravagant. I wear what is suitable for the situation and the family.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/GbnoBFJ.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=1103"
-		}]
-	}, {
-		"code": "C07",
-		"vietnamese": "Việc ăn uống, chớ kén chọn; ăn vừa no, chớ quá nhiều.",
-		"french": "Manger et boire, je ne choisis pas ma nourriture. Je ne mange que la bonne quantité et non plus.",
-		"english": "Eating and drinking, I don't pick nor choose my food. I only eat the right amount and not over.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/35PnpEz.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=1375"
-		}]
-	}, {
-		"code": "C08",
-		"vietnamese": "Tuổi còn trẻ, không uống rượu; Uống rượu say, rất xấu xa.",
-		"french": "Jeune, je ne bois pas d'alcool. Quand je suis ivre, mon comportement est mauvais à voir.",
-		"english": "I am still young, I don't drink alcohol. when I am drunk, my behavior will turn ugly.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/iJFwzFC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=2355"
-		}]
-	}, {
-		"code": "C09",
-		"vietnamese": "Đi thong thả, đứng ngay thẳng.",
-		"french": "Je debout et marche droitement aux pas légers et réguliers. ",
-		"english": "I walk composed, with light and even steps. I stand up straight and tall.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/cCpTHJh.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=2760"
+			"code": "C02",
+			"chineseTrad": "晨 必 盥, 兼 漱 口",
+			"hanviet": "Thần tất quán, kiêm thấu khẩu",
+			"vietnamese": "Sáng rửa mặt, và đánh răng",
+			"french": "Au réveil du matin, je me lave le visage et je me brosse les dents",
+			"english": "Woke up in the morning, I wash my face and brush my teeth",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/63FWjJf.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=2418"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=53"
-		}]
-	}, {
-		"code": "C10",
-		"vietnamese": "Chào cúi sâu, lạy cung kính.",
-		"french": "Je salue respectueusement.",
-		"english": "I bows deeply and pay my respect with reverence.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/cCpTHJh.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=2760"
+			"code": "C03",
+			"chineseTrad": "便 溺 回, 輒 淨 手",
+			"hanviet": "Tiện niệu hồi, triếp tịnh thủ",
+			"vietnamese": "Vệ sinh rồi, liền rửa tay",
+			"french": "Après avoir utilisé les toilettes, je me lave toujours les mains",
+			"english": "After using the toilet, I always wash my hands",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/63FWjJf.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=2418"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=53"
-		}]
-	}, {
-		"code": "C11",
-		"vietnamese": "Không đạp ngạch, không dựa nghiêng; Không ngồi duỗi, không rung đùi.",
-		"french": "Je ne marche pas sur les seuils de porte. Je ne m'appuie pas sur une jambe. Je ne m'assois pas les jambes écartées. Debout ou assis, je ne me balance pas la partie inférieure de mon corps.",
-		"english": "I don't step on doorsills nor stand leaning on one leg. I don't sit with my legs apart or sprawled out. I don't rock the lower part of my body while standing or sitting down.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/cCpTHJh.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=273"
-		}]
-	}, {
-		"code": "C12",
-		"vietnamese": "Kéo nhẹ màn, không tiếng động.",
-		"french": "Je lève le rideau lentement et discrètement.",
-		"english": "I lift the curtain slowly and quietly.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/IsrExEU.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=640"
+			"code": "C04",
+			"chineseTrad": "冠 必 正, 紐 必 結, 襪 與 履, 俱 緊 切",
+			"hanviet": "Quan tất chánh, nữu tất kết, miệt dữ lý, câu khẩn thiết",
+			"vietnamese": "Nón ngay ngắn, gài nút kỹ, mang giầy vớ, phải chỉnh tề",
+			"french": "Je porte mon chapeau droit et j'attache les crochets de mes vêtements, mes chaussettes et mes chaussures proprement et correctement",
+			"english": "I wear my hat straight and ties the hooks of my clothes. my socks and shoes also beeing worn neatly and correctly",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/lbWUGrc.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/XLfO4i896Lw?start=2970"
+				}, {
+					"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=53"
-		}]
-	}, {
-		"code": "C13",
-		"vietnamese": "Không quẹo góc, không cho đụng.",
-		"french": "Je me laisse suffisamment d'espace quand je tourne pour ne pas cogner dans un coin.",
-		"english": "I leave myself ample space when I turn so I won't bump into a corner.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/IsrExEU.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=640"
+			"code": "C05",
+			"chineseTrad": "置 冠 服, 有 定 位, 勿 亂 頓, 致 污 穢",
+			"hanviet": "Trí quan phục, hữu định vị, vật loạn đốn, trí ô uế",
+			"vietnamese": "Đặt nón áo, nơi cố định, không hỗn loạn,tránh dơ bẩn",
+			"french": "Je range toujours mon chapeau et mes vêtements à leur place. Je ne les jette pas n'importe où. Cela les salirait",
+			"english": "I always place my hat and clothes away in their proper places. I don't carelessly throw my clothes around, for that will get them dirty",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/ZNmq3AA.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=402"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=53"
-		}]
-	}, {
-		"code": "C14",
-		"vietnamese": "Cầm vật trống, như vật đầy.",
-		"french": "Je tiens prudemment les conteneurs vides comme s'ils étaient pleins.",
-		"english": "I hold empty containers carefully as if they were full.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/IsrExEU.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=437"
-		}]
-	}, {
-		"code": "C15",
-		"vietnamese": "Vào nhà trống, như có người.",
-		"french": "J'entre dans les pièces vides comme si elles étaient occupées.",
-		"english": "I enter empty rooms as if they were occupied.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=595"
-		}]
-	}, {
-		"code": "C16",
-		"vietnamese": "Việc đừng gấp, gấp dễ hư.",
-		"french": "J'évite de faire les choses rapidement. Car faire des choses à la hâte vont mener à beaucoup d'erreurs.",
-		"english": "I avoid doing things in a hurry, as doing things in haste will lead to many mistakes.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/F1GdKSK.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=1079"
-		}]
-	}, {
-		"code": "C17",
-		"vietnamese": "Đừng sợ khó, đừng coi thường.",
-		"french": "Je n'ai pas peur des tâches difficiles et je ne deviens pas négligent quand un travail est trop facile.",
-		"english": "I'm not afraid of difficult tasks and I don't become careless when a job is too easy.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/sKNQkVU.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=1727"
+			"code": "C06",
+			"chineseTrad": "衣 貴 潔, 不 貴 華, 上 循 分, 下 稱 家",
+			"hanviet": "Y quý khiết, bất quý hoa, thượng tuần phận, hạ xứng gia",
+			"vietnamese": "Áo quý sạch, không quý đắt, trên hợp phận, dưới hợp gia",
+			"french": "J'accorde plus d'importance aux vêtements propres qu'à l'extravagance. Je porte ce qui convient à la situation et à la famille",
+			"english": "I accord more important to the clean clothes than extravagant. I wear what is suitable for the situation and the family",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/GbnoBFJ.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=1103"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/zYJn6rrnvfw?start=53"
-		}]
-	}, {
-		"code": "C18",
-		"vietnamese": "Chổ tranh cãi, tuyệt không gần.",
-		"french": "Je reste loin des disputes et des endroits bruyants.",
-		"english": "I keep away from rowdy places.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/dBdmKCQ.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/zYJn6rrnvfw?start=2706"
+			"code": "C07",
+			"chineseTrad": "對 飲 食, 勿 揀 擇, 食 適 可, 勿 過 則",
+			"hanviet": "Đối ẩm thực, vật giản trạch, thực thích khả, vật quá tắc",
+			"vietnamese": "Việc ăn uống, chớ kén chọn, ăn vừa no, chớ quá nhiều",
+			"french": "Manger et boire, je ne choisis pas ma nourriture. Je ne mange que la bonne quantité et non plus",
+			"english": "Eating and drinking, I don't pick nor choose my food. I only eat the right amount and not over",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/35PnpEz.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=1375"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=53"
-		}]
-	}, {
-		"code": "C19",
-		"vietnamese": "Chuyện thị phi, tuyệt không hỏi.",
-		"french": "Je ne pose pas de questions sur des choses innapropriées, incorrectes, anormales ou inhabituelles.",
-		"english": "I don't ask about things that are abnormal or unusual.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/dBdmKCQ.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=1334"
-		}]
-	}, {
-		"code": "C20",
-		"vietnamese": "Đến nhà người, phải hỏi trước.",
-		"french": "Avant d'aller chez quelqu'un je dois demander en premier si les personnes sont disponnible à nous acceuillir à ce moment là.",
-		"english": "About to going at someone's house, I first make sure if they are available.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=1509"
-		}]
-	}, {
-		"code": "C21",
-		"vietnamese": "Bước vào nhà, phải lên tiếng.",
-		"french": "Avant d'entrer dans une pièce, je me fais d'abord entendre, de sorte que ceux qui sont à l'intérieur sachent que quelqu'un s'approche.",
-		"english": "Before entering a room, I first make myself heard, so that those inside know someone is approaching.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/XiGj7K9.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=2864"
-		}]
-	}, {
-		"code": "C22",
-		"vietnamese": "Nếu người hỏi, nên nói tên; Nói ta, tôi, không rõ ràng.",
-		"french": "Si on demande qui je suis, je dois donner mon nom. Répondre par 'c'est moi' ou 'moi' n'est pas clair.",
-		"english": "Someone asks who I am, I must give my name. to answer `it is me’ or `me’ is not clear.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/XiGj7K9.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=2918"
-		}]
-	}, {
-		"code": "C23",
-		"vietnamese": "Dùng đồ người, phải hỏi trước; Nếu không hỏi, tức là trộm.",
-		"french": "Avant d'emprunter des choses aux autres, je demande la permission. Si je ne demande pas, c'est voler.",
-		"english": "Before borrowing things from others, I ask for permission. if I do not ask, it is stealing.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/MibmxL3.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=3016"
+			"code": "C08",
+			"chineseTrad": "年 方 少, 勿 飲 酒, 飲 酒 醉, 最 為 醜",
+			"hanviet": "Niên phương thiếu, vật ẩm tửu. Ẩm tửu tuý, tối vi xú",
+			"vietnamese": "Tuổi còn trẻ, không uống rượu. Uống rượu say, rất xấu xa",
+			"french": "Jeune, je ne bois pas d'alcool. Quand je suis ivre, mon comportement est mauvais à voir",
+			"english": "I am still young, I don't drink alcohol. when I am drunk, my behavior will turn ugly",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/iJFwzFC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=2355"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/Z3_1VPQ2kLE?start=53"
-		}]
-	}, {
-		"code": "C24",
-		"vietnamese": "Mượn đồ người, phải sớm trả; Sau có cần, mượn không khó.",
-		"french": "Empruntant les choses aux autres, je les retourne rapidement. Plus tard, si j'ai un besoin urgent, je n'aurai plus de problème pour les emprunter de nouveau.",
-		"english": "Borrowing things from others, I return them promptly. later, if I have an urgent need, I will not have a problem borrowing from them again.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/nxAbDL5.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=3016"
+			"code": "C09",
+			"chineseTrad": "步 從 容, 立 端 正",
+			"hanviet": "bộ tòng dung, lập đoan chánh",
+			"vietnamese": "Đi thong thả, đứng ngay thẳng",
+			"french": "Je debout et marche droitement aux pas légers et réguliers. ",
+			"english": "I walk composed, with light and even steps. I stand up straight and tall",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/cCpTHJh.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=2760"
+				}, {
+					"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/Z3_1VPQ2kLE?start=53"
-		}]
-	}],
+			"code": "C10",
+			"chineseTrad": "揖 深 圓, 拜 恭 敬",
+			"hanviet": "Ấp thâm viên, bái cung kính",
+			"vietnamese": "Chào cúi sâu, lạy cung kính",
+			"french": "Je salue respectueusement",
+			"english": "I bows deeply and pay my respect with reverence",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/cCpTHJh.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/_FcZmfv8YlU?start=2760"
+				}, {
+					"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=53"
+				}
+			]
+		}, {
+			"code": "C11",
+			"chineseTrad": "勿 踐 閾, 勿 跛 倚, 勿 箕 踞, 勿 搖 髀",
+			"hanviet": "Vật tiễn quắc, vật bí ỷ, vật ki cứ, vật diêu bễ",
+			"vietnamese": "Không đạp ngạch, không dựa nghiêng, không ngồi duỗi, không rung đùi",
+			"french": "Je ne marche pas sur les seuils de porte. Je ne m'appuie pas sur une jambe. Je ne m'assois pas les jambes écartées. Debout ou assis, je ne me balance pas la partie inférieure de mon corps",
+			"english": "I don't step on doorsills nor stand leaning on one leg. I don't sit with my legs apart or sprawled out. I don't rock the lower part of my body while standing or sitting down",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/cCpTHJh.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=273"
+				}
+			]
+		}, {
+			"code": "C12",
+			"chineseTrad": "緩 揭 簾, 勿 有 聲",
+			"hanviet": "Hoãn yết liêm, vật hữu thanh",
+			"vietnamese": "Kéo nhẹ màn, không tiếng động",
+			"french": "Je lève le rideau lentement et discrètement",
+			"english": "I lift the curtain slowly and quietly",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/IsrExEU.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=640"
+				}, {
+					"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=53"
+				}
+			]
+		}, {
+			"code": "C13",
+			"chineseTrad": "寬 轉 彎, 勿 觸 棱",
+			"hanviet": "Khoan chuyển loan, vật xúc lăng",
+			"vietnamese": "Không quẹo góc, không cho đụng",
+			"french": "Je me laisse suffisamment d'espace quand je tourne pour ne pas cogner dans un coin",
+			"english": "I leave myself ample space when I turn so I won't bump into a corner",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/IsrExEU.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/EwulxIsL4ak?start=640"
+				}, {
+					"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=53"
+				}
+			]
+		}, {
+			"code": "C14",
+			"chineseTrad": "執 虛 器, 如 執 盈",
+			"hanviet": "Chấp hư khí, như chấp doanh",
+			"vietnamese": "Cầm vật trống, như vật đầy",
+			"french": "Je tiens prudemment les conteneurs vides comme s'ils étaient pleins",
+			"english": "I hold empty containers carefully as if they were full",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/IsrExEU.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=437"
+				}
+			]
+		}, {
+			"code": "C15",
+			"chineseTrad": "入 虛 室, 如 有 人",
+			"hanviet": "Nhập hư thất, như hữu nhân",
+			"vietnamese": "Vào nhà trống, như có người",
+			"french": "J'entre dans les pièces vides comme si elles étaient occupées",
+			"english": "I enter empty rooms as if they were occupied",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=595"
+				}
+			]
+		}, {
+			"code": "C16",
+			"chineseTrad": "事 勿 忙, 忙 多 錯",
+			"hanviet": "Sự vật mang, mang đa thác",
+			"vietnamese": "Việc đừng gấp, gấp dễ hư",
+			"french": "J'évite de faire les choses rapidement. Car faire des choses à la hâte vont mener à beaucoup d'erreurs",
+			"english": "I avoid doing things in a hurry, as doing things in haste will lead to many mistakes",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/F1GdKSK.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=1079"
+				}
+			]
+		}, {
+			"code": "C17",
+			"chineseTrad": "勿 畏 難, 勿 輕 略",
+			"hanviet": "Vật uý nan, vật khinh lược",
+			"vietnamese": "Đừng sợ khó, đừng coi thường",
+			"french": "Je n'ai pas peur des tâches difficiles et je ne deviens pas négligent quand un travail est trop facile",
+			"english": "I'm not afraid of difficult tasks and I don't become careless when a job is too easy",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/sKNQkVU.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/AFEp7cGGqHg?start=1727"
+				}, {
+					"p": "https://www.youtube.com/embed/zYJn6rrnvfw?start=53"
+				}
+			]
+		}, {
+			"code": "C18",
+			"chineseTrad": "鬥 鬧 場, 絕 勿 近",
+			"hanviet": "Đấu náo trường, tuyệt vật cận",
+			"vietnamese": "Chổ tranh cãi, tuyệt không gần",
+			"french": "Je reste loin des disputes et des endroits bruyants",
+			"english": "I keep away from rowdy places",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/dBdmKCQ.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/zYJn6rrnvfw?start=2706"
+				}, {
+					"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=53"
+				}
+			]
+		}, {
+			"code": "C19",
+			"chineseTrad": "邪 僻 事, 絕 勿 問",
+			"hanviet": "Tà tích sự, tuyệt vật vấn",
+			"vietnamese": "Chuyện thị phi, tuyệt không hỏi",
+			"french": "Je ne pose pas de questions sur des choses innapropriées, incorrectes, anormales ou inhabituelles",
+			"english": "I don't ask about things that are abnormal or unusual",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/dBdmKCQ.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=1334"
+				}
+			]
+		}, {
+			"code": "C20",
+			"chineseTrad": "將 入 門, 問 孰 存",
+			"hanviet": "Tương nhập môn, vấn thục tồn",
+			"vietnamese": "Đến nhà người, phải hỏi trước",
+			"french": "Avant d'aller chez quelqu'un je dois demander en premier si les personnes sont disponnible à nous acceuillir à ce moment là",
+			"english": "About to going at someone's house, I first make sure if they are available",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=1509"
+				}
+			]
+		}, {
+			"code": "C21",
+			"chineseTrad": "將 上 堂, 聲 必 揚",
+			"hanviet": "Tương thượng, đường, thanh tất dương",
+			"vietnamese": "Bước vào nhà, phải lên tiếng",
+			"french": "Avant d'entrer dans une pièce, je me fais d'abord entendre, de sorte que ceux qui sont à l'intérieur sachent que quelqu'un s'approche",
+			"english": "Before entering a room, I first make myself heard, so that those inside know someone is approaching",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/XiGj7K9.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=2864"
+				}
+			]
+		}, {
+			"code": "C22",
+			"chineseTrad": "人 問 誰, 對 以 名, 吾 與 我, 不 分 明",
+			"hanviet": "Nhân vấn thuỳ, đối dĩ danh, ngô dữ ngã, bất phân minh",
+			"vietnamese": "Nếu người hỏi, nên nói tên. Nói ta tôi, không rõ ràng",
+			"french": "Si on demande qui je suis, je dois donner mon nom. Répondre par 'c'est moi' ou 'moi' n'est pas clair",
+			"english": "Someone asks who I am, I must give my name. to answer `it is me’ or `me’ is not clear",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/XiGj7K9.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=2918"
+				}
+			]
+		}, {
+			"code": "C23",
+			"chineseTrad": "用 人 物, 須 明 求, 倘 不 問, 即 為 偷",
+			"hanviet": "Dụng nhân vật, tu minh cầu, thảng bất vấn, tức vi thâu",
+			"vietnamese": "Dùng đồ người, phải hỏi trước. Nếu không hỏi, tức là trộm",
+			"french": "Avant d'emprunter des choses aux autres, je demande la permission. Si je ne demande pas, c'est voler",
+			"english": "Before borrowing things from others, I ask for permission. if I do not ask, it is stealing",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/MibmxL3.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=3016"
+				}, {
+					"p": "https://www.youtube.com/embed/Z3_1VPQ2kLE?start=53"
+				}
+			]
+		}, {
+			"code": "C24",
+			"chineseTrad": "借 人 物, 及 時 還, 後 有 急, 借 不 難",
+			"hanviet": "Tá nhân vật, cập thời hoàn, hậu hữu cấp, tá bất nan",
+			"vietnamese": "Mượn đồ người, phải sớm trả. Sau có cần, mượn không khó",
+			"french": "Empruntant les choses aux autres, je les retourne rapidement. Plus tard, si j'ai un besoin urgent, je n'aurai plus de problème pour les emprunter de nouveau",
+			"english": "Borrowing things from others, I return them promptly. later, if I have an urgent need, I will not have a problem borrowing from them again",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/nxAbDL5.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/NbIFQA62S3A?start=3016"
+				}, {
+					"p": "https://www.youtube.com/embed/Z3_1VPQ2kLE?start=53"
+				}
+			]
+		}
+	],
 	"chapter04": [{
-		"code": "D00",
-		"vietnamese": "Tín",
-		"french": "je suis digne de confiance.",
-		"english": "Be trustworthy.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/Z3_1VPQ2kLE?start=53"
+			"code": "D00",
+			"chineseTrad": "信",
+			"hanviet": "Tín",
+			"vietnamese": "Tín",
+			"french": "je suis digne de confiance",
+			"english": "Be trustworthy",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/Z3_1VPQ2kLE?start=53"
+				}, {
+					"p": "https://www.youtube.com/embed/OTZ1puhOOBU?start=53"
+				}, {
+					"p": "https://www.youtube.com/embed/DgQUwBIJgFM?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/OTZ1puhOOBU?start=53"
+			"code": "D01",
+			"chineseTrad": "凡 出 言, 信 為 先, 詐 與 妄, 奚 可 焉",
+			"hanviet": "Phàm xuất ngôn, tín vi tiên, trá dữ vọng, hề khả yên",
+			"vietnamese": "Phàm nói ra, tín trước tiên. Lời dối trá, làm sao yên",
+			"french": "Parler, l'honnêteté, est primordial. Je ne mens pas. Je n'utilise pas de mots trompeurs. Si non, je ne serai pas tranquille",
+			"english": "When speaking honesty is primordial. i'm not lying nor ussing deceitful words",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/BktgHsl.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/DgQUwBIJgFM?start=1138"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/DgQUwBIJgFM?start=53"
-		}]
-	}, {
-		"code": "D01",
-		"vietnamese": "Phàm nói ra, tín trước tiên; Lời dối trá, làm sao yên.",
-		"french": "Parler, l'honnêteté, est primordial. Je ne mens pas. Je n'utilise pas de mots trompeurs. Si non, je ne serai pas tranquille.",
-		"english": "When speaking honesty is primordial. i'm not lying nor ussing deceitful words.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/BktgHsl.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/DgQUwBIJgFM?start=1138"
-		}]
-	}, {
-		"code": "D02",
-		"vietnamese": "Nói nhiều lời, không bằng ít; Chỉ nói thật, không nịnh xảo.",
-		"french": "Mieux vaut parler moins que beaucoup. Je ne dis que la vérité, pas de flatterie ni de mots rusés.",
-		"english": "Better speak less than much. I only said the truth, not flatering nor cunning words.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/UmYcnXo.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/DgQUwBIJgFM?start=2348"
-		}]
-	}, {
-		"code": "D03",
-		"vietnamese": "Lời gian trá, từ dơ bẩn; Tập khí xấu, phải trừ bỏ.",
-		"french": "Mots rusés, langage grossier et mauvaises habitudes, je les élimine",
-		"english": "Cunning words, foul language and bad habits, I supress them.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/DgQUwBIJgFM?start=3129"
+			"code": "D02",
+			"chineseTrad": "話 說 多, 不 如 少, 惟 其 是, 勿 佞 巧",
+			"hanviet": "Thoại thuyết đa, bất như thiểu, duy kỳ thị, vật nịnh xảo",
+			"vietnamese": "Nói nhiều lời, không bằng ít. Chỉ nói thật, không nịnh xảo",
+			"french": "Mieux vaut parler moins que beaucoup. Je ne dis que la vérité, pas de flatterie ni de mots rusés",
+			"english": "Better speak less than much. I only said the truth, not flatering nor cunning words",
+			"shortMeaning": "Nói nhiều lời, không bằng nói ít vài câu. Phải nói lời chân thật, không nên bóp méo sự thật. <br><br>Bệnh từ miệng vào, họa từ miệng ra. Miệng không lựa lời, thường hay tạo tác khẩu nghiệp, tự rước lây họa hại. Nói nhiều sai nhiều. Khi nói chuyện, luôn phải nghĩ đến lời nói này sẽ sanh ra hậu quả gì. Lời nói nếu không mang đến hữu ích cho người khác, tốt nhất không nên nói. Một lời nói vô ít, tuy ít mà đã nhiều. Lời dạy của thánh hiền, nghe nhiều mà vẫn ít.<br><br>Thế nhưng, chưa có trí tuệ, chưa có khả năng phân biệt thiện ác đúng sai, tốt nhất nên nghe nhiều, nên quán sát nhiều, không nên nói nhiều, sẽ tránh nhiều sai làm và rướt lấy hậu quả đau khổ. <br><br>Nên đọc nhiều kinh sách của thánh hiền để tăng thêm trí tuệ, dùng trí tuệ mà quán sát thế gian này, mới không bị hiện tượng trước mặt lừa đảo được mình. Xã hội hiện nay phức tạp, nhân tình sự lý biến hóa khôn lường, tự do ngôn ngữ, nói sai cũng không cần chịu trách nhiệm. Không có trí tuệ chân thật, tiếp xúc càng nhiều, kiến giải tư tưởng quan niệm sai lầm càng nhiều, tạo ác càng nhiều, đau khổ càng nhiều. Đọc kinh sách thành tựu học vấn trí tuệ, có năng lực ứng phó giải quyết vấn đề. Đọc lịch sử, tham quan khảo sát, phải thấy được sụ thật, nắm được vấn đề, thấy đượu sâu, thấy được xa, rút lấy kinh nghiệm thành công và thất bại. Nhưng, nếu không có trí tuệ học vấn chân thật, ngay đến lợi hại đúng sai cũng không thển phân biệt được, nói chi đến học ưu đểm, cải tiến khuyết điểm. Biến ưu điểm thành khuyết điểm, lấy khuyết điểm cho là ưu điểm.<br><br> Biết nhiều người thị phi nhiều, biết nhiều việc phiền não nhiều. Bệnh từ miệng vào, họa từ miệng ra. Những lời dạy người xưa, không phải không có đạo lý. Nơi không cần thiết không nên đi, Người không cần gặp không nên gặp, Việc không cần thiết không nên biết. Biết ít phiền não ít, biết nhiều thị phi nhiều. Không cần biết, không nên biết. Phải biết phòng ngừa ô nhiễm tâm địa, tinh thần, tư tưởng và kiến giải của mình",
+			"image": "https://i.imgur.com/UmYcnXo.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/DgQUwBIJgFM?start=2348"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/Nlh3YkaGX-0?start=53"
-		}]
-	}, {
-		"code": "D04",
-		"vietnamese": "Thấy chưa rõ, chớ vội nói; Hiểu chưa rõ, chớ vội truyền.",
-		"french": "Je ne vois pas clairement, je ne dis pas. Je ne le sais pas correctement, je ne transmets pas facilement aux autres.",
-		"english": "I don't see clearly, I don't tell. I don't know for sure, I don't easily pass on to others.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/fqNiWOK.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/Nlh3YkaGX-0?start=1445"
-		}]
-	}, {
-		"code": "D05",
-		"vietnamese": "Việc không tốt, chớ vội nhận; Vội nhận lời, khó tiến thoái.",
-		"french": "Je ne promets pas pour des choses d'inappropriées ou de mal. Si je promets, le faire ou ne pas le faire, sont toutes fautes.",
-		"english": "Asking to do something inappropriate or bad, I don't accept. if I do, I will be doubly wrong.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/jxSdDhc.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/Nlh3YkaGX-0?start=2357"
+			"code": "D03",
+			"chineseTrad": "奸 巧 語, 穢 污 詞, 市 井 氣, 切 戒 之",
+			"hanviet": "Gian xảo ngữ, uế ô từ, thị tỉnh khí, thiết giới chi",
+			"vietnamese": "Lời gian trá, từ dơ bẩn, tập khí xấu, phải trừ bỏ",
+			"french": "Mots rusés, langage grossier et mauvaises habitudes, je les élimine",
+			"english": "Cunning words, foul language and bad habits, I supress them",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/DgQUwBIJgFM?start=3129"
+				}, {
+					"p": "https://www.youtube.com/embed/Nlh3YkaGX-0?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/DczOSPLPA_g?start=53"
-		}]
-	}, {
-		"code": "D06",
-		"vietnamese": "Lúc nói năng, chậm rõ ràng; Không hấp tấp, không mơ hồ.",
-		"french": "J'ai confiance en ce que je dis. Je parle clairement et au point. Je ne parle pas trop vite ni marmonner.",
-		"english": "I speak clearly and to the point, not too fast nor mumble.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/DczOSPLPA_g?start=469"
-		}]
-	}, {
-		"code": "D07",
-		"vietnamese": "Người nói đúng, kẻ nói sai; Không liên quan, không để ý.",
-		"french": "L'un a dit ceci, l'autre a dit cela, si cela ne me concerne pas, je ne m'implique pas là dans.",
-		"english": "One said right, other said wrong, doesn't concerning me, i'm not involve.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/GnDxzHz.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/DczOSPLPA_g?start=1059"
-		}]
-	}, {
-		"code": "D08",
-		"vietnamese": "Thấy người thiện, liền học theo; dù kém xa, cũng dần kịp.",
-		"french": " Voir les autres font de bonnes actions, je suis leur exemple. Même si je suis encore loin derrière, j'atteindrai.",
-		"english": "Seeing others do good deeds, I following their example. even though’ i'm still far behind, I will reach.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/8oC9Oya.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/DczOSPLPA_g?start=1506"
+			"code": "D04",
+			"chineseTrad": "見 未 真, 勿 輕 言. 知 未 的, 勿 輕 傳",
+			"hanviet": "Kiến vị chân, vật khinh ngôn. Tri vị đích, vật khinh truyền",
+			"vietnamese": "Thấy chưa rõ, chớ vội nói. Hiểu chưa rõ, chớ vội truyền",
+			"french": "Je ne vois pas clairement, je ne dis pas. Je ne le sais pas correctement, je ne transmets pas facilement aux autres",
+			"english": "I don't see clearly, I don't tell. I don't know for sure, I don't easily pass on to others",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/fqNiWOK.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/Nlh3YkaGX-0?start=1445"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/sFQTkIqOs-w?start=53"
-		}]
-	}, {
-		"code": "D09",
-		"vietnamese": "Thấy người xấu, liền phản tỉnh; có thì sửa, không cảnh giác.",
-		"french": "Voir les autres faire le mal, je regarde immédiatement envers moi-même. Si j'ai la même erreur, je le corrigerai; sinon je m'assure de ne pas la commettre.",
-		"english": "Seeing others do wrong, I immediately reflect upon myself. if I have the same mistake, I will correct it. if not, I make sure not to commit.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/UovNkQ3.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/sFQTkIqOs-w?start=1876"
-		}]
-	}, {
-		"code": "D10",
-		"vietnamese": "Chỉ đức học, chỉ tài nghệ; Không bằng người, tự cố gắng.",
-		"french": "Ma morale, ma conduite, mes connaissances et mes compétences ne sont pas aussi bonnes que celles des autres, je m'encouragerai à être meilleur.",
-		"english": "My morals, conduct, knowledge, and skills seem not as good as those of others, I will encourage myself to be better.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/bRCj1XH.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/sFQTkIqOs-w?start=2998"
+			"code": "D05",
+			"chineseTrad": "事 非 宜, 勿 輕 諾, 苟 輕 諾, 進 退 錯",
+			"hanviet": "Sự phi nghi, vật khinh nặc. Cẩu khinh nặc, tiến thoái thác",
+			"vietnamese": "Việc không tốt, chớ vội nhận. Vội nhận lời, khó tiến thoái",
+			"french": "Je ne promets pas pour des choses d'inappropriées ou de mal. Si je promets, le faire ou ne pas le faire, sont toutes fautes",
+			"english": "Asking to do something inappropriate or bad, I don't accept. if I do, I will be doubly wrong",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/jxSdDhc.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/Nlh3YkaGX-0?start=2357"
+				}, {
+					"p": "https://www.youtube.com/embed/DczOSPLPA_g?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=53"
-		}]
-	}, {
-		"code": "D11",
-		"vietnamese": "Hoặc quần áo, hoặc ăn uống; Không bằng người, không nên buồn.",
-		"french": "Mes vêtements et ma nourriture ne sont pas aussi bons que ceux des autres, je ne suis pas concerné.",
-		"english": "My clothes, food and drink are not as good as that of others, i'm not concerned.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/OjNWxaT.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/sFQTkIqOs-w?start=2998"
+			"code": "D06",
+			"chineseTrad": "凡 道 字, 重 且 舒, 勿 急 疾, 勿 模 糊",
+			"hanviet": "Phàm đạo tự, trọng thả thư, vật cấp tật, vật mô hồ",
+			"vietnamese": "Lúc nói năng, chậm rõ ràng, không hấp tấp, không mơ hồ",
+			"french": "J'ai confiance en ce que je dis. Je parle clairement et au point. Je ne parle pas trop vite ni marmonner",
+			"english": "I speak clearly and to the point, not too fast nor mumble",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/DczOSPLPA_g?start=469"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=53"
-		}]
-	}, {
-		"code": "D12",
-		"vietnamese": "Chê thì giận, khen thì vui; Bạn xấu đến, bạn tốt đi.",
-		"french": "La critique ne me met pas en colère et les compliments ne me rendent pas heureux. Sinon la mauvaise compagnie viendra et les bons amis s'éloigneront.",
-		"english": "Criticism doesn't makes me angry and compliments doesn't make me happy. otherwise bad company will come and good friends will shy away.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/zgRb608.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=1756"
-		}]
-	}, {
-		"code": "D13",
-		"vietnamese": "Khen thì sợ, chê thì vui; Người hiền lương, dần gần gũi.",
-		"french": "Les compliments m'inquiètent et j'apprécie las critiques. Les gens sincères, compréhensifs et vertueux vont progressivement m'approcher.",
-		"english": "Compliments make me worry and I appreciative of criticism; Sincere, understanding, and virtuous people will gradually approach.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=2312"
-		}]
-	}, {
-		"code": "D14",
-		"vietnamese": "Vô ý phạm, cũng là sai; Cố ý phạm, là tạo ác.",
-		"french": "Faute, c'est commise non intentionnel. Acte mauvais, c'est commise intentionnel. Je ne commets pas.",
-		"english": "Mistake is commit inadvertently. evil act, its committing on purpose. I don't commit.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/HceGibL.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=2958"
+			"code": "D07",
+			"chineseTrad": "彼 說 長, 此 說 短, 不 關 己, 莫 閒 管",
+			"hanviet": "Bỉ thuyết trường, thử thuyết đoản, bất quan kỉ, mạc nhàn quản",
+			"vietnamese": "Người nói đúng, kẻ nói sai, không liên quan, không để ý",
+			"french": "L'un a dit ceci, l'autre a dit cela, si cela ne me concerne pas, je ne m'implique pas là dans",
+			"english": "One said right, other said wrong, doesn't concerning me, i'm not involve",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/GnDxzHz.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/DczOSPLPA_g?start=1059"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/MemFicQ6rlo?start=53"
-		}]
-	}, {
-		"code": "D15",
-		"vietnamese": "Sai chịu sửa, thì hết tội; Hễ che giấu, càng thêm tội.",
-		"french": "Je corrige et ne répète pas la même erreur, alors je ne possède plus l'erreur. Si j'essaye de la dissimuler, cela devient pire.",
-		"english": "I correct and not repeat the same mistake, then I no longer own the mistake. if I try to cover it up, it's getting worse.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/l3kXxrL.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/MemFicQ6rlo?start=566"
-		}]
-	}],
+			"code": "D08",
+			"chineseTrad": "見 人 善, 即 思 齊, 縱 去 遠, 以 漸 躋",
+			"hanviet": "Kiến nhân thiện, tức tư tề. Túng khứ viễn, dĩ tiệm tễ",
+			"vietnamese": "Thấy người thiện, liền học theo. Dù kém xa, cũng dần kịp",
+			"french": " Voir les autres font de bonnes actions, je suis leur exemple. Même si je suis encore loin derrière, j'atteindrai",
+			"english": "Seeing others do good deeds, I following their example. even though’ i'm still far behind, I will reach",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/8oC9Oya.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/DczOSPLPA_g?start=1506"
+				}, {
+					"p": "https://www.youtube.com/embed/sFQTkIqOs-w?start=53"
+				}
+			]
+		}, {
+			"code": "D09",
+			"chineseTrad": "見 人 惡, 即 內 省, 有 則 改, 無 加 警",
+			"hanviet": "Kiến nhân ác, tức nội tỉnh, hữu tắc cải, vô gia cảnh",
+			"vietnamese": "Thấy người xấu, liền phản tỉnh, có thì sửa, không cảnh giác",
+			"french": "Voir les autres faire le mal, je regarde immédiatement envers moi-même. Si j'ai la même erreur, je le corrigerai; sinon je m'assure de ne pas la commettre",
+			"english": "Seeing others do wrong, I immediately reflect upon myself. if I have the same mistake, I will correct it. if not, I make sure not to commit",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/UovNkQ3.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/sFQTkIqOs-w?start=1876"
+				}
+			]
+		}, {
+			"code": "D10",
+			"chineseTrad": "唯 德 學, 唯 才 藝, 不 如 人, 當 自 礪",
+			"hanviet": "Duy đức học, duy tài nghệ, bất như nhân, đương tự lệ",
+			"vietnamese": "Chỉ đức học, chỉ tài nghệ, không bằng người, tự cố gắng",
+			"french": "Ma morale, ma conduite, mes connaissances et mes compétences ne sont pas aussi bonnes que celles des autres, je m'encouragerai à être meilleur",
+			"english": "My morals, conduct, knowledge, and skills seem not as good as those of others, I will encourage myself to be better",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/bRCj1XH.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/sFQTkIqOs-w?start=2998"
+				}, {
+					"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=53"
+				}
+			]
+		}, {
+			"code": "D11",
+			"chineseTrad": "若 衣 服, 若 飲 食, 不 如 人, 勿 生 慼",
+			"hanviet": "Nhược y phục, nhược ẩm thực, bất như nhân, vật sanh thích",
+			"vietnamese": "Hoặc quần áo, hoặc ăn uống, không bằng người, không nên buồn",
+			"french": "Mes vêtements et ma nourriture ne sont pas aussi bons que ceux des autres, je ne suis pas concerné",
+			"english": "My clothes, food and drink are not as good as that of others, i'm not concerned",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/OjNWxaT.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/sFQTkIqOs-w?start=2998"
+				}, {
+					"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=53"
+				}
+			]
+		}, {
+			"code": "D12",
+			"chineseTrad": "聞 過 怒, 聞 譽 樂, 損 友 來, 益 友 卻",
+			"hanviet": "Văn quá nộ, văn dự lạc. Tổn hữu lai, ích hữu khước",
+			"vietnamese": "Chê thì giận, khen thì vui. Bạn xấu đến, bạn tốt đi",
+			"french": "La critique ne me met pas en colère et les compliments ne me rendent pas heureux. Sinon la mauvaise compagnie viendra et les bons amis s'éloigneront",
+			"english": "Criticism doesn't makes me angry and compliments doesn't make me happy. otherwise bad company will come and good friends will shy away",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/zgRb608.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=1756"
+				}
+			]
+		}, {
+			"code": "D13",
+			"chineseTrad": "聞 譽 恐, 聞 過 欣, 直 諒 士, 漸 相 親",
+			"hanviet": "Văn dự khủng, văn quá hân. Trực lượng sĩ, tiệm tương thân",
+			"vietnamese": "Khen thì sợ, chê thì vui. Người hiền lương, dần gần gũi",
+			"french": "Les compliments m'inquiètent et j'apprécie las critiques. Les gens sincères, compréhensifs et vertueux vont progressivement m'approcher",
+			"english": "Compliments make me worry and I appreciative of criticism; Sincere, understanding, and virtuous people will gradually approach",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=2312"
+				}
+			]
+		}, {
+			"code": "D14",
+			"chineseTrad": "無 心 非, 名 為 錯. 有 心 非, 名 為 惡",
+			"hanviet": "Vô tâm phi, danh vi thác. Hữu tâm phi, danh vi ác",
+			"vietnamese": "Vô ý phạm, cũng là sai. Cố ý phạm, là tạo ác",
+			"french": "Faute, c'est commise non intentionnel. Acte mauvais, c'est commise intentionnel. Je ne commets pas",
+			"english": "Mistake is commit inadvertently. evil act, its committing on purpose. I don't commit",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/HceGibL.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/YQ8amV5p9zo?start=2958"
+				}, {
+					"p": "https://www.youtube.com/embed/MemFicQ6rlo?start=53"
+				}
+			]
+		}, {
+			"code": "D15",
+			"chineseTrad": "過 能 改, 歸 於 無. 倘 揜 飾, 增 一 辜",
+			"hanviet": "Quá năng cải, quy ư vô. Thảng yểm sức, tăng nhất cô",
+			"vietnamese": "Sai chịu sửa, thì hết tội. Nếu che giấu, càng thêm tội",
+			"french": "Je corrige et ne répète pas la même erreur, alors je ne possède plus l'erreur. Si j'essaye de la dissimuler, cela devient pire",
+			"english": "I correct and not repeat the same mistake, then I no longer own the mistake. if I try to cover it up, it's getting worse",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/l3kXxrL.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/MemFicQ6rlo?start=566"
+				}
+			]
+		}
+	],
 	"chapter05": [{
-		"code": "E00",
-		"vietnamese": "Thương chúng sanh",
-		"french": "j'aime tout le monde équitablement.",
-		"english": "Love all equally.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/MemFicQ6rlo?start=2341"
+			"code": "E00",
+			"chineseTrad": "汎 愛 眾",
+			"hanviet": "phiếm ái chúng",
+			"vietnamese": "Thương chúng sanh",
+			"french": "j'aime tout le monde équitablement",
+			"english": "Love all equally",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/MemFicQ6rlo?start=2341"
+				}, {
+					"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=53"
-		}]
-	}, {
-		"code": "E01",
-		"vietnamese": "Phàm là người, đều phải thương; Chung bầu trời, cùng quả đất.",
-		"french": "Tous, indépendamment de la nationalité, la race, ou la religion, je les aime tous également.",
-		"english": "Human beings, regardless of nationality, race, or religion, everyone, I love them all equally. we share the same sky and live on the same planet.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/scM6gC5.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=1581"
-		}]
-	}, {
-		"code": "E02",
-		"vietnamese": "Đức hạnh cao, danh tự cao; được người trọng, không do tướng.",
-		"french": " Une personne avec de bonne vertue et de moralité élevée est hautement respectée. Ce que les gens apprécient n'est pas fondé sur l'apparence extérieure.",
-		"english": "A person of high ideals and morals is highly respected. what people value is not based on outside appearance.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/R3oDOpC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=1854"
-		}]
-	}, {
-		"code": "E03",
-		"vietnamese": "Người tài cao, danh tự cao; được người phục, không do khoe.",
-		"french": "Les capacités exceptionnelles d'une personne lui confèrent naturellement une bonne réputation. Le respect des autres ne vient pas en se vantant.",
-		"english": "A person’s outstanding abilities will naturally endow him with a good reputation. admiration from others does not come from boasting or praising oneself.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/R3oDOpC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=2178"
-		}]
-	}, {
-		"code": "E04",
-		"vietnamese": "Có khả năng, không ích kỷ; Người khác giỏi, không hủy bán.",
-		"french": " J'utilise mes capacités pour le bénéfice des autres, pas seulement pour moi-même. Les compétences des autres, je ne les dénigre/diminue pas.",
-		"english": "I'm using my capabilities for the benefit of others, not only for myself. i'm not slander others' competence.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/pxd3961.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=2498"
-		}]
-	}, {
-		"code": "E05",
-		"vietnamese": "Không nịnh giàu.",
-		"french": "Je ne flatte pas les riches.",
-		"english": "I don't flatter the rich.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/JwZfoTV.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=3077"
+			"code": "E01",
+			"chineseTrad": "凡 是 人, 皆 須 愛, 天 同 覆, 地 同 載",
+			"hanviet": "Phàm thị nhân, giai tu ái, thiên đồng phúc, địa đồng tải",
+			"vietnamese": "Phàm là người, đều phải thương. Chung bầu trời, cùng quả đất",
+			"french": "Tous, indépendamment de la nationalité, la race, ou la religion, je les aime tous également",
+			"english": "Human beings, regardless of nationality, race, or religion, everyone, I love them all equally. we share the same sky and live on the same planet",
+			"shortMeaning": "Không phân Quốc Gia, Chủng Tộc cùng Tôn Giáo, đều phải bình đẳng thương yêu lẫn nhau. Chúng ta sống chung cùng một bầu trời, lớn lên trên cùng một quả đất.<br><br>Nếu chúng ta có thể lìa khỏi tâm phân biệt, thì thiên hạ thái bình. Tại vì sao chúng ta không thể cùng ở chúng với mọi người? Do bởi phân biệt. Từ phân biệt mà khởi lên trước, do chấp trước mà không thể bao dung. Liền xảy ra đấu tranh, đấu tranh liền tạo tội nghiệp, chiêu cảm lây quả báo khổ.<br><br>Tâm lượng hẹp hòi, phân biệt quá nặng, chấp trước quá sâu. Thời xưa anh em thương yêu nhau, anh em cãi vã nhau là chuyện cười của thiên hạ. Ngày nay đấu tranh kiên cố, quốc gia với quốc gia, đoàn thể với đoàn thể, cá nhân với cá nhân. Vợ chồng hai người còn phân biệt, vẫn còn chấp trước, không thể bao dung lẫn nhau. Ngày nay quan niệm kiến giải tư tưởng sai lầm quá nhiều, quá nhiều. Tất cả đều do không nhận qua giáo dục của thánh hiền, không biết được quan hệ giữa mình với người, với hoàn cảnh tự nhiên, với những chúng sanh trong tầng không gian khác. Thời thời khắc khắc, do bởi vô trí, do bởi tự lợi, người với người đắc tội, người với người tín sổ. Người có lỗi với hoàn cảnh tự nhiên, đại địa cũng đang tín sổ với chúng ta.<br><br>Không phân tôn giáo, văn hóa, chủng tộc, quốc gia, giàu nghèo, sang hèn, tất cả đều phải bình đẳng đối đãi, hòa thuận sống chúng. Phải mở rộng tâm lượng, bao dung lẫn nhau. Nếu không thể bao dung, mâu thuận đối nghịch, không cách gì để giải quyết. Phải tôn trọng lẫn nhau. Phải yêu kính lẫn nhau. Phải quan tâm lẫn nhau. phải chăm sóc lẫn nhau. Chúng ta phải hộ trở hộp tác, chúng ta đều là người một nhà.<br><br>Chúng ta học được, chúng ta biết được, phải từ bản thân mình làm được, mới yêu cầu tới người khác",
+			"image": "https://i.imgur.com/scM6gC5.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=1581"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/tpacodjrhCU?start=53"
-		}]
-	}, {
-		"code": "E06",
-		"vietnamese": "Không khinh nghèo.",
-		"french": "Je ne méprise pas les pauvres.",
-		"english": "I don't despise the poor.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/JwZfoTV.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=3077"
+			"code": "E02",
+			"chineseTrad": "行 高 者, 名 自 高, 人 所 重, 非 貌 高",
+			"hanviet": "Hạnh cao giả, danh tự cao. Nhân sở trọng, phi mạo cao",
+			"vietnamese": "Đức hạnh cao, danh tự cao. Được người trọng, không do tướng",
+			"french": " Une personne avec de bonne vertue et de moralité élevée est hautement respectée. Ce que les gens apprécient n'est pas fondé sur l'apparence extérieure",
+			"english": "A person of high ideals and morals is highly respected. what people value is not based on outside appearance",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/R3oDOpC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=1854"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/tpacodjrhCU?start=53"
-		}]
-	}, {
-		"code": "E07",
-		"vietnamese": "Không bỏ cũ.",
-		"french": "Je ne dépricie pas, juste parce que c'est vieux.",
-		"english": "I don't despise, just because its old.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/HFdOKwY.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tpacodjrhCU?start=1263"
-		}]
-	}, {
-		"code": "E08",
-		"vietnamese": "Không chuộng mới.",
-		"french": "Je ne valorise pas, juste parce que c'est nouveau.",
-		"english": "I don't prioritize, just because its new.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/HFdOKwY.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tpacodjrhCU?start=1263"
-		}]
-	}, {
-		"code": "E09",
-		"vietnamese": "Người đang bận, không quấy rầy.",
-		"french": "Quand une personne est occupée, je ne le dérange pas.",
-		"english": "When a person is busy, I don't bother him with matters.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/NDKsh8v.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tpacodjrhCU?start=2345"
-		}]
-	}, {
-		"code": "E10",
-		"vietnamese": "Người không yên, không làm phiền.",
-		"french": "Quand l'esprit d'une personne n'est pas à l'aise, je ne le dérange pas avec des mots.",
-		"english": "When a person’s mind is not at ease, I don't bother him with words.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/KbbRIex.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tpacodjrhCU?start=2345"
-		}]
-	}, {
-		"code": "E11",
-		"vietnamese": "Người có lỗi, không vạch trần.",
-		"french": "Le défaut d'une personne, je ne l'expose pas.",
-		"english": "A person has a shortcoming, I don't expose it.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/HQVzbom.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tpacodjrhCU?start=2809"
-		}]
-	}, {
-		"code": "E12",
-		"vietnamese": "Việc riêng người, tuyệt không nói.",
-		"french": "Le secret d'une personne, je ne le dis pas.",
-		"english": "A person's secret, I don't tell.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/tpacodjrhCU?start=2809"
-		}]
-	}, {
-		"code": "E13",
-		"vietnamese": "Khen làm lành, đó là thiện; Người khác biết, càng khích lệ.",
-		"french": "Je glorifie les bonnes actions des autres. Les autres savent, ils seront encore plus encouragées.",
-		"english": "I praise good acts. thats good deeds. others know, they will be more encourage to do so.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/AKwYSOh.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=53"
-		}]
-	}, {
-		"code": "E14",
-		"vietnamese": "Nói người ác, chính là ác; Người ta ghét, họa tự chuồc.",
-		"french": "Je ne répands pas de rumeurs sur les méfaits des autres. C'est un méfait en soi. La personne n'aimera pas cela. Le malheur m'arrivera.",
-		"english": "I don't spread rumors about the wrongdoings of others. that's a wrongdoing in itself. others don't like, misfortunes will surely follow.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=172"
-		}]
-	}, {
-		"code": "E15",
-		"vietnamese": "Thiện cùng hướng, đức cùng xây.",
-		"french": " J'encourage les autres à faire le bien. Nos deux vertus s'accroître davantage.",
-		"english": "I encourage others to do good, both of our virtues are built up.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/s47v5KC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=312"
-		}]
-	}, {
-		"code": "E16",
-		"vietnamese": "Lổi không chỉ, đôi bên sai.",
-		"french": "Voyant quelqu'un commet des erreurs, je lui le dis prudemment. Si je ne lui dis pas, nous nous commettons l'erreur tous les deux.",
-		"english": "I will cautiously tell the person their errors, otherwise we are both wrong.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/s47v5KC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=312"
-		}]
-	}, {
-		"code": "E17",
-		"vietnamese": "Cho hoặc nhận, phải rõ ràng; Cho nên nhiều, nhận nên ít.",
-		"french": "Donner et recevoir, il faut que ce soit clair. Je donne plus et reçois moins.",
-		"english": "Receive or give have to be clear. I give more and receive less.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/87RrtVT.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=892"
-		}]
-	}, {
-		"code": "E18",
-		"vietnamese": "Sắp cầu người, trước hỏi mình; Mình không muốn, chớ buộc người.",
-		"french": "Avant de demander aux autres, je le demande à moi-même. Si ce n'est pas quelque chose que je serais prêt à faire, je ne demande pas aux autres.",
-		"english": "Asking others, I first ask myself. if it is not something I would be willing to do, I don't ask to others.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/tT6ocfr.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=1129"
-		}]
-	}, {
-		"code": "E19",
-		"vietnamese": "Ơn phải báo, oán phải quên; Báo oán ngắn, báo ơn dài.",
-		"french": "Je cherche à repayer la bonté des autres, et j'essaie d'oublier leur méchanceté. Je minimise et abandonne mes ressentiments et je retourne la bonté des gens longuement.",
-		"english": "I repay the kindness of others and let go of my resentments. I spend less time holding grudges and more time paying back the kindness of others.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/GE4tEgV.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=1679"
-		}]
-	}, {
-		"code": "E20",
-		"vietnamese": "Đối cấp dưới, thân quý đoan; Tuy quý đoan, nhưng hiền hoà.",
-		"french": " Les gens en dessous de ma position / statut / condition, j'agis honorablement et correctement. Je les traite avec gentillesse et générosité.",
-		"english": "To people below my position/status/condition, I'm acting honorably and properly. I will also treat them kindly and generously.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/9bKrz9L.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=2933"
+			"code": "E03",
+			"chineseTrad": "才 大 者, 望 自 大, 人 所 服, 非 言 大",
+			"hanviet": "Tài đại giả, vọng tự đại. Nhân sở phục, phi ngôn đại",
+			"vietnamese": "Người tài cao, danh tự cao. Được người phục, không do khoe",
+			"french": "Les capacités exceptionnelles d'une personne lui confèrent naturellement une bonne réputation. Le respect des autres ne vient pas en se vantant",
+			"english": "A person’s outstanding abilities will naturally endow him with a good reputation. admiration from others does not come from boasting or praising oneself",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/R3oDOpC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=2178"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/RUX67GJcCLo?start=53"
-		}]
-	}, {
-		"code": "E21",
-		"vietnamese": "Thế phục người, tâm không phục; Lý phục người, người mới phục.",
-		"french": "Si j'utilise ma supériorité pour les faire soumettre, leur coeur n'est pas avec moi. Si je les raisonne, ils n'auront plus rien à dire.",
-		"english": "Using my influence to make them submissive, their hearts will not be with me. convince them with reasoning, they will have nothing to object to.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/RUX67GJcCLo?start=493"
-		}]
-	}],
+			"code": "E04",
+			"chineseTrad": "己 有 能, 勿 自 私. 人 所 能, 勿 輕 訾",
+			"hanviet": "Kỉ hữu năng, vật tự tư. Nhân sở năng, vật khinh tí",
+			"vietnamese": "Có khả năng, không ích kỷ. Người khác giỏi, không hủy bán",
+			"french": " J'utilise mes capacités pour le bénéfice des autres, pas seulement pour moi-même. Les compétences des autres, je ne les dénigre/diminue pas",
+			"english": "I'm using my capabilities for the benefit of others, not only for myself. i'm not slander others' competence",
+			"shortMeaning": "Ngay khi chúng ta có năng lực có thể phục vụ mọi người, không nên tự tư tự lợi chỉ nghĩ đến mình, không chịu buông xả ý niệm này mà chịu đi phục vụ người khác. Đối với tài hoa của người khác, phải nên học tập tán thưởng khen ngợi mà không nên phê bình, đố kỵ, phỉ báng.<br><br>Thấy người thiện làm việc thiện, thì sân giận sanh tâm ganh ghét. Tự mình không bằng người, nhưng không muốn người giỏi hơn mình. Tâm ganh ghét là phiền não khi sanh ra đã có. Trẻ nhỏ còn đang bò, cho đứa này không cho đứa kia, đứa kia đã tỏ ra không vui. Tập khí sẳn có, cảnh giới hiện tiền, liền khởi tác dụng. Đều này phải nhờ vào sự tu dưỡng và sự giáo dục tốt.<br><br>Xã hội ngày nay, từ lớp mẫu giáo cho đến đại học, dạy người là cái gì? Cảnh tranh. Cảnh tranh, lại thêm một bước là gì? Cảnh tranh tiến thêm một bước chính là đấu tranh; Đấu tranh lại tiến thêm một bước chính là chiến tranh. Ngày xưa 2 người đánh nhau, chúng ta không lo ngại. Ngày nay hai người đánh nhau, chúng ta gặp tai nạn.<br><br>Cổ nhân thời xưa, dạy trẻ con bắt đầu học nhịn nhường. Dần dần nuôi thành thói quen, hiểu biết một chút, thì dạy chúng khiêm nhường. Đến khi lớn lên thì tự nhiên biết lễ nhường. Mới biết cư xử với mọi người hòa thuận. Thật sự làm được với người không tranh. Với người cạnh tranh, là đều rất phiền não.<br><br>Sân giận ganh ghét, thật tại mà nói, không thể tổn hại được người khác. Nếu đối phương không có oán hận, tất cả đều tùy thuận, chẳng những không tổn hại, còn giúp đối phương thành tựu đức hạnh. Tụ mình bị thiệt thòi, đã tạo tác tội nghiệp. Nếu đối phương không tha thứ, oán hận muôn trả thù, thì chính mình lại gặp phiền phức.<br><br>Oan gia nên giải không nên kết. Hóa giải oán kết là do chính mình, không phải đối phương. Họ có oán hận ta, nhưng ta không có oán hận họ, thì cái oán này không kết được. Kết oán phải hai bên mới kết được, đơn phương không thể kết được. Khi chúng ta gặp người sỉ nhục, hủy báng, hãm hại, phải có tâm bình khí hòa. Mà còn phải sinh tâm thương xót. Họ đối với ta tạo ác nghiệp, ác hạnh, ác niệm, ta không tiếp nhận, ta không nghe, ta không nói, không để trong tâm, thì tất cả trở về cho họ. Phải cảm ơn họ, nhờ cảnh giới hiện tiền mới biết công phu mình tới mức độ nào. Đối với mình chỉ có lợi không có hại. Nếu tự mình không chịu nổi, sanh tâm oán hận chống lại, thậm chí đến trả thù, thế là tạo nghiệp. Oan oan tương báo, hai bên đều khổ. Người trước không hiểu rõ chân tướng sự thật này, người sau không được dạy, họ vẫn tiếp tục tạo tội nghiệp, tất cả không thể trách. Cho nên sau khi hiểu rõ những sự thật này rồi, không nên làm những chuyện ngu muội này",
+			"image": "https://i.imgur.com/pxd3961.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=2498"
+				}
+			]
+		}, {
+			"code": "E05",
+			"chineseTrad": "勿 諂 富",
+			"hanviet": "Vật siểm phú",
+			"vietnamese": "Không nịnh giàu",
+			"french": "Je ne flatte pas les riches",
+			"english": "I don't flatter the rich",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/JwZfoTV.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=3077"
+				}, {
+					"p": "https://www.youtube.com/embed/tpacodjrhCU?start=53"
+				}
+			]
+		}, {
+			"code": "E06",
+			"chineseTrad": "勿 驕 貧",
+			"hanviet": "Vật kiêu bần",
+			"vietnamese": "Không khinh nghèo",
+			"french": "Je ne méprise pas les pauvres",
+			"english": "I don't despise the poor",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/JwZfoTV.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/y85L2VZa1MM?start=3077"
+				}, {
+					"p": "https://www.youtube.com/embed/tpacodjrhCU?start=53"
+				}
+			]
+		}, {
+			"code": "E07",
+			"chineseTrad": "勿 厭 故",
+			"hanviet": "Vật yếm cố",
+			"vietnamese": "Không bỏ cũ",
+			"french": "Je ne dépricie pas, juste parce que c'est vieux",
+			"english": "I don't despise, just because its old",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/HFdOKwY.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tpacodjrhCU?start=1263"
+				}
+			]
+		}, {
+			"code": "E08",
+			"chineseTrad": "勿 喜 新",
+			"hanviet": "Vật hỉ tân",
+			"vietnamese": "Không chuộng mới",
+			"french": "Je ne valorise pas, juste parce que c'est nouveau",
+			"english": "I don't prioritize, just because its new",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/HFdOKwY.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tpacodjrhCU?start=1263"
+				}
+			]
+		}, {
+			"code": "E09",
+			"chineseTrad": "人 不 閒, 勿 事 攪",
+			"hanviet": "Nhân bất nhàn, vật sự giảo",
+			"vietnamese": "Người đang bận, không quấy rầy",
+			"french": "Quand une personne est occupée, je ne le dérange pas",
+			"english": "When a person is busy, I don't bother him with matters",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/NDKsh8v.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tpacodjrhCU?start=2345"
+				}
+			]
+		}, {
+			"code": "E10",
+			"chineseTrad": "人 不 安, 勿 話 擾",
+			"hanviet": "Nhân bất an, vật thoại nhiễu",
+			"vietnamese": "Người không yên, không làm phiền",
+			"french": "Quand l'esprit d'une personne n'est pas à l'aise, je ne le dérange pas avec des mots",
+			"english": "When a person’s mind is not at ease, I don't bother him with words",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/KbbRIex.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tpacodjrhCU?start=2345"
+				}
+			]
+		}, {
+			"code": "E11",
+			"chineseTrad": "人 有 短, 切 莫 揭",
+			"hanviet": "Nhân hữu đoản, thiết mạc yết",
+			"vietnamese": "Người có lỗi, không vạch trần",
+			"french": "Le défaut d'une personne, je ne l'expose pas",
+			"english": "A person has a shortcoming, I don't expose it",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/HQVzbom.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tpacodjrhCU?start=2809"
+				}
+			]
+		}, {
+			"code": "E12",
+			"chineseTrad": "人 有 私, 切 莫 說",
+			"hanviet": "Nhân hữu tư, thiết mạc thuyết",
+			"vietnamese": "Việc riêng người, tuyệt không nói",
+			"french": "Le secret d'une personne, je ne le dis pas",
+			"english": "A person's secret, I don't tell",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/tpacodjrhCU?start=2809"
+				}
+			]
+		}, {
+			"code": "E13",
+			"chineseTrad": "道 人 善, 即 是 善, 人 知 之, 愈 思 勉",
+			"hanviet": "Đạo nhân thiện, tức thị thiện. Nhân tri chi, dũ tư miễn",
+			"vietnamese": "Khen làm thiện, đó là thiện. Người khác biết, càng khích lệ",
+			"french": "Je glorifie les bonnes actions des autres. Les autres savent, ils seront encore plus encouragées",
+			"english": "I praise good acts. thats good deeds. others know, they will be more encourage to do so",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/AKwYSOh.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=53"
+				}
+			]
+		}, {
+			"code": "E14",
+			"chineseTrad": "揚 人 惡, 即 是 惡, 疾 之 甚, 禍 且 作",
+			"hanviet": "Dương nhân ác, tức thị ác. Tật chi thậm, hoạ thả tác",
+			"vietnamese": "Nói người ác, chính là ác. Người ta ghét, họa tự chuồc",
+			"french": "Je ne répands pas de rumeurs sur les méfaits des autres. C'est un méfait en soi. La personne n'aimera pas cela. Le malheur m'arrivera",
+			"english": "I don't spread rumors about the wrongdoings of others. that's a wrongdoing in itself. others don't like, misfortunes will surely follow",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=172"
+				}
+			]
+		}, {
+			"code": "E15",
+			"chineseTrad": "善 相 勸, 德 皆 建",
+			"hanviet": "Thiện tương khuyến, đức giai kiến",
+			"vietnamese": "Thiện cùng hướng, đức cùng xây",
+			"french": " J'encourage les autres à faire le bien. Nos deux vertus s'accroître davantage",
+			"english": "I encourage others to do good, both of our virtues are built up",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/s47v5KC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=312"
+				}
+			]
+		}, {
+			"code": "E16",
+			"chineseTrad": "過 不 規, 道 兩 虧",
+			"hanviet": "Quá bất quy, đạo lưỡng khuy",
+			"vietnamese": "Lổi không chỉ, đôi bên sai",
+			"french": "Voyant quelqu'un commet des erreurs, je lui le dis prudemment. Si je ne lui dis pas, nous nous commettons l'erreur tous les deux",
+			"english": "I will cautiously tell the person their errors, otherwise we are both wrong",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/s47v5KC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=312"
+				}
+			]
+		}, {
+			"code": "E17",
+			"chineseTrad": "凡 取 與, 貴 分 曉, 與 宜 多, 取 宜 少",
+			"hanviet": "Phàm thủ dữ, quý phân hiểu. Dữ nghi đa, thủ nghi thiểu",
+			"vietnamese": "Cho hoặc nhận, phải rõ ràng. Cho nên nhiều, nhận nên ít",
+			"french": "Donner et recevoir, il faut que ce soit clair. Je donne plus et reçois moins",
+			"english": "Receive or give have to be clear. I give more and receive less",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/87RrtVT.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=892"
+				}
+			]
+		}, {
+			"code": "E18",
+			"chineseTrad": "將 加 人, 先 問 己, 己 不 欲, 即 速 已",
+			"hanviet": "Tương gia nhân, tiên vấn kỉ, kỉ bất dục, tức tốc dĩ",
+			"vietnamese": "Sắp cầu người, trước hỏi mình, mình không muốn, lập tức ngừng",
+			"french": "Avant de demander aux autres, je le demande à moi-même. Si ce n'est pas quelque chose que je serais prêt à faire, je ne demande pas aux autres",
+			"english": "Asking others, I first ask myself. if it is not something I would be willing to do, I don't ask to others",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/tT6ocfr.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=1129"
+				}
+			]
+		}, {
+			"code": "E19",
+			"chineseTrad": "恩 欲 報, 怨 欲 忘, 報 怨 短, 報 恩 長",
+			"hanviet": "Ân dục báo, oán dục vong. Báo oán đoản, báo ân trường",
+			"vietnamese": "Ơn phải báo, oán phải quên. Báo oán ngắn, báo ơn dài",
+			"french": "Je cherche à repayer la bonté des autres, et j'essaie d'oublier leur méchanceté. Je minimise et abandonne mes ressentiments et je retourne la bonté des gens longuement",
+			"english": "I repay the kindness of others and let go of my resentments. I spend less time holding grudges and more time paying back the kindness of others",
+			"shortMeaning": "Chúng ta thọ ơn của người khác, nhất định phải luôn nhớ đáp đền. Còn như họ đã kết oán thù với chúng ta, chúng ta phải xóa bỏ quên hết. Mối oán thù không nên kéo dài, thời gian càng ngắn càng tốt, còn lòng thọ ơn đáp đền phải lâu dài.<br><br>Ơn phải báo. Thân này do cha mẹ sanh ra, trí huệ của chúng ta do thầy mà có. Quốc gia bảo hộ chúng ta, tất cả chúng sanh vì ta mà phục vụ. Không có quốc gia, thì không có xã hội an định; xã hội không an định, không thành tựu được việc gì. Mội ngày chúng ta, ăn uống nghỉ ngơi đều nhờ vào tất cả chúng sanh. Tất cả chúng sanh đều là ân nhân của chúng ta. Phải biết tôn trọng, yêu thương, quan tâm, chăm sóc, hợp tác thành tựu lẫn nhau. Chúng ta sống trong thế gian này, bất luận là làm ngành nghề gì, chúng ta không thể rời xa xã hội này. Sống một ngày, sống cả đời, thì bao nhiêu người vì ta mà phục vụ, chúng ta có gì mà đền đáp ân của đại chúng? Phải thường luôn nghĩ đều này.<br><br>Oán phải hóa giải. Đời người sống trong thế gian này, muôn ngàn phải nhớ kỷ, tuyệt đối không nên kết oán với người khác, điều này rất quan trọng. Oan gia nên giải không nên kết. Tuyệt đối không nên kết oán với người khác. Người khác kết oán với ta, ta không kết oán với họ, thì có thể hóa giải được. Người khác hủy báng ta, làm nhục ta, thẩm chí hãm hại ta, cũng không nên để trong tâm, cũng phải quên hết sạch sẽ rốt ráo. Người khác đối sự với ta tốt, dù là chỉ một ngày, ta nhận sự chăm lo, nhận sự ân huệ của họ, ta mãi mãi không quên. Báo oán phải ngắn, báo ân phải dài, đây mới là đưa linh tánh của mình lên cao.<br><br>Nhân quả thật đáng sợ, người không học không biết, chúng ta biết rồi phải sớm tìm cách hóa giải, không nên kết giận thành thù, nhà tang mạng mất, hại người hại mình, hai bên đều thảm bại.<br><br>Muốn hóa giải oan gia đối đầu, nên cầu ở mình, không nên yêu cầu ở người; Yêu cầu đối phương, thì vĩnh viễn không thể hóa giải được. Tự mình phải buông bỏ ý niệm đối lập; Ta không đối lập với họ, thì mới hóa giải được. Họ có cái hay chúng ta phải tán thán, Họ đối sự với ta tốt thì ta phải cảm ân họ, họ đối với ta có sự hiểu lầm thì ta không thể để trong tâm, càng không nên nói đều xấu của họ. Phải dùng đức hạnh tu hành của mình để cảm hóa họ. Tu là tu sửa, hành là hành vi thân khẩu ý của mình; hành vi của chúng ta có chỗ chưa hoàn thiện, chúng ta đem chúng sửa đổi lại, đó gọi là tu hành. Đức hạnh là kết quả đạt được của sự tu hành. ",
+			"image": "https://i.imgur.com/GE4tEgV.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=1679"
+				}
+			]
+		}, {
+			"code": "E20",
+			"chineseTrad": "待 婢 僕, 身 貴 端, 雖 貴 端, 慈 而 寬",
+			"hanviet": "Đãi tì bộc, thân quý đoan. Tuy quý đoan, từ nhi khoan",
+			"vietnamese": "Đối cấp dưới, thân quý đoan. Tuy quý đoan, nhưng hiền hoà",
+			"french": " Les gens en dessous de ma position / statut / condition, j'agis honorablement et correctement. Je les traite avec gentillesse et générosité",
+			"english": "To people below my position/status/condition, I'm acting honorably and properly. I will also treat them kindly and generously",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/9bKrz9L.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/4KEQgW7tOp0?start=2933"
+				}, {
+					"p": "https://www.youtube.com/embed/RUX67GJcCLo?start=53"
+				}
+			]
+		}, {
+			"code": "E21",
+			"chineseTrad": "勢 服 人, 心 不 然. 理 服 人, 方 無 言",
+			"hanviet": "Thế phục nhân, tâm bất nhiên. Lý phục nhân, phương vô ngôn",
+			"vietnamese": "Thế phục người, tâm không phục. Lý phục người, người mới phục",
+			"french": "Si j'utilise ma supériorité pour les faire soumettre, leur coeur n'est pas avec moi. Si je les raisonne, ils n'auront plus rien à dire",
+			"english": "Using my influence to make them submissive, their hearts will not be with me. convince them with reasoning, they will have nothing to object to",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/RUX67GJcCLo?start=493"
+				}
+			]
+		}
+	],
 	"chapter06": [{
-		"code": "F00",
-		"vietnamese": "Gần người nhân",
-		"french": "je m'approche et apprendre des gens de grand vertu et compassion.",
-		"english": "Be close to and learn from people of virtue and compassion.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/R3oDOpC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/RUX67GJcCLo?start=1634"
+			"code": "F00",
+			"chineseTrad": "親  仁",
+			"hanviet": "thân nhân",
+			"vietnamese": "thân cận hiền nhân",
+			"french": "je m'approche et apprendre des gens de grand vertu et compassion",
+			"english": "Be close to and learn from people of virtue and compassion",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/R3oDOpC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/RUX67GJcCLo?start=1634"
+				}, {
+					"p": "https://www.youtube.com/embed/2j0KYILJ0Xw?start=53"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/2j0KYILJ0Xw?start=53"
-		}]
-	}, {
-		"code": "F01",
-		"vietnamese": "Cùng là người, khác tánh tình; Phàm phu nhiều, người hiền hiếm.",
-		"french": "Nous sommes tous humains, mais nous ne sommes pas les mêmes. La plupart d'entre nous sont ordinaires; Seul un très petit nombre a de grandes vertus et de hauts principes moraux.",
-		"english": "We are all human, but we are not the same. most of us are ordinary; Only a very few have great virtues and high moral principles.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/R3oDOpC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/2j0KYILJ0Xw?start=1203"
-		}]
-	}, {
-		"code": "F02",
-		"vietnamese": "Thật người hiền, người kính sợ; Lời không dối, mặt không xảo.",
-		"french": "Une personne vraiment vertueuse est grandement respectée par les autres. il n'aura pas peur de dire la vérité. Il n'a besoin de rien des autres personnes.",
-		"english": "A truly virtuous person is greatly respected by others. He will not be afraid to speak the truth and he will not fawn on others.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/R3oDOpC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/2j0KYILJ0Xw?start=1589"
-		}]
-	}, {
-		"code": "F03",
-		"vietnamese": "Gần người hiền, tốt vô hạn; Đức tiến dần, lỗi giảm dần.",
-		"french": "Je peux être proche et apprendre de gens de grande vertu et de compassion, j'en tirerai beaucoup de profit. Mes vertus grandiront chaque jour et mes méfaits diminueront de jour en jour.",
-		"english": "I can be close to and learn from people of great virtue and compassion, I will benefit immensely. my virtues will grow daily and my wrongdoings will lessen day by day.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/R3oDOpC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/2j0KYILJ0Xw?start=1732"
+			"code": "F01",
+			"chineseTrad": "同 是 人, 類 不 齊, 流 俗 眾, 仁 者 希",
+			"hanviet": "Đồng thị nhân, loại bất tề, lưu tục chúng, nhân giả hi",
+			"vietnamese": "Cùng là người, khác tánh tình, phàm phu nhiều, người hiền hiếm",
+			"french": "Nous sommes tous humains, mais nous ne sommes pas les mêmes. La plupart d'entre nous sont ordinaires; Seul un très petit nombre a de grandes vertus et de hauts principes moraux",
+			"english": "We are all human, but we are not the same. most of us are ordinary; Only a very few have great virtues and high moral principles",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/R3oDOpC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/2j0KYILJ0Xw?start=1203"
+				}
+			]
 		}, {
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=53"
-		}]
-	}, {
-		"code": "F04",
-		"vietnamese": "Không gần hiền, hại vô cùng; Tiểu nhân đến, trăm sự bại.",
-		"french": "Si je choisis de ne pas être proche et d'apprendre des gens de grande vertu, je souffrirai d'une grande perte. Les gens sans vertu se rapprocheront de moi et rien que j'essaierai ne réussira.",
-		"english": "If I choose not to be close to and learn from people of great virtue, I will suffer a great loss. people without virtue will get close to me and nothing I attempt will succeed.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=323"
-		}]
-	}],
+			"code": "F02",
+			"chineseTrad": "果 仁 者, 人 多 畏. 言 不 諱, 色 不 媚",
+			"hanviet": "Quả nhân giả, nhân đa uý. Ngôn bất huý, sắc bất mị",
+			"vietnamese": "Thật người hiền, người kính sợ. Lời không dối, mặt không xảo",
+			"french": "Une personne vraiment vertueuse est grandement respectée par les autres. il n'aura pas peur de dire la vérité. Il n'a besoin de rien des autres personnes",
+			"english": "A truly virtuous person is greatly respected by others. He will not be afraid to speak the truth and he will not fawn on others",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/R3oDOpC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/2j0KYILJ0Xw?start=1589"
+				}
+			]
+		}, {
+			"code": "F03",
+			"chineseTrad": "能 親 仁, 無 限 好, 德 日 進, 過 日 少",
+			"hanviet": "Năng thân nhân, vô hạn hảo. Đức nhật tiến, quá nhật thiểu",
+			"vietnamese": "Gần người hiền, tốt vô hạn. Đức tiến dần, lỗi giảm dần",
+			"french": "Je peux être proche et apprendre de gens de grande vertu et de compassion, j'en tirerai beaucoup de profit. Mes vertus grandiront chaque jour et mes méfaits diminueront de jour en jour",
+			"english": "I can be close to and learn from people of great virtue and compassion, I will benefit immensely. my virtues will grow daily and my wrongdoings will lessen day by day",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/R3oDOpC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/2j0KYILJ0Xw?start=1732"
+				}, {
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=53"
+				}
+			]
+		}, {
+			"code": "F04",
+			"chineseTrad": "不 親 仁, 無 限 害, 小 人 進, 百 事 壞",
+			"hanviet": "Bất thân nhân, vô hạn hại. Tiểu nhân tiến, bách sự hoại",
+			"vietnamese": "Không gần hiền, hại vô cùng. Tiểu nhân đến, trăm sự bại",
+			"french": "Si je choisis de ne pas être proche et d'apprendre des gens de grande vertu, je souffrirai d'une grande perte. Les gens sans vertu se rapprocheront de moi et rien que j'essaierai ne réussira",
+			"english": "If I choose not to be close to and learn from people of great virtue, I will suffer a great loss. people without virtue will get close to me and nothing I attempt will succeed",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=323"
+				}
+			]
+		}
+	],
 	"chapter07": [{
-		"code": "G00",
-		"vietnamese": "Dư lực văn học",
-		"french": "Après que tout ce qui précède est accompli, je devrais étudier et apprendre plus pour améliorer ma vie culturelle et spirituelle.",
-		"english": "After all above are accomplished, I should study further and learn more to improve my cultural and spiritual life.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/y5icrCUb.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=723"
-		}]
-	}, {
-		"code": "G01",
-		"vietnamese": "Không thực hành, chỉ học văn; Không thật chất, thành người gì.",
-		"french": "Je mets en pratique ce que j'apprends. Si je ne mets pas en pratique ce que j'ai appris, mais continue à étudier en surface, même si mes connaissances augmentent, ce n'est que superficiel. Quel genre de personne serai-je?",
-		"english": "I put into pratice what I learn. if I do not actively practice what I have learned, but continue to study on the surface, eventhough my knowledge is increasing, it is only superficial. what kind of person will I be?.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/RJdXHYa.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=723"
-		}]
-	}, {
-		"code": "G02",
-		"vietnamese": "Chỉ thực hành, không học văn; Theo ý mình, mê lý chân.",
-		"french": "Je pratique, mais je continue toujours à apprendre plus. Si j'applique, mais cesse d'étudier, je ferai des choses fondées sur ma propre opinion, en pensant que c'est correct. En fait, ce que je sais n'est pas la vérité.",
-		"english": "I pratice but always keep learning more. if I do apply my knowledge diligently, but stop studying, I will only do things based on my own opinion, thinking it is correct. in fact, what I know is not the truth.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=723"
-		}]
-	}, {
-		"code": "G03",
-		"vietnamese": "Cách đọc sách, phải tập trung; Tâm mắt miệng, tín đều trọng.",
-		"french": "Étudier implique la concentration dans trois domaines: ma pensée, mon regard et ma bouche. Croire en ce que j'apprends est tout aussi important.",
-		"english": "There are methods to study correctly. they involve concentration in three areas: my mind, my eyes, and my mouth. believe in what I learn is equally important.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/DmCjRcE.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=1202"
-		}]
-	}, {
-		"code": "G04",
-		"vietnamese": "Mới đọc đây, chớ thích kia; đây chưa xong, không học khác.",
-		"french": "Quand je commence à lire un livre, je ne pense pas à un autre. si je n'ai pas terminé celle-ci, je ne débuterai pas un autre.",
-		"english": "When I begin to read a book, I don't think about another. if I have not completed the book, I won't start another.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=1517"
-		}]
-	}, {
-		"code": "G05",
-		"vietnamese": "Thời gian ít, gắng dụng công; Công phu đủ, đọc liền thông.",
-		"french": "Je m'accorde assez de temps pour étudier. si je consacre suffisamment de temps et d'efforts, je comprendrai.",
-		"english": "I give myself enought time to study, and I study hard. if I devote enough time and effort, I will thoroughly understand.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2055"
-		}]
-	}, {
-		"code": "G06",
-		"vietnamese": "Tâm có nghi, ghi chép lại; Gặp người hỏi, cầu xác nghĩa.",
-		"french": "Si j'ai une question, je prends note. Je vais demander à la personne qui a la connaissance pour la bonne réponse.",
-		"english": "If I have a question, I will make a note of it. I will ask the person who has the knowledge for the right answer.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/8lvaUvt.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2197"
-		}]
-	}, {
-		"code": "G07",
-		"vietnamese": "Phòng yên tịnh, tường vách sạch; Bàn ngay ngắn, bút nghiên chánh.",
-		"french": "J'étudie dans un espace calme et propre. La chambre, les murs, le bureau et les outils bien rangés.",
-		"english": "I keep my room neat, my walls uncluttered and clean, my desk tidy and my brush and inkstone properly placed.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/lKSfWfd.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2416"
-		}]
-	}, {
-		"code": "G08",
-		"vietnamese": "Mực mài nghiêng, tâm không chánh; Chữ viết ẩu, tâm không định.",
-		"french": "Je m'assois droit et écrit correctement. Quand les mots sont écrits avec insouciance, ne montrant aucun respect, cela reflète un défaut dans mon état d'esprit.",
-		"english": "My words are written properly. when words are written carelessly, showing no respect, this shows my state of mind has not been well.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/7P95dQ1.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2558"
-		}]
-	}, {
-		"code": "G09",
-		"vietnamese": "Xếp sách vở, chỗ cố định; đọc xem xong, để chỗ cũ.",
-		"french": "Mes livres sont classés et placés à leur place. Après avoir fini de lire un livre, je le remets à sa place.",
-		"english": "My books are classified and placed in their proper places. after I finish reading a book, I put it back where it belongs.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/KHwJL0b.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2714"
-		}]
-	}, {
-		"code": "G10",
-		"vietnamese": "Dù có gấp, cũng xếp kỹ.",
-		"french": "Même pressé, j'arrange mes livres correctement à leur place.",
-		"english": "Even in a hurry, I arrange properly.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2714"
-		}]
-	}, {
-		"code": "G11",
-		"vietnamese": "Sách có rách, phải sửa ngay.",
-		"french": "Toutes les pages manquantes ou endommagées doivent être immédiatement réparées.",
-		"english": "All missing or damaged pages ought to be immediately repaired.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/9u2OjyH.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2714"
-		}]
-	}, {
-		"code": "G12",
-		"vietnamese": "Không sách thánh, bỏ không xem; Che thông minh, hoại tâm trí.",
-		"french": "[Saut pour des enseignements obligatoires], si ce n'est pas un livre sur les enseignements des saints et des sages, il devrait être rejeté et ne même pas regardé. De tels livres peuvent bloquer mon intelligence et ma sagesse et nuire à ma volonté.",
-		"english": "If it is not a book on the teachings of the saints and sages, it should be discarded and not even looked at. such books can block my intelligence and wisdom, and will undermine my aspirations and sense of direction.",
-		"shortMeaning": "",
-		"image": "",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2826"
-		}]
-	}, {
-		"code": "G13",
-		"vietnamese": "Chớ tự chê, chớ tự đoạ; Thánh hiền nhân, dần dần được.",
-		"french": "Ne nous sous-estime pas. N'abandonne pas. Être une personne vertu avec de grands idéaux et principes moraux est quelque chose que nous pouvons tous atteindre.",
-		"english": "Neither be harsh on myself, nor give up on myself. to be a person of high ideals, moral standards and virtue is something we can all attain in time.",
-		"shortMeaning": "",
-		"image": "https://i.imgur.com/R3oDOpC.jpg",
-		"video": [{
-			"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2944"
-		}]
-	}]
+			"code": "G00",
+			"chineseTrad": "餘 力 學 文",
+			"hanviet": "dư lực học văn",
+			"vietnamese": "Dư lực văn học",
+			"french": "Après que tout ce qui précède est accompli, je devrais étudier et apprendre plus pour améliorer ma vie culturelle et spirituelle",
+			"english": "After all above are accomplished, I should study further and learn more to improve my cultural and spiritual life",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/y5icrCUb.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=723"
+				}
+			]
+		}, {
+			"code": "G01",
+			"chineseTrad": "不 力 行, 但 學 文, 長 浮 華, 成 何 人",
+			"hanviet": "Bất lực hành, đãn học văn, trưởng phù hoa, thành hà nhân",
+			"vietnamese": "Không thực hành, chỉ học văn, không thật chất, thành người gì",
+			"french": "Je mets en pratique ce que j'apprends. Si je ne mets pas en pratique ce que j'ai appris, mais continue à étudier en surface, même si mes connaissances augmentent, ce n'est que superficiel. Quel genre de personne serai-je?",
+			"english": "I put into pratice what I learn. if I do not actively practice what I have learned, but continue to study on the surface, eventhough my knowledge is increasing, it is only superficial. what kind of person will I be?",
+			"shortMeaning": "Nếu không đích thân thực hành các bổn phận hiếu thảo, anh em hòa thuận, sống cẩn thận và có uy tín, thương mọi người và kết bạn tốt mà chỉ vùi đầu đọc sách, thì tuy có chút kiến thức nhưng cũng chỉ làm tăng thêm tính nói lý thuyết suông, trở thành một người không thực tế. Đọc sách như vậy liệu có ích gì?<br><br>Học mà không thực tiện, làm sao chứng minh được đều mình học, đều mình hiểu là đúng không sai. Nếu không áp dụng được trong cuộc sống, không có thật chất. Đối với mình, đối với người, không hữu ích gì. Trước phải làm ra cho người khác xem, sau nói ra họ mới tin tưởng. Không làm được chỉ nói suông, chính mình còn hoài nghi, nói chi tới người nghe. Trước phải làm được, đạt được kết quả, khế nhập cảnh giới, sau đó nói ra, như đinh đống cột, không chút bân khuân, không chút hoài nghi, nói được rõ ràng; người khác nghe rồi, cũng không còn lời nào để nói.<br><br>Thí dụ mà nói, chọn lựa học tập việc làm, không nên ngưỡng vọng cao xa, phải chọn lựa thích hợp trình độ, năng lực và hoàn cảnh đời sống hiền tiền, của chính mình. Liên quan đến đời sống sinh hoạt hiện tiền của mình, thì cơ hội áp dụng được càng nhiều; huân tập càng nhiều, vào được càng sâu, trí tuệ càng thêm lớn. Hũu ích cho mình, hữu ích cho người",
+			"image": "https://i.imgur.com/RJdXHYa.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=723"
+				}
+			]
+		}, {
+			"code": "G02",
+			"chineseTrad": "但 力 行, 不 學 文, 任 己 見, 昧 理 真",
+			"hanviet": "Đãn lực hành, bất học văn, nhậm kỉ kiến, muội lý chân",
+			"vietnamese": "Chỉ thực hành, không học văn, theo ý mình, không hiểu lý",
+			"french": "Je pratique, mais je continue toujours à apprendre plus. Si j'applique, mais cesse d'étudier, je ferai des choses fondées sur ma propre opinion, en pensant que c'est correct. En fait, ce que je sais n'est pas la vérité",
+			"english": "I pratice but always keep learning more. if I do apply my knowledge diligently, but stop studying, I will only do things based on my own opinion, thinking it is correct. in fact, what I know is not the truth",
+			"shortMeaning": "Nếu chúng ta chỉ chú trọng về mặt thực hành mà không chịu nghiên cứu học tập thêm, chỉ nhờ vào kiến giải của mình cho là đúng, vậy thì chúng ta đối với chân tướng sự thật không thấu hiểu.<br><br>Thế gian pháp con phải học, thời đại này của chúng ta, bất cứ làm điều gì, mua đều gì mới, đều có giấy chỉ dẫn, đều phải học. Nói chi tới lời dạy của thánh hiền, chỉ dạy chân tướng của vũ trụ nhân sinh.<br><br>Giải Hành phải tương ưng, hai bên giúp đỡ lẫn nhau. Hành giúp cho giải, khiến cho chúng ta càng giải càng sâu. Giải giúp cho hành, khiến cho chúng ta hành càng viên mãn. Nếu chỉ chú trọng thực hành, không chịu học thêm, lấy cách nhìn cách nghĩ của mình, tự cho là đúng, sẽ không hiểu được chân tướng sự thật, mà còn hiểu sai ý nghĩa. Khi chuyện xảy ra, sẽ có chướng ngại. Cuối cùng lại trách lời dạy của người xưa là không đúng, thế là lại tạo thêm tội nghiệp, đánh mất lòng tin của người khác. Chướng ngại mình, chướng ngại người. Kinh sách của cổ thánh tiên hiền, văn tự tuy ít, Sự Lý hàm chứa bên trong vô cùng sâu rộng, không nên được ích cho là đủ, mà khinh thường",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=723"
+				}
+			]
+		}, {
+			"code": "G03",
+			"chineseTrad": "讀 書 法, 有 三 到, 心 眼 口, 信 皆 要",
+			"hanviet": "Độc thư pháp, hữu tam đáo, tâm nhãn khẩu, tín giai yếu",
+			"vietnamese": "Cách đọc sách, phải tập trung, tâm mắt miệng, tín đều trọng",
+			"french": "Étudier implique la concentration dans trois domaines: ma pensée, mon regard et ma bouche. Croire en ce que j'apprends est tout aussi important",
+			"english": "There are methods to study correctly. they involve concentration in three areas: my mind, my eyes, and my mouth. believe in what I learn is equally important",
+			"shortMeaning": "Phương cách đọc sách nhất định phải tập trung vào ba điểm. Phải chú tâm, mắt xem, miệng đọc. Đối với lời dạy của Thánh Hiền, chúng ta phải tin sâu mà thực hành, điều này rất quan trọng.<br><br>Người bình thường chúng ta, mắt chạy theo sắc tướng, tai chạy theo tướng âm thâm, lưỡi dính tướng vị, mũi dính tướng hương, thân tìm nơi thoải mái, tâm (tư tưởng ý niệm) luôn hướng ra bên ngoài. Sáu căn chúng ta chạy nhảy lung tung như con khỉ, không thể tập trung được. Học vấn, mục tiêu chính là cầu tâm định lại: tâm định thì sanh trí tuệ, đọc sách sự sự, thấy được sâu, thấy được rộng. Muốn tâm định lại, phải nhiếp sáu căn; muốn nhiếp sáu căn, trước phải nhiếp mắt và tai. Mắt phải chú tâm vào sách, miệng đọc tai nghe. Vọng tưởng ý niêm khởi phải thâu nhiếp lại, không được chạy theo nó.<br><br>Học tập đối với kính sách của cổ thánh tiên hiền, thế xuất thế gian pháp, có thể lãnh ngộ được bao nhiêu cùng với lòng tin của chúng ta mà so sánh tỷ lễ. Nếu dùng tâm nghi hoặc mà nghiên cứu, nhiều nhất chỉ được ngoài da của văn tự, hoặc là thường thức, còn nghĩa lý bên trong, chúng ta không thể nào hiểu được. Một phần thành kính thì được Một phần lợi ích, mười phần thành kính thì mười phần lợi ích. Đới với người sự việc, phải dùng tâm thành kính mới đạt được trí tuệ viên mãn. Nghi hoặc là đều tồn hại lớn đối với một người cầu trí huệ. Có tâm chân thành cung kính đối với sách của cổ thánh tiên hiền, mới thể hội được nghĩa lý bên trong, mới tiếp nhận được sự lợi ích. Người không có tâm cung kính, họ sẽ bài xích lời dạy của thầy.<br><br> Thầy giáo không phải hy vọng học trò cung kính đối với mình, đó không phải là vị thầy tốt. Mà thầy giáo xem từ thái độ cung kinh của trò, mà nhìn ra tâm cầu học cầu đạo của trò có khẩn thiết hay không. Người xưa tôn sư trọng đạo là cha mẹ dạy. Ngày nay cha mẹ không biết, trường học cũng không nghe nhắc đến. Hiện nay, không còn nói thái độ cầu học cầu đạo nữa, hiện nay nói là Kỹ thuật, là học tập kỹ năng. Cho nên, xã hội hiện nay, trong sinh viên đại học, nhà xí nghiệp khó kiếm được nhân tài, đối với đạo lý làm người, họ không biết. Học tập luân lý đạo đức nhân quả, sẽ không phạm tội phản nghịch, tư tưởng lời nói việc làm, sẽ tuân theo quy tắc luân lý đạo đức. Bất hiếu cha mẹ, bội sư phản đạo, với ông chủ làm sao mà trung thành. Họ chỉ vì lợi mà làm, không có lợi thì không làm. Tuy làm chưa chắc hết lòng chịu phụ trách, họ không chịu trách nhiệm",
+			"image": "https://i.imgur.com/DmCjRcE.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=1202"
+				}
+			]
+		}, {
+			"code": "G04",
+			"chineseTrad": "方 讀 此, 勿 慕 彼, 此 未 終, 彼 勿 起",
+			"hanviet": "Phương độc thử, vật mộ bỉ. Thử vị chung, bỉ vật khởi",
+			"vietnamese": "Mới đọc đây, chớ thích kia. Đây chưa xong, không học khác",
+			"french": "Quand je commence à lire un livre, je ne pense pas à un autre. si je n'ai pas terminé celle-ci, je ne débuterai pas un autre",
+			"english": "When I begin to read a book, I don't think about another. if I have not completed the book, I won't start another",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=1517"
+				}
+			]
+		}, {
+			"code": "G05",
+			"chineseTrad": "寬 為 限, 緊 用 功, 工 夫 到, 滯 塞 通",
+			"hanviet": "khoan vi hạn, khẩn dụng công. Công phu đáo, trệ tắc thông",
+			"vietnamese": "Thời gian ít, gắng dụng công. Công phu đủ, đọc liền thông",
+			"french": "Je m'accorde assez de temps pour étudier. si je consacre suffisamment de temps et d'efforts, je comprendrai",
+			"english": "I give myself enought time to study, and I study hard. if I devote enough time and effort, I will thoroughly understand",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2055"
+				}
+			]
+		}, {
+			"code": "G06",
+			"chineseTrad": "心 有 疑, 隨 札 記, 就 人 問, 求 確 義",
+			"hanviet": "Tâm hữu nghi, tuỳ trát kí, tựu nhân vấn, cầu xác nghĩa",
+			"vietnamese": "Tâm có nghi, ghi chép lại, gặp người hỏi, cầu xác nghĩa",
+			"french": "Si j'ai une question, je prends note. Je vais demander à la personne qui a la connaissance pour la bonne réponse",
+			"english": "If I have a question, I will make a note of it. I will ask the person who has the knowledge for the right answer",
+			"shortMeaning": "Lúc đang tìm tòi học hỏi, nếu có thắc mắc gì thì phải nên ghi chép lại liền để khi có cơ hội gặp Thầy hay bạn bè bèn đem ra hỏi, cần phải thật sự hiểu rõ ý nghĩa đúng đắn của vấn đề mới thôi. <br><br>Có nghi phải hỏi, đoạn nghi mới có thể sanh tín. Hỏi phải hỏi đúng người, mỗi người có chuyên môn của mỗi người. Người được hỏi, phải có học, có làm. Tốt hơn nữa là có học, có tu, có chứng, có được kết quả, khế nhập cảnh giới. Nếu như có giải không hành, có hành không giải, đều không đáng tin. Có giải không hành tăng thêm tà kiến, có hành không giải tăng thêm vô minh; tà tri tà kiến hiểu sai và vô minh không biết mình làm gì, đều không thể thân cận. Nếu không tìm được người chỉ dẫn, thì tìm lời dạy của người xưa, y theo lời dạy mà làm. Thành tựu được bao nhiêu là do ở tâm thành kính của chính mình",
+			"image": "https://i.imgur.com/8lvaUvt.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2197"
+				}
+			]
+		}, {
+			"code": "G07",
+			"chineseTrad": "房 室 清, 牆 壁 淨, 几 案 潔, 筆 硯 正",
+			"hanviet": "Phòng thất thanh, tường bích tịnh, kỉ án khiết, bút nghiễn chánh",
+			"vietnamese": " Phòng yên tịnh, tường vách sạch, bàn học sạch, bút nghiên ngay",
+			"french": "J'étudie dans un espace calme et propre. La chambre, les murs, le bureau et les outils bien rangés",
+			"english": "I keep my room neat, my walls uncluttered and clean, my desk tidy and my brush and inkstone properly placed",
+			"shortMeaning": "Trong phòng học phải yên tịnh, tường vách cũng phải giữ gìn cho sạch sẽ. bàn học của mình sắp đặt ngay ngắn, bút mực phải để cho gọn gàng. <br><br>Có phương hướng rồi, phải nỗ lực mà làm. Hoàn cảnh ngoại duyên vô cùng quan trọng. Học, trước tiên phải cầu tâm định lại. Người xưa khi đọc sách phải tìm một nơi thanh vắng, để giảm bớt đi sự quấy nhiều ở bên ngoài. Như vậy, mới có thể khai ngộ, hiểu được đạo lý hàm chứa bên trong văn tự. Sự quấy nhiễu của người và việc, còn nghiêm trọng hơn cả hoàn cảnh bên ngoài",
+			"image": "https://i.imgur.com/lKSfWfd.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2416"
+				}
+			]
+		}, {
+			"code": "G08",
+			"chineseTrad": "墨 磨 偏, 心 不 端. 字 不 敬, 心 先 病",
+			"hanviet": "Mặc ma thiên, tâm bất đoan. Tự bất kính, tâm tiên bệnh",
+			"vietnamese": "Mực mài nghiêng, tâm không chánh. Chữ viết ẩu, tâm không định",
+			"french": "Je m'assois droit et écrit correctement. Quand les mots sont écrits avec insouciance, ne montrant aucun respect, cela reflète un défaut dans mon état d'esprit",
+			"english": "My words are written properly. when words are written carelessly, showing no respect, this shows my state of mind has not been well",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/7P95dQ1.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2558"
+				}
+			]
+		}, {
+			"code": "G09",
+			"chineseTrad": "列 典 籍, 有 定 處, 讀 看 畢, 還 原 處",
+			"hanviet": "Liệt điển tịch, hữu định xứ. Độc khán tất, hoàn nguyên xứ",
+			"vietnamese": "Xếp sách vở, chỗ cố định. Đọc xem xong, để chỗ cũ",
+			"french": "Mes livres sont classés et placés à leur place. Après avoir fini de lire un livre, je le remets à sa place",
+			"english": "My books are classified and placed in their proper places. after I finish reading a book, I put it back where it belongs",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/KHwJL0b.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2714"
+				}
+			]
+		}, {
+			"code": "G10",
+			"chineseTrad": "雖 有 急, 卷 束 齊",
+			"hanviet": "Tuy hữu cấp, quyển thúc tề",
+			"vietnamese": "Dù có gấp, cũng xếp kỹ",
+			"french": "Même pressé, j'arrange mes livres correctement à leur place",
+			"english": "Even in a hurry, I arrange properly",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2714"
+				}
+			]
+		}, {
+			"code": "G11",
+			"chineseTrad": "有 缺 壞, 就 補 之",
+			"hanviet": "Hữu khuyết hoại, tựu bổ chi",
+			"vietnamese": "Sách có rách, phải sửa ngay",
+			"french": "Toutes les pages manquantes ou endommagées doivent être immédiatement réparées",
+			"english": "All missing or damaged pages ought to be immediately repaired",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/9u2OjyH.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2714"
+				}
+			]
+		}, {
+			"code": "G12",
+			"chineseTrad": "非 聖 書, 屏 勿 視, 蔽 聰 明, 壞 心 志",
+			"hanviet": "Phi thánh thư, bính vật thị. Tế thông minh, hoại tâm chí",
+			"vietnamese": "Không sách thánh, bỏ không xem. Che thông minh, hoại tâm trí",
+			"french": "[Saut pour des enseignements obligatoires], si ce n'est pas un livre sur les enseignements des saints et des sages, il devrait être rejeté et ne même pas regardé. De tels livres peuvent bloquer mon intelligence et ma sagesse et nuire à ma volonté",
+			"english": "If it is not a book on the teachings of the saints and sages, it should be discarded and not even looked at. such books can block my intelligence and wisdom, and will undermine my aspirations and sense of direction",
+			"shortMeaning": "",
+			"image": "",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2826"
+				}
+			]
+		}, {
+			"code": "G13",
+			"chineseTrad": "勿 自 暴, 勿 自 棄, 聖 與 賢, 可 馴 致",
+			"hanviet": "Vật tự bạo, vật tự khí. Thánh dữ hiền, khả tuần trí",
+			"vietnamese": "Chớ tự chê, chớ tự bỏ. Thánh và hiền, dần làm được. ",
+			"french": "Ne nous sous-estime pas. N'abandonne pas. Être une personne vertu avec de grands idéaux et principes moraux est quelque chose que nous pouvons tous atteindre",
+			"english": "Neither be harsh on myself, nor give up on myself. to be a person of high ideals, moral standards and virtue is something we can all attain in time",
+			"shortMeaning": "",
+			"image": "https://i.imgur.com/R3oDOpC.jpg",
+			"video": [{
+					"p": "https://www.youtube.com/embed/kCRvejcW4uI?start=2944"
+				}
+			]
+		}
+	]
 }
