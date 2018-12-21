@@ -524,10 +524,14 @@ function setDtq120(videos) {
   var table = document.getElementById('dtq-table');
 
   for (var i = 1, row; row = table.rows[i]; i++) {
+
     if (typeof videos[i - 1] !== 'undefined' && videos[i - 1].frSub) {
       var link = `<a href=javascript:void(0) data-link= ${videos[i - 1].frSub} class=videoLink> ${videos[i - 1].title} <span class=fr-sub>(fr)</span></a>`;
       row.cells[dtq120Col].innerHTML = link;
-    } else if (typeof videos[i - 1] !== 'undefined' && videos[i - 1].embedVideo) {
+    }else if (typeof videos[i - 1] !== 'undefined' && videos[i - 1].vnSub) {
+      var link = `<a href=javascript:void(0) data-link= ${videos[i - 1].vnSub} class=videoLink> ${videos[i - 1].title} <span class=fr-sub>(vn)</span></a>`;
+      row.cells[dtq120Col].innerHTML = link;
+    }else if (typeof videos[i - 1] !== 'undefined' && videos[i - 1].embedVideo) {
       var link = `<a href=javascript:void(0) data-link= ${videos[i - 1].embedVideo} class=videoLink> ${videos[i - 1].title} </a>`;
       row.cells[dtq120Col].innerHTML = link;
     }
@@ -561,6 +565,14 @@ function setNlntt(objMovies) {
 
       var html = '', num = 1;
       for (var j in currChapter) {
+        if (currChapter[j].linkFr) {
+          html += `<a href=javascript:void(0) data-link= ${currChapter[j].linkFr} class=videoLink>  no${num} <span class=fr-sub>(fr)</span></a>`;
+          num++;
+        }
+        if (currChapter[j].linkVn) {
+          html += `<a href=javascript:void(0) data-link= ${currChapter[j].linkVn} class=videoLink>  no${num} <span class=fr-sub>(vn)</span></a>`;
+          num++;
+        }
         if (currChapter[j].link) {
           html += `<a href=javascript:void(0) data-link= ${currChapter[j].link} class=videoLink>  no${num} </a>`;
           num++;
@@ -601,7 +613,7 @@ function loadVideos(title) {
     url: `/dtq/videos/${title}`,
     success: function(res) {
       var obj = JSON.parse(res.videos);
-      html += "<table class=display><thead><tr><th>Title</th><th>Theories</th><th>without Sub</th><th>english Sub</th><th>french Sub</th></tr></thead><tbody>";
+      html += "<table class=display><thead><tr><th width=50%>Title</th><th width=30%>Theories</th><th width=5%>no Sub</th><th width=5%>viet Sub</th><th width=5%>eng Sub</th><th width=5%>fr Sub</th></tr></thead><tbody>";
 
       var chapters = obj.chapters;
       for (var i in chapters) {
@@ -609,6 +621,7 @@ function loadVideos(title) {
         html += `<tr><td> ${chapters[i].title} </td>` +
           `<td> ${getTheoryParts(chapters[i].theory)} </td>` +
           `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].embedVideo} > ${addLinkIfNotEmpty(chapters[i].embedVideo)} </a></td>` +
+          `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].vnSub} > ${addLinkIfNotEmpty(chapters[i].vnSub)} </a></td>` +
           `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].enSub} > ${addLinkIfNotEmpty(chapters[i].enSub)} </a></td>` +
           `<td><a class=videoLink href=javascript:void(0) data-link=${chapters[i].frSub} > ${addLinkIfNotEmpty(chapters[i].frSub)} </a></td>`;
       }
