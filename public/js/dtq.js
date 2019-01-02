@@ -30,6 +30,8 @@ $(document).ready(function() {
     displaySurveys('group-surveys');
   });
 
+  $('#download').click(loadDownload);
+
   /**
    * videos 
    */
@@ -74,6 +76,20 @@ $(document).ready(function() {
   })
 
 })
+function loadDownload (){
+  var html = '<table id=docs-table class=display><thead><tr><th width=25%>Title</th><th width=10%>Download</th><th width=50%>Description</th></tr></thead><tbody>';
+
+  html += `<tr><td>Để Tự Quy - accordion book</td><td><a href="../shared/de tu quy_accordion book.pdf">download</a></td>
+    <td><a href="../img/accordion book.jpg"> example</td></tr>`;        
+
+  html += '</tbody></table>';
+  document.getElementById('main-content').innerHTML = html;
+
+  $('table.display').DataTable({
+    paging: false,
+    ordering: false
+  });
+}
 
 /*************************************************************************************************************
  *
